@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="edu.fpt.entity.StudentEntity">
+        <table name="student" schema="student" catalog=""/>
+        <attributes>
+            <id name="stdId">
+                <column name="stdId" precision="-1"/>
+            </id>
+            <basic name="classId">
+                <column name="classId" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="majorId">
+                <column name="majorId" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="stdAge">
+                <column name="stdAge" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="stdName">
+                <column name="stdName" nullable="false"/>
+            </basic>
+            <many-to-one name="classnameByClassId" optional="true" target-entity="edu.fpt.entity.ClassnameEntity">
+                <join-column name="classId" nullable="false" referenced-column-name="classId"/>
+            </many-to-one>
+            <many-to-one name="majorByMajorId" optional="true" target-entity="edu.fpt.entity.MajorEntity">
+                <join-column name="majorId" nullable="false" referenced-column-name="majorId"/>
+            </many-to-one>
+        </attributes>
+    </entity>
+</entity-mappings>

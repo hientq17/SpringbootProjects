@@ -1,0 +1,1621 @@
+@-moz-keyframes fadeInOverlay {
+    0% {
+        background: hsla(0, 0%, 100%, 0)
+    }
+    to {
+        background: var(--ui_black_backdrop_opacity)
+    }
+}
+
+@-webkit-keyframes fadeInOverlay {
+    0% {
+        background: hsla(0, 0%, 100%, 0)
+    }
+    to {
+        background: var(--ui_black_backdrop_opacity)
+    }
+}
+
+@-o-keyframes fadeInOverlay {
+    0% {
+        background: hsla(0, 0%, 100%, 0)
+    }
+    to {
+        background: var(--ui_black_backdrop_opacity)
+    }
+}
+
+@keyframes fadeInOverlay {
+    0% {
+        background: hsla(0, 0%, 100%, 0)
+    }
+    to {
+        background: var(--ui_black_backdrop_opacity)
+    }
+}
+
+@-moz-keyframes fadeOutOverlay {
+    0% {
+        background: var(--ui_black_backdrop_opacity)
+    }
+    to {
+        background: hsla(0, 0%, 100%, 0)
+    }
+}
+
+@-webkit-keyframes fadeOutOverlay {
+    0% {
+        background: var(--ui_black_backdrop_opacity)
+    }
+    to {
+        background: hsla(0, 0%, 100%, 0)
+    }
+}
+
+@-o-keyframes fadeOutOverlay {
+    0% {
+        background: var(--ui_black_backdrop_opacity)
+    }
+    to {
+        background: hsla(0, 0%, 100%, 0)
+    }
+}
+
+@keyframes fadeOutOverlay {
+    0% {
+        background: var(--ui_black_backdrop_opacity)
+    }
+    to {
+        background: hsla(0, 0%, 100%, 0)
+    }
+}
+
+.AssemblyButtonBase {
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    border: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: -webkit-flex;
+    display: flex;
+    font: inherit;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center
+}
+
+.AssemblyButtonBase:focus {
+    outline: none
+}
+
+.AssemblyButtonBase[aria-disabled=true], .AssemblyButtonBase[disabled] {
+    cursor: default
+}
+
+.AssemblyButtonBase--small {
+    border-radius: var(--button-radius-small);
+    height: var(--button-height-small);
+    font-weight: var(--typography-section-weight);
+    font-size: .875rem;
+    letter-spacing: normal;
+    line-height: 1.428571428571429;
+    padding: var(--button-vertical-padding-small) var(--button-horizontal-padding-small)
+}
+
+@media screen and (max-width: 38.75em) {
+    .AssemblyButtonBase--small {
+        font-weight: var(--typography-section-weight);
+        font-size: .75rem;
+        letter-spacing: normal;
+        line-height: 1.333333333333333
+    }
+}
+
+.AssemblyButtonBase--medium {
+    border-radius: var(--button-radius-medium);
+    height: var(--button-height-medium);
+    font-weight: var(--typography-section-weight);
+    font-size: .875rem;
+    letter-spacing: normal;
+    line-height: 1.428571428571429;
+    padding: var(--button-vertical-padding-medium) var(--button-horizontal-padding-medium)
+}
+
+@media screen and (max-width: 38.75em) {
+    .AssemblyButtonBase--medium {
+        font-weight: var(--typography-section-weight);
+        font-size: .75rem;
+        letter-spacing: normal;
+        line-height: 1.333333333333333
+    }
+}
+
+.AssemblyButtonBase--large {
+    border-radius: var(--button-radius-large);
+    height: var(--button-height-large);
+    font-weight: var(--typography-section-weight);
+    font-size: 1rem;
+    letter-spacing: normal;
+    line-height: 1.5;
+    padding: var(--button-vertical-padding-large) var(--button-horizontal-padding-large)
+}
+
+@media screen and (max-width: 38.75em) {
+    .AssemblyButtonBase--large {
+        font-weight: var(--typography-section-weight);
+        font-size: .875rem;
+        letter-spacing: normal;
+        line-height: 1.428571428571429
+    }
+}
+
+.AssemblyButtonBase--xlarge {
+    border-radius: var(--button-radius-xlarge);
+    height: var(--button-height-xlarge);
+    font-weight: var(--typography-section-weight);
+    font-size: 1rem;
+    letter-spacing: normal;
+    line-height: 1.5;
+    padding: var(--button-vertical-padding-xlarge) var(--button-horizontal-padding-xlarge)
+}
+
+@media screen and (max-width: 38.75em) {
+    .AssemblyButtonBase--xlarge {
+        font-weight: var(--typography-section-weight);
+        font-size: .875rem;
+        letter-spacing: normal;
+        line-height: 1.428571428571429
+    }
+}
+
+.AssemblyButtonBase--border {
+    border: .0625rem solid var(--button-border)
+}
+
+.AssemblyButtonBase--border:disabled {
+    border-color: var(--button-disabled-border)
+}
+
+.AssemblyButtonBase--border:hover:enabled {
+    border-color: var(--button-hover-border)
+}
+
+.AssemblyButtonBase--fullWidth {
+    width: 100%
+}
+
+.AssemblyButtonBase--default {
+    background: var(--default-button-background);
+    color: var(--default-button-text)
+}
+
+.AssemblyButtonBase--default:disabled {
+    color: var(--default-button-text-disabled)
+}
+
+.AssemblyButtonBase--teal {
+    background: var(--teal-button-background);
+    color: var(--teal-button-text)
+}
+
+.AssemblyButtonBase--teal:disabled {
+    background: var(--teal-button-disabled-background)
+}
+
+.AssemblyButtonBase--teal:hover:enabled {
+    background: var(--teal-button-hover-background)
+}
+
+.AssemblyButtonBase--coral {
+    background: var(--coral-button-background);
+    color: var(--coral-button-text)
+}
+
+.AssemblyButtonBase--coral:disabled {
+    background: var(--coral-button-disabled-background)
+}
+
+.AssemblyButtonBase--coral:hover:enabled {
+    background: var(--coral-button-hover-background)
+}
+
+.AssemblyButtonBase--yellow {
+    background: var(--yellow-button-background);
+    color: var(--yellow-button-text)
+}
+
+.AssemblyButtonBase--yellow:disabled {
+    background: var(--yellow-button-disabled-background);
+    color: var(--yellow-button-disabled-text)
+}
+
+.AssemblyButtonBase--yellow:hover:enabled {
+    background: var(--yellow-button-hover-background)
+}
+
+.AssemblyButtonBase--link {
+    color: var(--link-button-text)
+}
+
+.AssemblyButtonBase--link:disabled {
+    color: var(--link-button-text-disabled)
+}
+
+.AssemblyButtonBase--link:disabled .UIIcon {
+    fill: var(--link-button-text-disabled)
+}
+
+.AssemblyButtonBase--link:hover:enabled {
+    color: var(--link-button-text-hover)
+}
+
+.AssemblyButtonBase--link:hover:enabled .UIIcon {
+    fill: var(--link-button-text-hover)
+}
+
+.AssemblyButtonBase--create {
+    color: var(--create-button-text)
+}
+
+.AssemblyButtonBase--create:disabled {
+    color: var(--create-button-disabled-text)
+}
+
+.AssemblyButtonBase-dropdownText {
+    margin-right: .625rem
+}
+
+.AssemblyMenuItem-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 0 var(--spacing-medium)
+}
+
+.AssemblyMenuItem-container:hover {
+    background: var(--menu_item_highlight_muted)
+}
+
+.AssemblyMenuItem-container:hover .AssemblyMenuItem-title {
+    color: var(--ui_color_default_foreground)
+}
+
+.AssemblyMenuItem-container:hover.AssemblyMenuItem-container--inverted {
+    background: none
+}
+
+.AssemblyMenuItem-container:hover.AssemblyMenuItem-container--inverted .AssemblyMenuItem-title {
+    color: var(--neutral-100)
+}
+
+.AssemblyMenuItem {
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    font-weight: var(--typography-section-weight);
+    font-size: .875rem;
+    letter-spacing: normal;
+    line-height: 1.428571428571429;
+    height: var(--menu-item-height);
+    color: var(--secondary-body-text-color)
+}
+
+@media screen and (max-width: 38.75em) {
+    .AssemblyMenuItem {
+        font-weight: var(--typography-section-weight);
+        font-size: .75rem;
+        letter-spacing: normal;
+        line-height: 1.333333333333333
+    }
+}
+
+.AssemblyMenuItem-left {
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center
+}
+
+.AssemblyMenuItem-left .UIIcon {
+    margin-right: var(--spacing-small)
+}
+
+.AssemblyMenuItem-title {
+    white-space: nowrap
+}
+
+.AssemblyMenuItem-subtext {
+    font-weight: var(--typography-body-weight);
+    font-size: .875rem;
+    letter-spacing: normal;
+    line-height: 1.428571428571429;
+    text-align: left;
+    color: var(--secondary-body-text-color);
+    max-width: 18.75rem;
+    margin-top: var(--spacing-xxsmall);
+    padding-left: var(--spacing-large)
+}
+
+@media screen and (max-width: 38.75em) {
+    .AssemblyMenuItem-subtext {
+        font-weight: var(--typography-body-weight);
+        font-size: .75rem;
+        letter-spacing: normal;
+        line-height: 1.333333333333333
+    }
+}
+
+.AssemblyMenuItem-container--withSubtext {
+    padding: var(--spacing-xsmall) var(--spacing-medium)
+}
+
+.AssemblyMenuItem-container--withSubtext .AssemblyMenuItem {
+    height: auto
+}
+
+.AssemblyMenuItem-container--withSubtext .AssemblyMenuItem-title {
+    color: var(--ui_color_default_foreground)
+}
+
+.AssemblyMenuItem-container--inverted .AssemblyMenuItem-title {
+    color: var(--indigo-200)
+}
+
+@media screen and (max-width: 48em) {
+    .AssemblyMenuItem-container--withSubtext .AssemblyMenuItem, .AssemblyMenuItem-container .AssemblyMenuItem {
+        height: auto
+    }
+
+    .AssemblyMenuItem-container--withSubtext .AssemblyMenuItem-title, .AssemblyMenuItem-container .AssemblyMenuItem-title {
+        font-weight: var(--typography-body-weight);
+        font-size: 1.25rem;
+        letter-spacing: normal;
+        line-height: 1.4
+    }
+
+    .AssemblyMenuItem-container--withSubtext .AssemblyMenuItem-subtext, .AssemblyMenuItem-container--withSubtext .UIIcon, .AssemblyMenuItem-container .AssemblyMenuItem-subtext, .AssemblyMenuItem-container .UIIcon {
+        display: none
+    }
+}
+
+@media screen and (max-width: 48em) and (max-width: 38.75em) {
+    .AssemblyMenuItem-container--withSubtext .AssemblyMenuItem-title, .AssemblyMenuItem-container .AssemblyMenuItem-title {
+        font-weight: var(--typography-body-weight);
+        font-size: 1rem;
+        letter-spacing: normal;
+        line-height: 1.5
+    }
+}
+
+.AssemblyMenu {
+    min-width: 16.25rem
+}
+
+.AssemblyMenu-header {
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: var(--spacing-xxlarge)
+}
+
+@media screen and (max-width: 48em) {
+    .AssemblyMenu-header {
+        height: auto
+    }
+}
+
+.AssemblyMenu--narrow {
+    min-width: 12.5rem
+}
+
+.AssemblyMenu-section {
+    padding-top: var(--spacing-xsmall);
+    padding-bottom: var(--spacing-xsmall);
+    border-top: .0625rem solid var(--menu_item_divider)
+}
+
+.AssemblyMenu-section:first-child {
+    border: none
+}
+
+@media screen and (max-width: 48em) {
+    .AssemblyMenu-section.AssemblyMenu-section--inverted:not(.AssemblyMenu-section--wrap) {
+        padding: 0;
+        border-left: .0625rem solid var(--ui_color_white_transparent_90);
+        margin: var(--spacing-xsmall) var(--spacing-small)
+    }
+
+    .AssemblyMenu-section.AssemblyMenu-section--inverted:not(.AssemblyMenu-section--wrap) > * {
+        padding-top: var(--spacing-small);
+        padding-bottom: 0
+    }
+
+    .AssemblyMenu-section.AssemblyMenu-section--inverted:not(.AssemblyMenu-section--wrap) > :first-child {
+        padding-top: 0
+    }
+
+    .AssemblyMenu-section.AssemblyMenu-section--wrap {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        border: none;
+        padding-bottom: 0
+    }
+
+    .AssemblyMenu-section.AssemblyMenu-section--wrap > * {
+        -webkit-flex: 1 1 calc(50% - 2 * var(--spacing-medium));
+        -ms-flex: 1 1 calc(50% - 2 * var(--spacing-medium));
+        flex: 1 1 calc(50% - 2 * var(--spacing-medium));
+        margin-bottom: var(--spacing-small)
+    }
+}
+
+.AssemblyPopover {
+    background: var(--ui_color_white_background);
+    border-radius: var(--spacing-xsmall);
+    transform: translateY(var(--spacing-xsmall));
+    border: 1px solid var(--menu_item_divider)
+}
+
+.theme-default .AssemblyPopover, .theme-night .AssemblyPopover {
+    box-shadow: 0 .25rem 1rem 0 rgba(0, 0, 0, .16)
+}
+
+.AssemblyPopover > * {
+    position: relative;
+    z-index: 300
+}
+
+.AssemblyTab {
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    position: relative;
+    white-space: nowrap
+}
+
+@media screen and (min-width: 48.0625em) {
+    .AssemblyTab {
+        height: 100%;
+        margin: 0 var(--spacing-small);
+        font-weight: var(--typography-section-weight);
+        font-size: 1rem;
+        letter-spacing: normal;
+        line-height: 1.5
+    }
+
+    .AssemblyTab .UIIcon {
+        margin-left: var(--spacing-xsmall)
+    }
+}
+
+@media screen and (max-width: 48em) {
+    .AssemblyTab {
+        width: 100%;
+        -ms-flex-pack: justify;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+        margin: var(--spacing-xsmall) 0;
+        padding: 0 var(--spacing-small);
+        font-weight: var(--typography-section-weight);
+        font-size: 1.25rem;
+        letter-spacing: normal;
+        line-height: 1.4
+    }
+}
+
+@media screen and (min-width: 48.0625em) and (max-width: 38.75em) {
+    .AssemblyTab {
+        font-weight: var(--typography-section-weight);
+        font-size: .875rem;
+        letter-spacing: normal;
+        line-height: 1.428571428571429
+    }
+}
+
+@media screen and (max-width: 48em) and (max-width: 38.75em) {
+    .AssemblyTab {
+        font-weight: var(--typography-section-weight);
+        font-size: 1rem;
+        letter-spacing: normal;
+        line-height: 1.5
+    }
+}
+
+.AssemblyTab--inverted {
+    color: var(--indigo-200)
+}
+
+.AssemblyTab--inverted:active, .AssemblyTab--inverted:focus, .AssemblyTab--inverted:hover {
+    color: var(--neutral-100)
+}
+
+.AssemblyTab--inverted:active:after, .AssemblyTab--inverted:focus:after, .AssemblyTab--inverted:hover:after {
+    background: var(--indigo-200)
+}
+
+.AssemblyTab--inverted:after {
+    background: transparent;
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-top-right-radius: var(--radius-small)
+}
+
+@media screen and (min-width: 48.0625em) {
+    .AssemblyTab--inverted:after {
+        height: var(--spacing-xxsmall);
+        right: 0;
+        border-top-left-radius: var(--radius-small)
+    }
+}
+
+@media screen and (max-width: 48em) {
+    .AssemblyTab--inverted:after {
+        width: var(--spacing-xxsmall);
+        top: 0;
+        border-bottom-right-radius: var(--radius-small)
+    }
+}
+
+.AssemblyTab--inverted.AssemblyTab--isSelected {
+    color: var(--neutral-100)
+}
+
+.AssemblyTab--inverted.AssemblyTab--isSelected:after {
+    background: var(--yellow-200)
+}
+
+.AssemblyTabs {
+    display: -webkit-flex;
+    display: flex;
+    height: 100%
+}
+
+@media screen and (max-width: 48em) {
+    .AssemblyTabs {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+}
+
+.ModeControls {
+    background-color: var(--sidebar-background);
+    box-shadow: 0 .25rem 1.25rem rgba(0, 0, 0, .08);
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+@media screen and (max-width: 48em) {
+    .ModeControls {
+        position: static;
+        box-shadow: none
+    }
+}
+
+@media print {
+    .ModeControls {
+        display: none
+    }
+}
+
+.ModeControls-modeHeader {
+    background-color: var(--ui_color_inverse_background);
+    *zoom: 1;
+    display: table;
+    height: 3.125rem;
+    padding: 0 .75rem;
+    width: 100%
+}
+
+.ModeControls-modeHeader:after, .ModeControls-modeHeader:before {
+    content: "";
+    display: table
+}
+
+.ModeControls-modeHeader:after {
+    clear: both
+}
+
+.ModeControls-modeHeader.ModeControls-actionsAndProgressCombined {
+    background-color: var(--ui_color_default_background);
+    padding: 1rem;
+    height: 3.75rem
+}
+
+.ModeControls-modeHeader.ModeControls-actionsAndProgressCombined .ModeControls-modeHeaderBack, .ModeControls-modeHeader.ModeControls-actionsAndProgressCombined .ModeControls-modeHeaderOptions {
+    padding-top: .25rem
+}
+
+.ModeControls-modeHeader.ModeControls-actionsAndProgressCombined .ModeControls-modeHeaderBack .UIIcon, .ModeControls-modeHeader.ModeControls-actionsAndProgressCombined .ModeControls-modeHeaderOptions .UIIcon {
+    color: #939bb4
+}
+
+.ModeControls-modeHeader.ModeControls-actionsAndProgressCombined .ModeControls-modeHeaderOptions {
+    top: 1rem;
+    right: 1rem
+}
+
+.ModeControls-modeHeader.ModeControls-actionsAndProgressCombined .ModeControls-progress, .ModeControls-modeHeader.ModeControls-actionsAndProgressCombined .ModeControls-progressSection {
+    display: inline-block
+}
+
+.ModeControls-modeHeaderBack, .ModeControls-modeHeaderOptions {
+    display: inline-block;
+    padding: .75rem 0 .25rem;
+    position: absolute
+}
+
+.ModeControls-modeHeaderOptions {
+    right: .75rem
+}
+
+.ModeControls-modeHeaderOption + .ModeControls-modeHeaderOption {
+    margin-left: 1rem
+}
+
+body.embed .ModeControls-modeHeaderBack .UILink {
+    display: none
+}
+
+.UIIcon.ModeControls-modeHeaderIcon {
+    height: 1.5rem;
+    width: 1.5rem
+}
+
+.ModeControls-sidebar {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.ModeControls-back {
+    border-bottom: 1px solid var(--ui_divider_color_black);
+    padding: .5rem 1rem
+}
+
+.ie11 .ModeControls-back, .ie-edge .ModeControls-back {
+    padding: 1.25rem
+}
+
+.ModeControls-back .UILink {
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    min-height: 2.5rem
+}
+
+.ie11 .ModeControls-back .UILink, .ie-edge .ModeControls-back .UILink {
+    min-height: 1.25rem
+}
+
+body.embed .ModeControls-back {
+    display: none
+}
+
+.ModeControls-backText {
+    color: var(--ui_color_gray_30);
+    margin-left: .5rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: .875rem;
+    line-height: 1.285714285714286
+}
+
+@media screen and (max-width: 38.75em) {
+    .ModeControls-backText {
+        font-weight: 600;
+        font-size: .75rem;
+        line-height: 1.333333333333333
+    }
+}
+
+.ModeControls-backIcon.UIIcon {
+    vertical-align: middle
+}
+
+.ModeControls-main {
+    padding: 1rem;
+    top: 3.75rem !important;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+body.embed .ModeControls-main {
+    top: 0 !important
+}
+
+@media screen and (max-width: 48em) {
+    .ModeControls-progress {
+        border-spacing: 1rem;
+        display: table;
+        margin-top: 0;
+        table-layout: fixed;
+        width: 100%
+    }
+}
+
+.ModeControls-progressSection + .ModeControls-progressSection, .ModeControls-progressSection + [class^=UI], [class^=UI] + .ModeControls-progressSection {
+    margin-top: 1.5rem
+}
+
+@media screen and (max-width: 48em) {
+    .ModeControls-progressSection {
+        display: table-cell;
+        width: 100%
+    }
+}
+
+.ModeControls-fullscreen {
+    padding: 1rem 0
+}
+
+.ModeControls-actions {
+    top: auto !important;
+    bottom: 1rem;
+    left: 1rem;
+    position: absolute;
+    right: 1rem;
+    top: 1rem
+}
+
+.ModeControls-action + .ModeControls-action, .ModeControls-action + [class^=UI], [class^=UI] + .ModeControls-action {
+    margin-top: 1rem
+}
+
+.ModeControls-modeName {
+    position: relative;
+    font-weight: 700;
+    font-size: .875rem;
+    letter-spacing: .1875rem;
+    line-height: 1.214285714285714;
+    margin: 1.5rem 0 2.5rem
+}
+
+@media screen and (max-width: 38.75em) {
+    .ModeControls-modeName {
+        font-weight: 700;
+        font-size: .75rem;
+        letter-spacing: .1875rem;
+        line-height: 1.333333333333333
+    }
+}
+
+body.embed .ModeControls-modeName {
+    margin-top: 0
+}
+
+.ModeControls-modeName .UIModeIcon {
+    margin-right: .75rem;
+    vertical-align: middle
+}
+
+.ModeControls-modeText {
+    margin-bottom: 2.5rem
+}
+
+.ModeControls-optionsOverlay .UIPopover, .ModeControls-optionsOverlay .UIPopover:after {
+    margin-left: 3.75rem
+}
+
+.ModeControls-blurBottom, .ModeControls-blurTop {
+    height: 1.25rem;
+    position: absolute;
+    width: 100%
+}
+
+.ModeControls-blurTop {
+    background: -webkit-linear-gradient(var(--card-alt-background), var(--card-alt-background-transparent));
+    background: -moz-linear-gradient(var(--card-alt-background), var(--card-alt-background-transparent));
+    background: -ms-linear-gradient(var(--card-alt-background), var(--card-alt-background-transparent));
+    background: linear-gradient(var(--card-alt-background), var(--card-alt-background-transparent));
+    z-index: 1;
+    top: 100%
+}
+
+.ModeControls-blurBottom {
+    background: -webkit-linear-gradient(var(--card-alt-background-transparent), var(--card-alt-background));
+    background: -moz-linear-gradient(var(--card-alt-background-transparent), var(--card-alt-background));
+    background: -ms-linear-gradient(var(--card-alt-background-transparent), var(--card-alt-background));
+    background: linear-gradient(var(--card-alt-background-transparent), var(--card-alt-background));
+    bottom: 100%
+}
+
+.ModeLayout {
+    background-color: var(--ui_color_gray_90_background);
+    top: 5rem !important;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    max-height: 100%;
+    transition: max-height .2s ease-in
+}
+
+.ModeLayout.is-showingAdz {
+    overflow-y: auto
+}
+
+.ModeLayout.is-showingSmartBanner {
+    max-height: calc(100% - 5.1875rem)
+}
+
+.ModeLayout.is-usingDarkBackground {
+    background-color: #282e3e
+}
+
+.ModeLayout.is-showingNewNav, body.embed .ModeLayout {
+    top: 0 !important
+}
+
+.ModeLayout.is-showingNewNav {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+@media screen and (max-width: 48em) {
+    .ModeLayout {
+        top: 0 !important
+    }
+}
+
+@media print {
+    .ModeLayout {
+        position: static
+    }
+}
+
+.ModeLayout .UIContainer {
+    display: -webkit-flex;
+    display: flex;
+    padding: 0
+}
+
+:not(.is-showingNewNav).ModeLayout .UIContainer {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+@media screen and (max-width: 48em) {
+    .ModeLayout .UIContainer {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+}
+
+@media print {
+    .ModeLayout .UIContainer {
+        display: block
+    }
+}
+
+.is-showingNewNav.ModeLayout .UIContainer {
+    height: 100%;
+    width: 100%
+}
+
+.ModeLayout.is-fullWidth .UIContainer {
+    max-width: none
+}
+
+.ModeLayout.is-fullHeight .UIContainer {
+    position: static
+}
+
+.ModeLayout-controls {
+    bottom: 0;
+    display: block;
+    position: fixed;
+    top: 5rem;
+    width: 12.1875rem
+}
+
+.ModeLayout.is-showingNewNav .ModeLayout-controls {
+    position: relative;
+    width: 100%;
+    top: 0;
+    bottom: auto
+}
+
+@media screen and (max-width: 48em) {
+    .ModeLayout-controls {
+        display: block;
+        position: static;
+        width: 100%
+    }
+}
+
+body.embed .ModeLayout-controls {
+    bottom: 1.8125rem
+}
+
+.ModeLayout-content {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin-left: 12.1875rem;
+    padding: 1.5rem;
+    position: relative;
+    width: 100%
+}
+
+@media screen and (max-width: 48em) {
+    .ModeLayout-content {
+        padding: 1rem
+    }
+}
+
+@media screen and (max-width: 38.75em) {
+    .ModeLayout-content {
+        padding: 0
+    }
+}
+
+.ModeLayout-content.is-fullHorizontalBleed {
+    padding-left: 0;
+    padding-right: 0;
+    overflow-y: auto
+}
+
+.ModeLayout-content > * {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+.ModeLayout.is-showingNewNav .ModeLayout-content {
+    margin-left: 0
+}
+
+@media screen and (max-width: 48em) {
+    .ModeLayout.is-showingNewNav .ModeLayout-content {
+        padding: 0
+    }
+}
+
+body.embed .ModeLayout-content {
+    margin-bottom: 1.8125rem
+}
+
+@media screen and (max-width: 48em) {
+    .ModeLayout-content {
+        margin-left: 0
+    }
+}
+
+@media screen and (max-width: 48em) {
+    .LearnModeLayout .ModeLayout-content {
+        -webkit-flex: none;
+        -ms-flex: none;
+        flex: none
+    }
+}
+
+@media print {
+    .ModeLayout-content {
+        margin-left: 0;
+        display: block
+    }
+}
+
+.ModeLayout-ad {
+    padding: 1.5rem .625rem 1.5rem 0;
+    width: 10.625rem
+}
+
+.ModeLayout.is-showingNewNav .ModeLayout-ad {
+    padding-top: 2.5rem
+}
+
+@media screen and (min-width: 48.0625em) {
+    body.flex-sidebar .ModeLayout-ad {
+        width: 11.875rem
+    }
+}
+
+@media screen and (min-width: 64.0625em) {
+    body.flex-sidebar .ModeLayout-ad {
+        width: 19.375rem
+    }
+}
+
+.ModeLayout.is-usingDarkBackground .ModeLayout-ad .SiteAd-label {
+    color: #fff
+}
+
+@media screen and (max-width: 48em) {
+    .TestModePage .ModeLayout-ad {
+        padding: 0 0 .75rem;
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 38.75em) {
+    .TestModePage .ModeLayout-ad {
+        padding: .75rem 0 0
+    }
+}
+
+@media screen and (max-width: 48em) {
+    .LearnModeLayout .ModeLayout-ad {
+        padding: .75rem 0 0;
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 48em) {
+    .StudyModesLayout .ModeLayout-ad {
+        padding: 0;
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 38.75em) {
+    .StudyModesLayout .ModeLayout-ad {
+        background-color: #fff
+    }
+}
+
+@media screen and (max-width: 20em) {
+    .StudyModesLayout .ModeLayout-ad {
+        display: none
+    }
+}
+
+@media screen and (max-width: 48em) and (max-height: 40.5625em) {
+    .StudyModesLayout .ModeLayout-ad {
+        display: none
+    }
+}
+
+@media print {
+    .ModeLayout-ad {
+        display: none
+    }
+}
+
+.ModeSignUpPrompt {
+    width: 100%;
+    display: table
+}
+
+.ModeSignUpPrompt-cell {
+    display: table-cell;
+    width: 100%
+}
+
+@media screen and (max-width: 64em) {
+    .ModeSignUpPrompt-cell {
+        display: block
+    }
+}
+
+.ModeSignUpPrompt-cell:last-child {
+    padding-left: 1.5rem;
+    white-space: nowrap
+}
+
+@media screen and (max-width: 64em) {
+    .ModeSignUpPrompt-cell:last-child {
+        padding-top: 1.5rem;
+        padding-left: 0
+    }
+}
+
+.NewModeControls {
+    background: var(--new_mode_nav_background)
+}
+
+.NewModeControls-inner {
+    background-color: var(--new_mode_nav_background);
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    padding: 0 2rem;
+    position: relative;
+    box-shadow: 0 .0625rem .1875rem rgba(0, 0, 0, .08);
+    height: 4rem;
+    width: 100%;
+    z-index: 101
+}
+
+@media screen and (max-width: 48em) {
+    .NewModeControls-inner {
+        height: 3.25rem
+    }
+}
+
+@media screen and (max-width: 38.75em) {
+    .NewModeControls-inner {
+        padding: 0 1rem
+    }
+}
+
+.NewModeControls-modeName {
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center
+}
+
+.NewModeControls-modeName .UIModeIcon {
+    transform: translateY(.0625rem);
+    height: 1.75rem;
+    width: 1.75rem
+}
+
+@media screen and (max-width: 48em) {
+    .NewModeControls-modeName .UIModeIcon {
+        transform: none;
+        height: 1.375rem;
+        width: 1.375rem
+    }
+}
+
+.NewModeControls-modeName span {
+    margin-left: .5rem;
+    font-weight: var(--typography-heading-weight);
+    font-size: 1.25rem;
+    letter-spacing: normal;
+    line-height: 1.4
+}
+
+@media screen and (max-width: 38.75em) {
+    .NewModeControls-modeName span {
+        font-weight: var(--typography-heading-weight);
+        font-size: 1.125rem;
+        letter-spacing: normal;
+        line-height: 1.333333333333333
+    }
+}
+
+@media screen and (max-width: 48em) {
+    .NewModeControls-modeName span {
+        font-weight: var(--typography-heading-weight);
+        font-size: 1rem;
+        letter-spacing: normal;
+        line-height: 1.5
+    }
+}
+
+@media screen and (max-width: 48em) and (max-width: 38.75em) {
+    .NewModeControls-modeName span {
+        font-weight: var(--typography-heading-weight);
+        font-size: 1rem;
+        letter-spacing: normal;
+        line-height: 1.5
+    }
+}
+
+.NewModeControls-actions {
+    display: -webkit-flex;
+    display: flex
+}
+
+.NewModeControls-actions, .NewModeControls-options {
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center
+}
+
+.NewModeControls-options {
+    font-weight: var(--typography-section-weight);
+    font-size: .875rem;
+    letter-spacing: normal;
+    line-height: 1.428571428571429
+}
+
+@media screen and (max-width: 38.75em) {
+    .NewModeControls-options {
+        font-weight: var(--typography-section-weight);
+        font-size: .75rem;
+        letter-spacing: normal;
+        line-height: 1.333333333333333
+    }
+}
+
+.NewModeControls-options .UIButton {
+    border-radius: .25rem;
+    border: .0625rem solid var(--divider-color);
+    padding: .625rem 1rem
+}
+
+@media screen and (max-width: 48em) {
+    .NewModeControls-options .UIButton {
+        border: none
+    }
+}
+
+.NewModeControls-options .UIIcon {
+    color: var(--neutral-500);
+    height: 1.125rem;
+    width: 1.125rem
+}
+
+.NewModeControls-optionsLabel {
+    transform: translateY(-.0625rem)
+}
+
+@media screen and (max-width: 48em) {
+    .NewModeControls-optionsLabel {
+        display: none
+    }
+}
+
+.NewModeControls-progress {
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    background-color: var(--new_mode_nav_background);
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center
+}
+
+@media screen and (max-width: 38.75em) {
+    .NewModeControls-progress {
+        padding: .5rem .25rem
+    }
+}
+
+.NewModeControls-exit {
+    border-left: .0625rem solid var(--neutral-400);
+    padding-left: 1.25rem;
+    margin-left: 1.25rem
+}
+
+@media screen and (max-width: 48em) {
+    .NewModeControls-exit {
+        margin-left: 0;
+        border: none
+    }
+}
+
+.NewModeControls-exit .UILink {
+    color: var(--neutral-500);
+    display: block;
+    line-height: 1
+}
+
+.NewModeControls-exit .UILink:visited {
+    color: var(--neutral-500)
+}
+
+.NewModeControls-exit .UILink:focus:not(:active):not(:hover) {
+    color: var(--ui_color_default_foreground_transparent_76)
+}
+
+.SignupCurtainModal-title {
+    margin-bottom: 2.5rem;
+    padding: 0 3.75rem;
+    text-align: center
+}
+
+@media screen and (min-width: 38.8125em) {
+    .SignupCurtainModal-title {
+        margin-bottom: 1.875rem
+    }
+}
+
+.SignupCurtainModal-body {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center
+}
+
+@media screen and (min-width: 38.8125em) {
+    .SignupCurtainModal-body {
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row
+    }
+}
+
+.SignupCurtainModal-social {
+    margin-bottom: .625rem
+}
+
+@media screen and (min-width: 38.8125em) {
+    .SignupCurtainModal-social {
+        margin-right: 1rem
+    }
+
+    .SignupCurtainModal-social .UIIcon {
+        margin-bottom: .25rem;
+        height: 1rem;
+        width: 1rem
+    }
+
+    .SignupCurtainModal-social .UIButton {
+        border: none;
+        color: var(--ui_color_gray_30);
+        height: 5.625rem;
+        width: 5.625rem;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center
+    }
+
+    .theme-default .SignupCurtainModal-social .UIButton, .theme-night .SignupCurtainModal-social .UIButton {
+        box-shadow: 0 0 .125rem 0 rgba(0, 0, 0, .16)
+    }
+
+    .SignupCurtainModal-social .UIButton .UIButton-wrapper {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+
+    .SignupCurtainModal-social .UIButton .UIIcon + * {
+        margin: 0;
+        padding: 0
+    }
+}
+
+.SignupCurtainModal-divider {
+    margin: .625rem 0 1.25rem
+}
+
+@media screen and (min-width: 38.8125em) {
+    .SignupCurtainModal-divider {
+        display: none
+    }
+}
+
+.SignupCurtainModal-email {
+    margin-bottom: 1.5rem
+}
+
+@media screen and (min-width: 38.8125em) {
+    .SignupCurtainModal-email .UIIcon {
+        margin-bottom: .25rem;
+        height: 1rem;
+        width: 1rem
+    }
+
+    .SignupCurtainModal-email .UIButton {
+        border: none;
+        color: var(--ui_color_gray_30);
+        height: 5.625rem;
+        width: 5.625rem;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center
+    }
+
+    .theme-default .SignupCurtainModal-email .UIButton, .theme-night .SignupCurtainModal-email .UIButton {
+        box-shadow: 0 0 .125rem 0 rgba(0, 0, 0, .16)
+    }
+
+    .SignupCurtainModal-email .UIButton .UIButton-wrapper {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+
+    .SignupCurtainModal-email .UIButton .UIIcon + * {
+        margin: 0;
+        padding: 0
+    }
+}
+
+.SignupCurtainModal-login {
+    text-align: center;
+    font-weight: 600;
+    font-size: .875rem;
+    line-height: 1.285714285714286
+}
+
+@media screen and (max-width: 38.75em) {
+    .SignupCurtainModal-login {
+        font-weight: 600;
+        font-size: .75rem;
+        line-height: 1.333333333333333
+    }
+}
+
+.SignupBlueModal .UIModalBody {
+    padding: 0
+}
+
+.SignupBlueModal .underlined {
+    position: relative
+}
+
+.SignupBlueModal .underlined:after {
+    content: url(https://assets.quizlet.com/a/i/svg/underline-word.58de3bb652930bd.svg);
+    position: absolute;
+    left: -.125rem;
+    top: .375rem
+}
+
+@media screen and (min-width: 38.8125em) {
+    .SignupBlueModal .SignupWithEmailForm {
+        padding: 2rem
+    }
+}
+
+@media screen and (max-width: 38.75em) {
+    .SignupBlueModal .SignupWithEmailForm {
+        padding: 1rem
+    }
+
+    .SignupBlueModal .UIModal.is-open, .SignupBlueModal .UIModalBody {
+        height: 100%
+    }
+}
+
+.SignupBlueModal .SignupBlueModal-body {
+    background-color: var(--ui_color_secondary_indigo_dark_background);
+    background-image: url(https://assets.quizlet.com/a/i/svg/diamond-confetti.caeebed8a459fce.svg), url(https://assets.quizlet.com/a/i/svg/star-confetti.6551eb84c81a507.svg), url(https://assets.quizlet.com/a/i/svg/circle-confetti.a78329e3623aa73.svg), url(https://assets.quizlet.com/a/i/svg/background-shape.d1488ecb6fb8a39.svg);
+    background-repeat: no-repeat;
+    border-radius: .29375rem;
+    box-shadow: 0 .125rem .625rem 0 var(--ui_shadow_color)
+}
+
+.SignupBlueModal .SignupBlueModal-body .SignupCurtainModal-subtitle {
+    margin-bottom: 1rem;
+    text-align: center
+}
+
+.SignupBlueModal .SignupBlueModal-body .SignupCurtainModal-login, .SignupBlueModal .SignupBlueModal-body .SignupCurtainModal-subtitle, .SignupBlueModal .SignupBlueModal-body .SignupCurtainModal-title {
+    color: #fff
+}
+
+.SignupBlueModal .SignupBlueModal-body .SignupCurtainModal-login > span, .SignupBlueModal .SignupBlueModal-body .SignupCurtainModal-subtitle > span {
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal
+}
+
+.SignupBlueModal .SignupBlueModal-body .SignupCurtainModal-login .UILink, .SignupBlueModal .SignupBlueModal-body .SignupCurtainModal-subtitle .UILink {
+    color: #fff
+}
+
+.SignupBlueModal .SignupBlueModal-body .UIHeading--three > span {
+    display: block;
+    text-align: center
+}
+
+.SignupBlueModal .SignupBlueModal-body .SignupCurtainModal-email {
+    margin-bottom: 1.25rem
+}
+
+.SignupBlueModal .SignupBlueModal-body .SignupCurtainModal-email .UIButton.UIButton--fill, .SignupBlueModal .SignupBlueModal-body .SignupCurtainModal-email:hover {
+    background-color: #fff;
+    color: #303545
+}
+
+@media screen and (min-width: 38.8125em) {
+    .SignupBlueModal .SignupBlueModal-body {
+        background-position: 2rem 6.5rem, 5rem 2rem, 93.5% 46%, 0 0;
+        background-size: 1.75rem, 1rem, 1rem, cover;
+        padding: 4rem 2rem 2rem
+    }
+
+    .SignupBlueModal .SignupBlueModal-body .UIButton {
+        border-radius: .15rem;
+        box-shadow: 0 0 .125rem 0 rgba(0, 0, 0, .12)
+    }
+
+    .SignupBlueModal .SignupBlueModal-body .SignupCurtainModal-email .UIButton {
+        background-color: #fff
+    }
+}
+
+@media screen and (max-width: 38.75em) {
+    .SignupBlueModal .SignupBlueModal-body {
+        background-position: 13% 12%, 21% 5%, 89% 45%, 71% -17%;
+        background-size: 1rem, 1rem, 1rem, 27rem;
+        margin: 0 1rem;
+        position: relative;
+        padding: 4.625rem 1.5rem 1rem;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%)
+    }
+
+    .SignupBlueModal .SignupBlueModal-body .SignupCurtainModal-title {
+        margin-bottom: 2rem;
+        padding: 0
+    }
+
+    .SignupBlueModal .SignupBlueModal-body .SignupCurtainModal-body {
+        padding: 0 1.25rem
+    }
+
+    .SignupBlueModal .SignupBlueModal-body .SignupCurtainModal-social {
+        border-radius: .125rem;
+        box-shadow: 0 .125rem .5rem 0 var(--ui_shadow_color)
+    }
+
+    .SignupBlueModal .SignupBlueModal-body .SignupCurtainModal-social .UIButton--social, .SignupBlueModal .SignupBlueModal-body .SignupCurtainModal-social .UIButton--social:visited {
+        border: none;
+        border-radius: .125rem
+    }
+
+    .SignupBlueModal .SignupBlueModal-body .SignupCurtainModal-email .UIButton {
+        border-radius: .125rem;
+        height: 2.5rem
+    }
+
+    .SignupBlueModal .SignupBlueModal-body .SignupCurtainModal-email .UIButton .UIIcon {
+        height: 1.25rem;
+        width: 1.25rem
+    }
+}
+
+@media screen and (max-width: 20em) {
+    .SignupBlueModal .SignupBlueModal-body {
+        background-position: 13% 12%, 21% 5%, 89% 45%, 0 0;
+        background-size: 1rem, 1rem, 1rem, 27.875rem
+    }
+}
+
+.SignupCurtainModal .UIModal-box {
+    -webkit-animation: fadeOutFlyOutModal 1.2s ease;
+    -moz-animation: fadeOutFlyOutModal 1.2s ease;
+    -ms-animation: fadeOutFlyOutModal 1.2s ease;
+    animation: fadeOutFlyOutModal 1.2s ease
+}
+
+.SignupCurtainModal .UIModal-backdrop.is-included {
+    -webkit-animation: fadeInModal 1.2s ease;
+    -moz-animation: fadeInModal 1.2s ease;
+    -ms-animation: fadeInModal 1.2s ease;
+    animation: fadeInModal 1.2s ease
+}

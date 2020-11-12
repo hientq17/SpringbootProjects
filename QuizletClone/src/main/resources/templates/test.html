@@ -1,0 +1,1239 @@
+
+<html lang="vi" class="windows webkit chrome cursor"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Quizlet</title>
+    <meta property="og:site_name" content="Quizlet">
+    <link rel="shortcut icon" href="https://assets.quizlet.com/a/i/favicon.49934e03de62f41.ico">
+    <meta name="description" content="Quizlet cloned by MrEND"/>
+
+    <link th:href="@{/css/overview/global.0eac2207c19698c.css}" rel="stylesheet">
+    <link th:href="@{/css/overview/rich_text.01a9756d785af29.css}" rel="stylesheet">
+    <link th:href="@{/css/overview/set.be65a300d280d9c.css}" rel="stylesheet">
+    <link th:href="@{/css/overview/ui.72aa8a8027329dc.css}" rel="stylesheet">
+
+    <link rel="stylesheet" th:href="@{/font-awesome-4.7.0/css/font-awesome.min.css}">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body class="sets show has-footer qad-is-showing flex-sidebar theme-default" itemscope=""
+      itemtype="http://schema.org/WebPage" data-new-gr-c-s-check-loaded="14.981.0">
+<div class="site">
+    <div class="SiteHeaderWrapper" id="SiteHeaderReactTarget">
+        <header class="SiteHeader" itemscope="" itemtype="http://schema.org/WPHeader" role="banner">
+            <div class="SiteHeader-wrapper">
+                <span class="SiteHeader-searchTransitionGroupMobile"></span>
+                <span class="SiteHeader-headerItemsTransitionGroupMobile">
+                    <div
+                            class="SiteHeader-logo SiteHeader-section">
+                        <a class="UILink UILink--inverted" data-testid="UILink-anchor" href="/latest">
+                            <div aria-label="Quizlet" class="SiteLogo" role="img" title="Quizlet">
+                                <svg fill="currentColor" viewBox="0 0 244 53" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M26.99 1.09c15.382 0 26.99 11.36 26.99 25.883 0 6.687-2.54 12.583-6.676 17.04l7.182 7.98H42.37l-2.49-2.847c-3.6 2.482-8.102 3.638-12.89 3.638C11.68 52.784 0 41.496 0 26.974 0 12.017 12.116 1.09 26.99 1.09zm0 41.7c2.03 0 3.844-.43 5.586-1.15L22.2 29.993h12.117l5.587 6.4c2.03-2.518 2.974-5.537 2.974-9.42 0-8.698-6.6-15.817-15.89-15.817-9.287 0-15.814 7.046-15.814 15.817 0 8.915 6.527 15.818 15.815 15.818zM61.035 15.76H71.99v20.706c0 4.89 3.048 6.686 6.676 6.686 3.627 0 6.675-1.797 6.675-6.686V15.758h10.956v21.64C96.296 48.04 88.026 53 78.666 53s-17.63-4.96-17.63-15.6V15.757zm42.75 36.235h10.81V15.758h-10.81v36.235zm-.992-45.69c0-3.56 2.92-6.303 6.36-6.303 3.518 0 6.36 2.743 6.36 6.303 0 3.485-2.842 6.23-6.36 6.23-3.44 0-6.36-2.745-6.36-6.23zm35.738 18.873h-16.74v-9.418h35.332l-20.15 26.817h19.133v9.418h-37.94l20.365-26.817zm23.67 26.817h10.81V1.883H162.2v50.11zm17.063-18.19c0-11.503 8.272-18.908 19.372-18.908 11.173 0 18.5 8.196 18.5 18.334 0 0 0 2.03-.217 3.684h-26.843c.218 4.314 3.48 6.883 9.648 6.883 6.966 0 10.883-2.085 12.987-3.523v9.347c-3.41 2.157-7.182 3.308-13.567 3.308-12.263 0-19.88-7.405-19.88-18.765v-.36zm26.99-4.026c0-3.235-3.337-5.967-7.618-5.967-4.498 0-8.27 2.66-8.488 5.967h16.105zm19.172-4.313h-4.86v-9.706h4.86V1.882h10.52v13.876H244v9.706h-8.054v26.53h-10.52v-26.53z"
+                                          fill-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+						<div class="SiteHeader-defaultMobileHeader SiteHeader-section">
+                             <span aria-label="Tạo" class="SiteHeader-mobileLinkArea SiteHeader-mobileCreate">
+                                  <a class="UILink UILink--inverted" data-testid="UILink-anchor" href="/create-set">
+                                      <svg aria-label="create-set"
+                                           class="UIIcon UIIcon--create-set SiteHeader-icon UIIcon--medium" role="img">
+                                          <noscript></noscript>
+                                          <use xlink:href="#create-set"></use>
+                                          <noscript></noscript>
+                                      </svg>
+                                  </a>
+                             </span>
+                            <span aria-label="Tìm kiếm" class="SiteHeader-mobileLinkArea SiteHeader-mobileSearch">
+                                <button class="UILink UILink--inverted" type="button">
+                                    <svg aria-label="search"
+                                         class="UIIcon UIIcon--search SiteHeader-icon UIIcon--medium" role="img">
+                                        <noscript></noscript>
+                                        <use xlink:href="#search"></use>
+                                        <noscript></noscript>
+                                    </svg></button>
+                            </span>
+                            <span class="HeaderAvatarMobile-mobileLinkArea SiteHeader-mobileNav"
+                                  data-testid="header-avatar">
+                                <button class="UILink UILink--inverted" type="button">
+                                    <span class="UserAvatar" style="height: 32px; width: 32px;">
+                                        <div class="Image">
+                                            <img alt="Ảnh hồ sơ" class="Image-image" height="32"
+                                                 referrerpolicy="no-referrer"
+                                                 src="https://assets.quizlet.com/a/i/animals/5.3ed6843e993d6e0.jpg"
+                                                 width="32">
+                                        </div>
+                                    </span>
+                                </button>
+                            </span>
+                        </div>
+            </span>
+            </div>
+        </header>
+    </div>
+    <img alt="logo" class="PrintLogo" id="QNZ2Z3AvgC2"
+         src="https://assets.quizlet.com/a/i/logo/Quizlet-print.1cb9134976f36dc.png">
+    <div class="SetPageWrapper">
+        <div class="SetPageWrapper-contentContainerWithAdz">
+            <div class="SetPageSidebarAdz-container SetPageSidebarAdz-510" id="SetPageSidebarAdz">
+                <div class="SetPage-adzWrapper">
+                    <div class=""></div>
+                </div>
+            </div>
+            <div id="SetPageTarget">
+                <div class="SetPage has-adz hasStickyAd">
+                    <div class="SetPage-setContentWrapper">
+                        <div class="SetPage-setIntroWrapper" id="setPageSetIntroWrapper">
+                            <div class="SetPage-setIntro">
+                                <div class="SetPage-content">
+                                    <div class="SetPage-setTitle SetPage-setTitle--cleanup">
+                                        <div class="SetPage-titleWrapper">
+                                            <h1 class="UIHeading UIHeading--one">CSI 101 - Unit 8</h1>
+                                            <div class="UIDiv SetPage-options SetPage-options--cleanup"
+                                                 aria-label="Tùy chọn">
+                                                <span class="MenuIconWithTooltip is-Popover is-Tooltip UIOverlayTrigger-target">
+                                                    <span class="UIIconButton">
+                                                        <button class="UIButton UIButton--basic"
+                                                                title="Thêm học phần vào lớp hoặc thư mục"
+                                                                type="button">
+                                                            <span class="UIButton-wrapper">
+                                                                <svg aria-label="add" class="UIIcon UIIcon--plus UIIcon--medium" role="img">
+                                                                    <noscript></noscript>
+                                                                    <use xlink:href="#plus"></use>
+                                                                    <noscript></noscript>
+                                                                </svg>
+                                                            </span>
+                                                        </button>
+                                                    </span>
+                                                </span>
+                                                <div class="SetPage-menuOption">
+                                                    <span class="MenuIconWithTooltip is-Popover is-Tooltip UIOverlayTrigger-target">
+                                                        <span class="UIIconButton">
+                                                            <button class="UIButton UIButton--basic"
+                                                                    title="Tùy chỉnh"
+                                                                    type="button">
+                                                                <span class="UIButton-wrapper">
+                                                                    <svg aria-label="copy"
+                                                                         class="UIIcon UIIcon--copy UIIcon--medium"
+                                                                         role="img">
+                                                                        <noscript></noscript>
+                                                                        <use xlink:href="#copy"></use>
+                                                                        <noscript></noscript>
+                                                                    </svg>
+                                                                </span>
+                                                            </button>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                                <div class="SetPage-menuOption">
+                                                    <span class="MenuIconWithTooltip is-Popover is-Tooltip UIOverlayTrigger-target">
+                                                        <span class="UIIconButton">
+                                                            <button class="UIButton UIButton--basic"
+                                                                    title="Chia sẻ" type="button">
+                                                                <span class="UIButton-wrapper">
+                                                                    <svg aria-label="share"
+                                                                         class="UIIcon UIIcon--share UIIcon--medium"
+                                                                         role="img">
+                                                                        <noscript></noscript>
+                                                                        <use xlink:href="#share"></use>
+                                                                        <noscript></noscript>
+                                                                    </svg>
+                                                                </span>
+                                                            </button>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                                <div class="SetPage-menuOption">
+                                                    <span
+                                                        class="MenuIconWithTooltip is-Popover is-Tooltip UIOverlayTrigger-target">
+                                                        <span class="UIIconButton">
+                                                            <button class="UIButton UIButton--basic" title="Thông tin" type="button">
+                                                                <span class="UIButton-wrapper">
+                                                                    <svg aria-label="info inverse" class="UIIcon UIIcon--info-inverse UIIcon--medium" role="img">
+                                                                        <noscript></noscript>
+                                                                        <use xlink:href="#info-inverse"></use>
+                                                                        <noscript></noscript>
+                                                                    </svg>
+                                                                </span>
+                                                            </button>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                                <div class="SetPage-menuOption">
+                                                    <span class="MenuIconWithTooltip is-bottomright is-Popover is-Tooltip UIOverlayTrigger-target">
+                                                        <span class="UIIconButton">
+                                                            <button class="UIButton UIButton--basic" title="Xem thêm"  type="button">
+                                                                <span class="UIButton-wrapper">
+                                                                    <svg aria-label="more menu - horizontal" class="UIIcon UIIcon--more UIIcon--medium" role="img">
+                                                                        <noscript></noscript>
+                                                                        <use xlink:href="#more"></use>
+                                                                        </noscript>
+                                                                    </svg>
+                                                                </span>
+                                                            </button>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="SetPage-setDetails--cleanup">
+                                                <div class="RatingDisplay-ratingsContainerCompact"></div>
+                                                <div class="SetPageHeader-creatorUsername">
+                                                    <div class="UserLink">
+                                                        <div class="UserLink-inner">
+                                                            <div class="UserLink-avatar">
+                                                                <a class="UILink" data-testid="UILink-anchor"
+                                                                   href="/Phan_Nguyen_Huy_Hieu"
+                                                                   tabindex="0"
+                                                                   title="Thăm hồ sơ của Phan_Nguyen_Huy_Hieu">
+                                                                    <img aria-label="Ảnh hồ sơ" class="UIAvatar"
+                                                                         src="https://quizlet.com/fb-pic/graph.facebook.com/865591646959593/picture?type=large"> </a>
+                                                            </div>
+                                                            <div class="UserLink-content"><a class="UILink"
+                                                                                             data-testid="UILink-anchor"
+                                                                                             href="/Phan_Nguyen_Huy_Hieu"
+                                                                                             tabindex="0"><span
+                                                                    class="UserLink-username">Phan_Nguyen_Huy_Hieu</span></a>
+                                                                <noscript></noscript>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="SetPage-studyPreview SetPage-studyPreview--cleanup">
+                                        <nav aria-label="Study modes" class="SetPage-studyModes has-adz">
+                                            <div class="UIRow">
+                                                <div class="SetPageModes-group SetPageModes-group--study">
+                                                    <div class="SetPageModes-groupLabel">
+                                                        <h2 class="UIHeading UIHeading--two">
+                                                            <span>HỌC</span>
+                                                        </h2>
+                                                    </div>
+                                                    <span class="SetPageModes-buttonWrapper">
+                                                        <a aria-label="Thẻ ghi nhớ" class="SetPageModeButton is-highlighted"
+                                                                                                data-sourcename="mode-link-flashcards"
+                                                                                                data-testid="SetPageModeButton-mode-link-flashcards"
+                                                                                                href="/227116164/flashcards?funnelUUID=0969a183-df39-41df-ba3c-4e019b41a187"
+                                                                                                rel="nofollow">
+                                                            <div class="SetPageModeButton-content">
+                                                                <div class="SetPageModeButton-icon">
+                                                                    <div class="UIModeIcon UIModeIcon--flashcards UIModeIcon--large">
+                                                                        <svg aria-label="mode cards large" class="UIIcon UIIcon--mode-cards-large UIModeIcon-modeIcon" role="presentation">
+                                                                            <noscript></noscript>
+                                                                            <use xlink:href="#mode-cards-large"></use>
+                                                                            <noscript></noscript>
+                                                                        </svg>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="SetPageModeButton-description">
+                                                                    <span class="SetPageModeButton-modeName">Thẻ ghi nhớ</span>
+                                                                </span>
+                                                            </div>
+                                                        </a>
+                                                    </span>
+                                                    <span class="SetPageModes-buttonWrapper"><a aria-label="Học"
+                                                                                              class="SetPageModeButton"
+                                                                                              data-sourcename="mode-link-learn"
+                                                                                              data-testid="SetPageModeButton-mode-link-learn"
+                                                                                              href="/227116164/study-path"
+                                                                                              rel="nofollow"><div
+                                                        class="SetPageModeButton-content"><div
+                                                        class="SetPageModeButton-icon"><div
+                                                        class="UIModeIcon UIModeIcon--assistant UIModeIcon--large"><svg
+                                                        aria-label="mode assistant large"
+                                                        class="UIIcon UIIcon--mode-assistant-large UIModeIcon-modeIcon"
+                                                        role="presentation"><noscript></noscript><use
+                                                        xlink:href="#mode-assistant-large"></use><noscript></noscript></svg></div></div><span
+                                                        class="SetPageModeButton-description"><span
+                                                        class="SetPageModeButton-modeName">Học</span></span></div></a></span><span
+                                                        class="SetPageModes-buttonWrapper"><a aria-label="Viết"
+                                                                                              class="SetPageModeButton"
+                                                                                              data-sourcename="mode-link-write"
+                                                                                              data-testid="SetPageModeButton-mode-link-write"
+                                                                                              href="/227116164/write?funnelUUID=0969a183-df39-41df-ba3c-4e019b41a187"
+                                                                                              rel="nofollow"><div
+                                                        class="SetPageModeButton-content"><div
+                                                        class="SetPageModeButton-icon"><div
+                                                        class="UIModeIcon UIModeIcon--write UIModeIcon--large"><svg
+                                                        aria-label="mode learn (large)"
+                                                        class="UIIcon UIIcon--mode-learn-large UIModeIcon-modeIcon"
+                                                        role="presentation"><noscript></noscript><use
+                                                        xlink:href="#mode-learn-large"></use><noscript></noscript></svg></div></div><span
+                                                        class="SetPageModeButton-description"><span
+                                                        class="SetPageModeButton-modeName">Viết</span></span></div></a></span><span
+                                                        class="SetPageModes-buttonWrapper"><a aria-label="Chính tả"
+                                                                                              class="SetPageModeButton"
+                                                                                              data-sourcename="mode-link-spell"
+                                                                                              data-testid="SetPageModeButton-mode-link-spell"
+                                                                                              href="/227116164/spell?funnelUUID=0969a183-df39-41df-ba3c-4e019b41a187"
+                                                                                              rel="nofollow"><div
+                                                        class="SetPageModeButton-content"><div
+                                                        class="SetPageModeButton-icon"><div
+                                                        class="UIModeIcon UIModeIcon--spell UIModeIcon--large"><svg
+                                                        aria-label="mode spell (large)"
+                                                        class="UIIcon UIIcon--mode-spell-large UIModeIcon-modeIcon"
+                                                        role="presentation"><noscript></noscript><use
+                                                        xlink:href="#mode-spell-large"></use><noscript></noscript></svg></div></div><span
+                                                        class="SetPageModeButton-description"><span
+                                                        class="SetPageModeButton-modeName">Chính tả</span></span></div></a></span><span
+                                                        class="SetPageModes-buttonWrapper"><a aria-label="Kiểm tra"
+                                                                                              class="SetPageModeButton"
+                                                                                              data-sourcename="mode-link-test"
+                                                                                              data-testid="SetPageModeButton-mode-link-test"
+                                                                                              href="/227116164/test?funnelUUID=0969a183-df39-41df-ba3c-4e019b41a187"
+                                                                                              rel="nofollow"><div
+                                                        class="SetPageModeButton-content"><div
+                                                        class="SetPageModeButton-icon"><div
+                                                        class="UIModeIcon UIModeIcon--test UIModeIcon--large"><svg
+                                                        aria-label="mode test (large)"
+                                                        class="UIIcon UIIcon--mode-test-large UIModeIcon-modeIcon"
+                                                        role="presentation"><noscript></noscript><use
+                                                        xlink:href="#mode-test-large"></use><noscript></noscript></svg></div></div><span
+                                                        class="SetPageModeButton-description"><span
+                                                        class="SetPageModeButton-modeName">Kiểm tra</span></span></div></a></span>
+                                                </div>
+                                                <div class="SetPageModes-group SetPageModes-group--play">
+                                                    <div class="SetPageModes-groupLabel"><h2
+                                                            class="UIHeading UIHeading--two"><span>TRÒ CHƠI</span></h2>
+                                                    </div>
+                                                    <span class="SetPageModes-buttonWrapper"><a aria-label="Ghép thẻ"
+                                                                                                class="SetPageModeButton"
+                                                                                                data-sourcename="mode-link-match"
+                                                                                                data-testid="SetPageModeButton-mode-link-match"
+                                                                                                href="/227116164/match?funnelUUID=0969a183-df39-41df-ba3c-4e019b41a187"
+                                                                                                rel="nofollow"><div
+                                                            class="SetPageModeButton-content"><div
+                                                            class="SetPageModeButton-icon"><div
+                                                            class="UIModeIcon UIModeIcon--match UIModeIcon--large"><svg
+                                                            aria-label="mode match (large)"
+                                                            class="UIIcon UIIcon--mode-match-large UIModeIcon-modeIcon"
+                                                            role="presentation"><noscript></noscript><use
+                                                            xlink:href="#mode-match-large"></use><noscript></noscript></svg></div></div><span
+                                                            class="SetPageModeButton-description"><span
+                                                            class="SetPageModeButton-modeName">Ghép thẻ</span></span></div></a></span><span
+                                                        class="SetPageModes-buttonWrapper"><a aria-label="Thiên thạch"
+                                                                                              class="SetPageModeButton"
+                                                                                              data-sourcename="mode-link-gravity"
+                                                                                              data-testid="SetPageModeButton-mode-link-gravity"
+                                                                                              href="/227116164/gravity?funnelUUID=0969a183-df39-41df-ba3c-4e019b41a187"
+                                                                                              rel="nofollow"><div
+                                                        class="SetPageModeButton-content"><div
+                                                        class="SetPageModeButton-icon"><div
+                                                        class="UIModeIcon UIModeIcon--gravity UIModeIcon--large"><svg
+                                                        aria-label="mode gravity (large)"
+                                                        class="UIIcon UIIcon--mode-gravity-large UIModeIcon-modeIcon"
+                                                        role="presentation"><noscript></noscript><use
+                                                        xlink:href="#mode-gravity-large"></use><noscript></noscript></svg></div></div><span
+                                                        class="SetPageModeButton-description"><span
+                                                        class="SetPageModeButton-modeName">Thiên thạch</span></span></div></a></span>
+                                                </div>
+                                            </div>
+                                        </nav>
+                                        <div class="SetPage-adz SetPage-adPreviewMweb">
+                                            <div class="SiteAd SiteAd--SetMWebStripV3 SiteAd--">
+                                                <div class="SiteAd-adContainer" id="dfp-SetMWebStripV3"></div>
+                                            </div>
+                                        </div>
+                                        <section aria-label="Xem trước thẻ ghi nhớ"
+                                                 class="SetPageCardsPreview-container" role="main">
+                                            <div class="SetPageCardsPreview">
+                                                <div class="SetPageCardsPreview-inner">
+                                                    <div class="CardsList CardsList--showSingle" th:with="cardCounter=${counter.create(0)}">
+                                                        <!--    TODO list question in card mode-->
+                                                        <div th:each="question: ${questionList}" th:with="cardCount=${cardCounter.incrementAndGet()}">
+                                                            <div th:id="'list-card-'+${cardCount}" class="CardsList-container">
+                                                                <section aria-hidden="false"
+                                                                         class="CardsItem current showing showing-first"
+                                                                         data-testid="Card" onclick="flip()">
+                                                                    <div aria-hidden="true"
+                                                                         class="CardsItemSide CardsItemSide--firstSide has-text showing-hint"
+                                                                         role="presentation">
+                                                                        <div class="CardsItemInner CardsItemInner--showBox">
+                                                                            <div class="CardsItemInner-cell">
+                                                                                <div class="FormattedTextWithImage" th:each="answer: ${answerList.get(cardCount-1)}">
+                                                                                    <div aria-label="T"
+                                                                                         class="FormattedText notranslate lang-en"
+                                                                                         style="font-size: 30px;">
+                                                                                        <div style="display: block; text-align: center" th:each="answer: ${answerList.get(cardCount-1)}">
+                                                                                            <span th:if="${answer.answerCorrect==true}"
+                                                                                                  th:text="${answer.answerContent}">
+                                                                                            </span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div aria-hidden="true"
+                                                                         class="CardsItemSide CardsItemSide--secondSide CardsItemSide--lastSide has-text showing-hint"
+                                                                         role="presentation">
+                                                                        <div class="CardsItemInner CardsItemInner--showBox">
+                                                                            <div class="CardsItemInner-cell">
+                                                                                <div class="FormattedTextWithImage">
+                                                                                    <div aria-label="Without a database most applications would be useless."
+                                                                                         class="FormattedText notranslate lang-en"
+                                                                                         style="font-size: 30px;">
+                                                                                        <div style="display: block;" >
+                                                                                            <span th:text="${question.questionContent}"></span><br>
+                                                                                            <div th:each="answer: ${answerList.get(cardCount-1)}">
+                                                                                                <span th:text="${answer.answerContent}"></span><br>
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </section>
+                                                            </div>
+                                                        </div>
+                                                        <!-- TODO flip card -->
+                                                        <script>
+                                                            function flip(){
+                                                                var flag = true;
+                                                                $('.showing-first').each(function(){
+                                                                    $(this).attr('class','CardsItem current showing showing-second');
+                                                                    flag = false;
+                                                                });
+                                                                if(flag){
+                                                                    $('.showing-second').each(function(){
+                                                                        $(this).attr('class','CardsItem current showing showing-first');
+                                                                    });
+                                                                }
+                                                            }
+                                                        </script>
+                                                        <!-- TODO preview card -->
+                                                        <div class="CardsList-navControl previousButton">
+                                                            <span class="UIIconButton">
+                                                                <button class="UIButton UIButton--borderless" id="previous-card" disabled=""
+                                                                    title="Xem thẻ trước đó" type="button">
+                                                                    <span class="UIButton-wrapper">
+                                                                        <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                                                                    </span>
+                                                                </button>
+                                                            </span>
+                                                        </div>
+                                                        <div class="CardsList-navControl progressIndex">
+                                                            <span class="UIText UIText--bodyThree">
+                                                                <span id="current-card">1</span>/
+                                                                <span th:text="${questionList.size()}"></span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="CardsList-navControl nextButton">
+                                                            <span class="UIIconButton">
+                                                                <button class="UIButton UIButton--borderless" id="next-card"
+                                                                    title="Xem thẻ tiếp theo" type="button">
+                                                                    <span class="UIButton-wrapper">
+                                                                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                                                    </span>
+                                                                </button>
+                                                            </span>
+                                                        </div>
+                                                        <!-- TODO previous & next card -->
+                                                        <input type="hidden" id="total-card" th:value="${questionList.size()}"/>
+                                                        <script>
+                                                                $( document ).ready(function() {
+                                                                $(".CardsList-container").hide();
+                                                                $("#list-card-1").show();
+                                                                var totalCard = $("#total-card").val();
+
+                                                                $("#next-card").click(function(){
+                                                                    var current = parseInt($("#current-card").text());
+                                                                    var nextId = "#list-card-"+(current+1);
+                                                                    $("#current-card").text(current+1);
+                                                                    if(current+1==totalCard){
+                                                                        $(this).prop('disabled', true);
+                                                                    }
+                                                                    $("#previous-card").prop('disabled', false);
+                                                                    $(".CardsList-container").hide();
+                                                                    $(nextId).show();
+                                                                });
+
+                                                                $("#previous-card").click(function(){
+                                                                    var current = parseInt($("#current-card").text());
+                                                                    var nextId = "#list-card-"+(current-1);
+                                                                    $("#current-card").text(current-1);
+                                                                    if(current-1==1){
+                                                                        $(this).prop('disabled', true);
+                                                                    }
+                                                                    $("#next-card").prop('disabled', false);
+                                                                    $(".CardsList-container").hide();
+                                                                    $(nextId).show();
+                                                                });
+                                                            });
+                                                        </script>
+                                                        <div class="CardsList-bottomControls">
+                                                            <div class="CardsList-keyboardShortcuts"><span
+                                                                    class="CardsList-keyboardHint is-Popover is-Tooltip UIOverlayTrigger-target"><span
+                                                                    class="UIIconButton is-Popover is-Tooltip UIOverlayTrigger-target"><button
+                                                                    class="UIButton UIButton--borderless"
+                                                                    type="button"><span
+                                                                    class="UIButton-wrapper"><svg aria-label="keyboard"
+                                                                                                  class="UIIcon UIIcon--keyboard"
+                                                                                                  role="img"><noscript></noscript><use
+                                                                    xlink:href="#keyboard"></use><noscript></noscript></svg></span></button></span></span>
+                                                            </div>
+                                                            <div class="CardsList-fullscreenButton"><span
+                                                                    class="UIIconButton is-Popover is-Tooltip UIOverlayTrigger-target"><a
+                                                                    class="UIButton UIButton--borderless"
+                                                                    href="/227116164/flashcards" role="button"><span
+                                                                    class="UIButton-wrapper"><svg
+                                                                    aria-label="fullscreen"
+                                                                    class="UIIcon UIIcon--fullscreen" role="img"><noscript></noscript><use
+                                                                    xlink:href="#fullscreen"></use><noscript></noscript></svg></span></a></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="SetPage-setDetails" id="setPageSetDetails">
+                            <div class="SetPage-setDetailsInfoWrapper">
+                                <div class="SetPage-setDetailsInfo">
+                                    <div class="SetPage-content">
+                                        <div>
+                                            <div class="SetPageInformation--Cleanup">
+                                                <div class="SetPageInformation-keyConcepts"><span
+                                                        class="SetPageInformation-relatedTagsHeading">TỪ KHÓA LIÊN QUAN ĐẾN HỌC PHẦN NÀY</span>
+                                                    <div class="SetPageInformation-keyphrase" title="commands"><span
+                                                            class="UIPill UIPill--curated"><span class="UIPill-content"><a
+                                                            class="UILink UILink--revert" data-testid="UILink-anchor"
+                                                            href="/explore/commands/">Commands</a></span></span></div>
+                                                    <div class="SetPageInformation-keyphrase" title="tables"><span
+                                                            class="UIPill UIPill--curated"><span class="UIPill-content"><a
+                                                            class="UILink UILink--revert" data-testid="UILink-anchor"
+                                                            href="/explore/tables/">Tables</a></span></span></div>
+                                                    <div class="SetPageInformation-keyphrase" title="data"><span
+                                                            class="UIPill UIPill--curated"><span class="UIPill-content"><a
+                                                            class="UILink UILink--revert" data-testid="UILink-anchor"
+                                                            href="/explore/data/">Data</a></span></span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="SetPage-setDetailsTermsWrapper">
+                                <div class="SetPage-setDetailsTerms SetPage-setDetailsTerms--cleanup">
+                                    <div class="SetPage-content">
+                                        <div class="SetPageTaggingEmbedded SetPageTaggingEmbedded--hidden"></div>
+                                    </div>
+                                    <div class="SetPage-content">
+                                        <div>
+                                            <div>
+                                                <section class="UISection SetPageTerms-termsWrapper SetPage-termsList"
+                                                         role="contentinfo"
+                                                         aria-labelledby="SetPageTermsHeader-termsListHeading-227116164">
+                                                    <div class="SetPage-terms">
+                                                        <div class="UIDiv SetPageTermsHeader-termsListTitle"><h4
+                                                                class="UIHeading UIHeading--assembly UIHeading--four">
+                                                            <span id="SetPageTermsHeader-termsListHeading-227116164">Thuật ngữ trong học phần này
+                                                                (<span th:text="${questionList.size()}"></span>)</span>
+                                                        </h4>
+                                                            <div class="SetPageTermsHeader-controls SetPageTermsHeader-controls--main">
+                                                                <div class="SetPageTermsHeader-sortDropdown">
+                                                                    <div class="UIFieldset UIFieldset--inline">
+                                                                        <div class="UIFieldset-fields">
+                                                                            <div class="UIDropdown"><select
+                                                                                    class="UIDropdown-select">
+                                                                                <option value="original">Thứ tự gốc
+                                                                                </option>
+                                                                                <option value="alphabetical">Bảng chữ
+                                                                                    cái
+                                                                                </option>
+                                                                            </select>
+                                                                                <svg aria-label="chevron down"
+                                                                                     class="UIIcon UIIcon--chevron-down UIDropdown-icon"
+                                                                                     role="img">
+                                                                                    <noscript></noscript>
+                                                                                    <use xlink:href="#chevron-down"></use>
+                                                                                    <noscript></noscript>
+                                                                                </svg>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- TODO question list-->
+                                                        <section class="SetPageTerms-termsList" th:with="count=${counter.get()}">
+                                                            <div aria-label="Thuật ngữ" class="SetPageTerms-term"
+                                                                 th:each="question: ${questionList}">
+                                                                <div class="SetPageTerm has-definitionText is-showing">
+                                                                    <div class="SetPageTerm-inner">
+                                                                        <div class="SetPageTerm-contentWrapper">
+                                                                            <div class="SetPageTerm-content" th:with="count=${counter.incrementAndGet()}">
+                                                                                <div class="SetPageTerm-side SetPageTerm-smallSide">
+                                                                                    <div class="SetPageTerm-sideContent">
+                                                                                        <a class="SetPageTerm-wordText">
+                                                                                            <span th:each="answer: ${answerList.get(count)}">
+                                                                                                <span th:if="${answer.answerCorrect==true}" th:text="${answer.answerContent}"></span><br>
+                                                                                            </span>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="SetPageTerm-side SetPageTerm-largeSide">
+                                                                                    <div class="SetPageTerm-sideContent">
+                                                                                        <a class="SetPageTerm-definitionText">
+                                                                                            <span class="TermText notranslate lang-en"
+                                                                                                  th:text="${question.questionContent}">
+                                                                                            </span><br>
+                                                                                            <span th:each="answer: ${answerList.get(count)}">
+                                                                                                <span th:text="${answer.answerContent}"></span><br>
+                                                                                            </span>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="SetPageTerm-actions">
+                                                                            <span class="SetPageTerm-star">
+                                                                                <span class="UIIconButton">
+                                                                                    <button class="UIButton UIButton--borderless" type="button">
+                                                                                        <span class="UIButton-wrapper">
+                                                                                            <svg aria-label="Gắn sao" class="UIIcon UIIcon--star" role="img">
+                                                                                                <noscript></noscript>
+                                                                                                <use xlink:href="#star"></use>
+                                                                                                <noscript></noscript>
+                                                                                            </svg>
+                                                                                        </span>
+                                                                                    </button>
+                                                                                </span>
+                                                                            </span>
+                                                                            <span class="SetPageTerm-audio">
+                                                                                <span class="UIIconButton">
+                                                                                    <button class="UIButton UIButton--borderless" type="button">
+                                                                                        <span class="UIButton-wrapper">
+                                                                                            <svg aria-label="Âm thanh" class="UIIcon UIIcon--audio" role="img">
+                                                                                                <noscript></noscript>
+                                                                                                <use xlink:href="#audio"></use>
+                                                                                                <noscript></noscript>
+                                                                                            </svg>
+                                                                                        </span>
+                                                                                    </button>
+                                                                                </span>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </section>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="SetPage-setLinksWrapper" id="setPageSetLinksWrapper">
+                            <div class="SetPage-setLinks">
+                                <div class="SetPage-content">
+                                    <div>
+                                        <div class="SuggestedSets-inner">
+                                            <div class="SlidingCarousel SlidingCarousel--dummy">
+                                                <div class="SlidingCarousel-panes SlidingCarousel-panes--initial">
+                                                    <div class="SlidingCarousel-pane is-stretched is-current">
+                                                        <section aria-label="HỌC PHẦN NÀY THƯỜNG Ở CHUNG THƯ MỤC VỚI..."
+                                                                 class="SuggestedSetsContentCardGroup">
+                                                            <div class="UIContainer">
+                                                                <div class="SuggestedSetsContentCardGroup-content">
+                                                                    <div class="SuggestedSetsContentCardGroup-header">
+                                                                        <h5 class="UIHeading UIHeading--five">HỌC PHẦN
+                                                                            NÀY THƯỜNG Ở CHUNG THƯ MỤC VỚI...</h5></div>
+                                                                    <div class="UISetCard"
+                                                                         onclick="window.location.assign('https://quizlet.com/vn/227115958/csi-101-unit-7-flash-cards/')">
+                                                                        <div class="UIDiv UIBaseCard UIBaseCard--noLinkBox">
+                                                                            <div class="UIDiv UIBaseCard-inner">
+                                                                                <div class="UIBaseCard-header">
+                                                                                    <div class="UIBaseCardHeader">
+                                                                                        <div class="UIBaseCardHeader-info">
+                                                                                            <div class="UIBaseCardHeader-title">
+                                                                                                <a class="UILink UILink--revert"
+                                                                                                   href="https://quizlet.com/vn/227115958/csi-101-unit-7-flash-cards/"
+                                                                                                   title="CSI 101 - Unit 7">
+                                                                                                    <h4 class="UIHeading UIHeading--four">
+                                                                                                        CSI 101 - Unit
+                                                                                                        7</h4></a></div>
+                                                                                            <div class="UIBaseCardHeader-meta">
+                                                                                                42 thuật ngữ
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="UIDiv UIBaseCard-footer">
+                                                                                    <div class="UserLink">
+                                                                                        <div class="UserLink-inner">
+                                                                                            <div class="UserLink-avatar">
+                                                                                                <a class="UILink"
+                                                                                                   href="/Phan_Nguyen_Huy_Hieu"
+                                                                                                   title="Thăm hồ sơ của Phan_Nguyen_Huy_Hieu"><span
+                                                                                                        class="UserAvatar"
+                                                                                                        id="QT3rQ62xdJF"
+                                                                                                        style=""><span
+                                                                                                        class="UIShimmer"></span></span></a>
+                                                                                            </div>
+                                                                                            <div class="UserLink-content">
+                                                                                                <a class="UILink"
+                                                                                                   href="/Phan_Nguyen_Huy_Hieu"
+                                                                                                   title="Thăm hồ sơ của Phan_Nguyen_Huy_Hieu"><span
+                                                                                                        class="UserLink-username">Phan_Nguyen_Huy_Hieu</span></a>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="UISetCard"
+                                                                         onclick="window.location.assign('https://quizlet.com/vn/227116772/csi-101-unit-9-flash-cards/')">
+                                                                        <div class="UIDiv UIBaseCard UIBaseCard--noLinkBox">
+                                                                            <div class="UIDiv UIBaseCard-inner">
+                                                                                <div class="UIBaseCard-header">
+                                                                                    <div class="UIBaseCardHeader">
+                                                                                        <div class="UIBaseCardHeader-info">
+                                                                                            <div class="UIBaseCardHeader-title">
+                                                                                                <a class="UILink UILink--revert"
+                                                                                                   href="https://quizlet.com/vn/227116772/csi-101-unit-9-flash-cards/"
+                                                                                                   title="CSI 101 - Unit 9">
+                                                                                                    <h4 class="UIHeading UIHeading--four">
+                                                                                                        CSI 101 - Unit
+                                                                                                        9</h4></a></div>
+                                                                                            <div class="UIBaseCardHeader-meta">
+                                                                                                42 thuật ngữ
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="UIDiv UIBaseCard-footer">
+                                                                                    <div class="UserLink">
+                                                                                        <div class="UserLink-inner">
+                                                                                            <div class="UserLink-avatar">
+                                                                                                <a class="UILink"
+                                                                                                   href="/Phan_Nguyen_Huy_Hieu"
+                                                                                                   title="Thăm hồ sơ của Phan_Nguyen_Huy_Hieu"><span
+                                                                                                        class="UserAvatar"
+                                                                                                        id="QEzPfSVQ2DN"
+                                                                                                        style=""><span
+                                                                                                        class="UIShimmer"></span></span></a>
+                                                                                            </div>
+                                                                                            <div class="UserLink-content">
+                                                                                                <a class="UILink"
+                                                                                                   href="/Phan_Nguyen_Huy_Hieu"
+                                                                                                   title="Thăm hồ sơ của Phan_Nguyen_Huy_Hieu"><span
+                                                                                                        class="UserLink-username">Phan_Nguyen_Huy_Hieu</span></a>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="UISetCard"
+                                                                         onclick="window.location.assign('https://quizlet.com/vn/227115272/csi-101-unit-5-flash-cards/')">
+                                                                        <div class="UIDiv UIBaseCard UIBaseCard--noLinkBox">
+                                                                            <div class="UIDiv UIBaseCard-inner">
+                                                                                <div class="UIBaseCard-header">
+                                                                                    <div class="UIBaseCardHeader">
+                                                                                        <div class="UIBaseCardHeader-info">
+                                                                                            <div class="UIBaseCardHeader-title">
+                                                                                                <a class="UILink UILink--revert"
+                                                                                                   href="https://quizlet.com/vn/227115272/csi-101-unit-5-flash-cards/"
+                                                                                                   title="CSI 101 - Unit 5">
+                                                                                                    <h4 class="UIHeading UIHeading--four">
+                                                                                                        CSI 101 - Unit
+                                                                                                        5</h4></a></div>
+                                                                                            <div class="UIBaseCardHeader-meta">
+                                                                                                44 thuật ngữ
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="UIDiv UIBaseCard-footer">
+                                                                                    <div class="UserLink">
+                                                                                        <div class="UserLink-inner">
+                                                                                            <div class="UserLink-avatar">
+                                                                                                <a class="UILink"
+                                                                                                   href="/Phan_Nguyen_Huy_Hieu"
+                                                                                                   title="Thăm hồ sơ của Phan_Nguyen_Huy_Hieu"><span
+                                                                                                        class="UserAvatar"
+                                                                                                        id="Q2ktPXBAVkt"
+                                                                                                        style=""><span
+                                                                                                        class="UIShimmer"></span></span></a>
+                                                                                            </div>
+                                                                                            <div class="UserLink-content">
+                                                                                                <a class="UILink"
+                                                                                                   href="/Phan_Nguyen_Huy_Hieu"
+                                                                                                   title="Thăm hồ sơ của Phan_Nguyen_Huy_Hieu"><span
+                                                                                                        class="UserLink-username">Phan_Nguyen_Huy_Hieu</span></a>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="UISetCard"
+                                                                         onclick="window.location.assign('https://quizlet.com/vn/227115524/csi-101-unit-6-flash-cards/')">
+                                                                        <div class="UIDiv UIBaseCard UIBaseCard--noLinkBox">
+                                                                            <div class="UIDiv UIBaseCard-inner">
+                                                                                <div class="UIBaseCard-header">
+                                                                                    <div class="UIBaseCardHeader">
+                                                                                        <div class="UIBaseCardHeader-info">
+                                                                                            <div class="UIBaseCardHeader-title">
+                                                                                                <a class="UILink UILink--revert"
+                                                                                                   href="https://quizlet.com/vn/227115524/csi-101-unit-6-flash-cards/"
+                                                                                                   title="CSI 101 - Unit 6">
+                                                                                                    <h4 class="UIHeading UIHeading--four">
+                                                                                                        CSI 101 - Unit
+                                                                                                        6</h4></a></div>
+                                                                                            <div class="UIBaseCardHeader-meta">
+                                                                                                40 thuật ngữ
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="UIDiv UIBaseCard-footer">
+                                                                                    <div class="UserLink">
+                                                                                        <div class="UserLink-inner">
+                                                                                            <div class="UserLink-avatar">
+                                                                                                <a class="UILink"
+                                                                                                   href="/Phan_Nguyen_Huy_Hieu"
+                                                                                                   title="Thăm hồ sơ của Phan_Nguyen_Huy_Hieu"><span
+                                                                                                        class="UserAvatar"
+                                                                                                        id="QA4VsWN7bG5"
+                                                                                                        style=""><span
+                                                                                                        class="UIShimmer"></span></span></a>
+                                                                                            </div>
+                                                                                            <div class="UserLink-content">
+                                                                                                <a class="UILink"
+                                                                                                   href="/Phan_Nguyen_Huy_Hieu"
+                                                                                                   title="Thăm hồ sơ của Phan_Nguyen_Huy_Hieu"><span
+                                                                                                        class="UserLink-username">Phan_Nguyen_Huy_Hieu</span></a>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                    <div class="SlidingCarousel-pane is-hidden">
+                                                        <section aria-label="CÓ THỂ BẠN SẼ THÍCH..."
+                                                                 class="SuggestedSetsContentCardGroup">
+                                                            <div class="UIContainer">
+                                                                <div class="SuggestedSetsContentCardGroup-content">
+                                                                    <div class="SuggestedSetsContentCardGroup-header">
+                                                                        <h5 class="UIHeading UIHeading--five">CÓ THỂ BẠN
+                                                                            SẼ THÍCH...</h5></div>
+                                                                    <div class="UISetCard"
+                                                                         onclick="window.location.assign('https://quizlet.com/340584479/sql-matching-flash-cards/')">
+                                                                        <div class="UIDiv UIBaseCard UIBaseCard--noLinkBox">
+                                                                            <div class="UIDiv UIBaseCard-inner">
+                                                                                <div class="UIBaseCard-header">
+                                                                                    <div class="UIBaseCardHeader">
+                                                                                        <div class="UIBaseCardHeader-info">
+                                                                                            <div class="UIBaseCardHeader-title">
+                                                                                                <a class="UILink UILink--revert"
+                                                                                                   href="https://quizlet.com/340584479/sql-matching-flash-cards/"
+                                                                                                   title="SQL Matching">
+                                                                                                    <h4 class="UIHeading UIHeading--four">
+                                                                                                        SQL
+                                                                                                        Matching</h4>
+                                                                                                </a></div>
+                                                                                            <div class="UIBaseCardHeader-meta">
+                                                                                                26 thuật ngữ
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="UIDiv UIBaseCard-footer">
+                                                                                    <div class="UserLink">
+                                                                                        <div class="UserLink-inner">
+                                                                                            <div class="UserLink-avatar">
+                                                                                                <a class="UILink"
+                                                                                                   href="/Madison_L75"
+                                                                                                   title="Thăm hồ sơ của Madison_L75"><span
+                                                                                                        class="UserAvatar"
+                                                                                                        id="QCsNpa6QRxY"
+                                                                                                        style=""><span
+                                                                                                        class="UIShimmer"></span></span></a>
+                                                                                            </div>
+                                                                                            <div class="UserLink-content">
+                                                                                                <a class="UILink"
+                                                                                                   href="/Madison_L75"
+                                                                                                   title="Thăm hồ sơ của Madison_L75"><span
+                                                                                                        class="UserLink-username">Madison_L75</span></a>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="UISetCard"
+                                                                         onclick="window.location.assign('https://quizlet.com/123705375/database-test-1-flash-cards/')">
+                                                                        <div class="UIDiv UIBaseCard UIBaseCard--noLinkBox">
+                                                                            <div class="UIDiv UIBaseCard-inner">
+                                                                                <div class="UIBaseCard-header">
+                                                                                    <div class="UIBaseCardHeader">
+                                                                                        <div class="UIBaseCardHeader-info">
+                                                                                            <div class="UIBaseCardHeader-title">
+                                                                                                <a class="UILink UILink--revert"
+                                                                                                   href="https://quizlet.com/123705375/database-test-1-flash-cards/"
+                                                                                                   title="Database Test 1">
+                                                                                                    <h4 class="UIHeading UIHeading--four">
+                                                                                                        Database Test
+                                                                                                        1</h4></a></div>
+                                                                                            <div class="UIBaseCardHeader-meta">
+                                                                                                13 thuật ngữ
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="UIDiv UIBaseCard-footer">
+                                                                                    <div class="UserLink">
+                                                                                        <div class="UserLink-inner">
+                                                                                            <div class="UserLink-avatar">
+                                                                                                <a class="UILink"
+                                                                                                   href="/Blake_Bordovsky"
+                                                                                                   title="Thăm hồ sơ của Blake_Bordovsky"><span
+                                                                                                        class="UserAvatar"
+                                                                                                        id="QHSPUMYMMZr"
+                                                                                                        style=""><span
+                                                                                                        class="UIShimmer"></span></span></a>
+                                                                                            </div>
+                                                                                            <div class="UserLink-content">
+                                                                                                <a class="UILink"
+                                                                                                   href="/Blake_Bordovsky"
+                                                                                                   title="Thăm hồ sơ của Blake_Bordovsky"><span
+                                                                                                        class="UserLink-username">Blake_Bordovsky</span></a>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="UISetCard"
+                                                                         onclick="window.location.assign('https://quizlet.com/144481454/cis-324-final-flash-cards/')">
+                                                                        <div class="UIDiv UIBaseCard UIBaseCard--noLinkBox">
+                                                                            <div class="UIDiv UIBaseCard-inner">
+                                                                                <div class="UIBaseCard-header">
+                                                                                    <div class="UIBaseCardHeader">
+                                                                                        <div class="UIBaseCardHeader-info">
+                                                                                            <div class="UIBaseCardHeader-title">
+                                                                                                <a class="UILink UILink--revert"
+                                                                                                   href="https://quizlet.com/144481454/cis-324-final-flash-cards/"
+                                                                                                   title="CIS-324 Final">
+                                                                                                    <h4 class="UIHeading UIHeading--four">
+                                                                                                        CIS-324
+                                                                                                        Final</h4></a>
+                                                                                            </div>
+                                                                                            <div class="UIBaseCardHeader-meta">
+                                                                                                54 thuật ngữ
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="UIDiv UIBaseCard-footer">
+                                                                                    <div class="UserLink">
+                                                                                        <div class="UserLink-inner">
+                                                                                            <div class="UserLink-avatar">
+                                                                                                <a class="UILink"
+                                                                                                   href="/southerngoddess1"
+                                                                                                   title="Thăm hồ sơ của southerngoddess1"><span
+                                                                                                        class="UserAvatar"
+                                                                                                        id="QvxgHS6XePs"
+                                                                                                        style=""><span
+                                                                                                        class="UIShimmer"></span></span></a>
+                                                                                            </div>
+                                                                                            <div class="UserLink-content">
+                                                                                                <a class="UILink"
+                                                                                                   href="/southerngoddess1"
+                                                                                                   title="Thăm hồ sơ của southerngoddess1"><span
+                                                                                                        class="UserLink-username">southerngoddess1</span></a>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="UISetCard"
+                                                                         onclick="window.location.assign('https://quizlet.com/9177661/database-management-review-flash-cards/')">
+                                                                        <div class="UIDiv UIBaseCard UIBaseCard--noLinkBox">
+                                                                            <div class="UIDiv UIBaseCard-inner">
+                                                                                <div class="UIBaseCard-header">
+                                                                                    <div class="UIBaseCardHeader">
+                                                                                        <div class="UIBaseCardHeader-info">
+                                                                                            <div class="UIBaseCardHeader-title">
+                                                                                                <a class="UILink UILink--revert"
+                                                                                                   href="https://quizlet.com/9177661/database-management-review-flash-cards/"
+                                                                                                   title="Database Management (review)">
+                                                                                                    <h4 class="UIHeading UIHeading--four">
+                                                                                                        Database
+                                                                                                        Management
+                                                                                                        (review)</h4>
+                                                                                                </a></div>
+                                                                                            <div class="UIBaseCardHeader-meta">
+                                                                                                119 thuật ngữ
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="UIDiv UIBaseCard-footer">
+                                                                                    <div class="UserLink">
+                                                                                        <div class="UserLink-inner">
+                                                                                            <div class="UserLink-avatar">
+                                                                                                <a class="UILink"
+                                                                                                   href="/thinktank"
+                                                                                                   title="Thăm hồ sơ của thinktank"><span
+                                                                                                        class="UserAvatar"
+                                                                                                        id="QKeaYNUW77Q"
+                                                                                                        style=""><span
+                                                                                                        class="UIShimmer"></span></span></a>
+                                                                                            </div>
+                                                                                            <div class="UserLink-content">
+                                                                                                <a class="UILink"
+                                                                                                   href="/thinktank"
+                                                                                                   title="Thăm hồ sơ của thinktank"><span
+                                                                                                        class="UserLink-username">thinktank</span></a>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                    <div class="SlidingCarousel-pane is-hidden">
+                                                        <section aria-label="HỌC PHẦN KHÁC CỦA TÁC GIẢ NÀY"
+                                                                 class="SuggestedSetsContentCardGroup">
+                                                            <div class="UIContainer">
+                                                                <div class="SuggestedSetsContentCardGroup-content">
+                                                                    <div class="SuggestedSetsContentCardGroup-header">
+                                                                        <h5 class="UIHeading UIHeading--five">HỌC PHẦN
+                                                                            KHÁC CỦA TÁC GIẢ NÀY</h5></div>
+                                                                    <div class="UISetCard"
+                                                                         onclick="window.location.assign('https://quizlet.com/vn/510538897/syb303-w2-flash-cards/')">
+                                                                        <div class="UIDiv UIBaseCard UIBaseCard--noLinkBox">
+                                                                            <div class="UIDiv UIBaseCard-inner">
+                                                                                <div class="UIBaseCard-header">
+                                                                                    <div class="UIBaseCardHeader">
+                                                                                        <div class="UIBaseCardHeader-info">
+                                                                                            <div class="UIBaseCardHeader-title">
+                                                                                                <a class="UILink UILink--revert"
+                                                                                                   href="https://quizlet.com/vn/510538897/syb303-w2-flash-cards/"
+                                                                                                   title="SYB303-W2"><h4
+                                                                                                        class="UIHeading UIHeading--four">
+                                                                                                    SYB303-W2</h4></a>
+                                                                                            </div>
+                                                                                            <div class="UIBaseCardHeader-meta">
+                                                                                                10 thuật ngữ
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="UIDiv UIBaseCard-footer">
+                                                                                    <div class="UserLink">
+                                                                                        <div class="UserLink-inner">
+                                                                                            <div class="UserLink-avatar">
+                                                                                                <a class="UILink"
+                                                                                                   href="/Phan_Nguyen_Huy_Hieu"
+                                                                                                   title="Thăm hồ sơ của Phan_Nguyen_Huy_Hieu"><span
+                                                                                                        class="UserAvatar"
+                                                                                                        id="QV3ZFTETr3W"
+                                                                                                        style=""><span
+                                                                                                        class="UIShimmer"></span></span></a>
+                                                                                            </div>
+                                                                                            <div class="UserLink-content">
+                                                                                                <a class="UILink"
+                                                                                                   href="/Phan_Nguyen_Huy_Hieu"
+                                                                                                   title="Thăm hồ sơ của Phan_Nguyen_Huy_Hieu"><span
+                                                                                                        class="UserLink-username">Phan_Nguyen_Huy_Hieu</span></a>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="UISetCard"
+                                                                         onclick="window.location.assign('https://quizlet.com/vn/487453756/isc301-flash-cards/')">
+                                                                        <div class="UIDiv UIBaseCard UIBaseCard--noLinkBox">
+                                                                            <div class="UIDiv UIBaseCard-inner">
+                                                                                <div class="UIBaseCard-header">
+                                                                                    <div class="UIBaseCardHeader">
+                                                                                        <div class="UIBaseCardHeader-info">
+                                                                                            <div class="UIBaseCardHeader-title">
+                                                                                                <a class="UILink UILink--revert"
+                                                                                                   href="https://quizlet.com/vn/487453756/isc301-flash-cards/"
+                                                                                                   title="ISC301"><h4
+                                                                                                        class="UIHeading UIHeading--four">
+                                                                                                    ISC301</h4></a>
+                                                                                            </div>
+                                                                                            <div class="UIBaseCardHeader-meta">
+                                                                                                394 thuật ngữ
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="UIDiv UIBaseCard-footer">
+                                                                                    <div class="UserLink">
+                                                                                        <div class="UserLink-inner">
+                                                                                            <div class="UserLink-avatar">
+                                                                                                <a class="UILink"
+                                                                                                   href="/Phan_Nguyen_Huy_Hieu"
+                                                                                                   title="Thăm hồ sơ của Phan_Nguyen_Huy_Hieu"><span
+                                                                                                        class="UserAvatar"
+                                                                                                        id="Q5gc66JMFuA"
+                                                                                                        style=""><span
+                                                                                                        class="UIShimmer"></span></span></a>
+                                                                                            </div>
+                                                                                            <div class="UserLink-content">
+                                                                                                <a class="UILink"
+                                                                                                   href="/Phan_Nguyen_Huy_Hieu"
+                                                                                                   title="Thăm hồ sơ của Phan_Nguyen_Huy_Hieu"><span
+                                                                                                        class="UserLink-username">Phan_Nguyen_Huy_Hieu</span></a>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="UISetCard"
+                                                                         onclick="window.location.assign('https://quizlet.com/vn/385532505/syb303-w1-flash-cards/')">
+                                                                        <div class="UIDiv UIBaseCard UIBaseCard--noLinkBox">
+                                                                            <div class="UIDiv UIBaseCard-inner">
+                                                                                <div class="UIBaseCard-header">
+                                                                                    <div class="UIBaseCardHeader">
+                                                                                        <div class="UIBaseCardHeader-info">
+                                                                                            <div class="UIBaseCardHeader-title">
+                                                                                                <a class="UILink UILink--revert"
+                                                                                                   href="https://quizlet.com/vn/385532505/syb303-w1-flash-cards/"
+                                                                                                   title="SYB303-W1"><h4
+                                                                                                        class="UIHeading UIHeading--four">
+                                                                                                    SYB303-W1</h4></a>
+                                                                                            </div>
+                                                                                            <div class="UIBaseCardHeader-meta">
+                                                                                                10 thuật ngữ
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="UIDiv UIBaseCard-footer">
+                                                                                    <div class="UserLink">
+                                                                                        <div class="UserLink-inner">
+                                                                                            <div class="UserLink-avatar">
+                                                                                                <a class="UILink"
+                                                                                                   href="/Phan_Nguyen_Huy_Hieu"
+                                                                                                   title="Thăm hồ sơ của Phan_Nguyen_Huy_Hieu"><span
+                                                                                                        class="UserAvatar"
+                                                                                                        id="QejfaEtCcWd"
+                                                                                                        style=""><span
+                                                                                                        class="UIShimmer"></span></span></a>
+                                                                                            </div>
+                                                                                            <div class="UserLink-content">
+                                                                                                <a class="UILink"
+                                                                                                   href="/Phan_Nguyen_Huy_Hieu"
+                                                                                                   title="Thăm hồ sơ của Phan_Nguyen_Huy_Hieu"><span
+                                                                                                        class="UserLink-username">Phan_Nguyen_Huy_Hieu</span></a>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="UISetCard"
+                                                                         onclick="window.location.assign('https://quizlet.com/vn/341702301/swr-flash-cards/')">
+                                                                        <div class="UIDiv UIBaseCard UIBaseCard--noLinkBox">
+                                                                            <div class="UIDiv UIBaseCard-inner">
+                                                                                <div class="UIBaseCard-header">
+                                                                                    <div class="UIBaseCardHeader">
+                                                                                        <div class="UIBaseCardHeader-info">
+                                                                                            <div class="UIBaseCardHeader-title">
+                                                                                                <a class="UILink UILink--revert"
+                                                                                                   href="https://quizlet.com/vn/341702301/swr-flash-cards/"
+                                                                                                   title="SWR"><h4
+                                                                                                        class="UIHeading UIHeading--four">
+                                                                                                    SWR</h4></a></div>
+                                                                                            <div class="UIBaseCardHeader-meta">
+                                                                                                447 thuật ngữ
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="UIDiv UIBaseCard-footer">
+                                                                                    <div class="UserLink">
+                                                                                        <div class="UserLink-inner">
+                                                                                            <div class="UserLink-avatar">
+                                                                                                <a class="UILink"
+                                                                                                   href="/Phan_Nguyen_Huy_Hieu"
+                                                                                                   title="Thăm hồ sơ của Phan_Nguyen_Huy_Hieu"><span
+                                                                                                        class="UserAvatar"
+                                                                                                        id="Qz6EJFncWPf"
+                                                                                                        style=""><span
+                                                                                                        class="UIShimmer"></span></span></a>
+                                                                                            </div>
+                                                                                            <div class="UserLink-content">
+                                                                                                <a class="UILink"
+                                                                                                   href="/Phan_Nguyen_Huy_Hieu"
+                                                                                                   title="Thăm hồ sơ của Phan_Nguyen_Huy_Hieu"><span
+                                                                                                        class="UserLink-username">Phan_Nguyen_Huy_Hieu</span></a>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                                <div class="SlidingCarousel-arrowsContainer"><span class="UIIconButton"><button
+                                                        class="UIButton" disabled="" type="button"><span
+                                                        class="UIButton-wrapper"><svg class="UIIcon UIIcon--wedge-left"><noscript></noscript><use
+                                                        xlink:href="#wedge-left"></use><noscript></noscript></svg></span></button></span><span
+                                                        class="UIIconButton"><button class="UIButton" disabled=""
+                                                                                     type="button"><span
+                                                        class="UIButton-wrapper"><svg
+                                                        class="UIIcon UIIcon--wedge-right"><noscript></noscript><use
+                                                        xlink:href="#wedge-right"></use><noscript></noscript></svg></span></button></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="SetPageFooter"></div>
+    </div>
+    <noscript><img src="https://sb.scorecardresearch.com/p?c1=2&amp;c2=8641686&amp;cv=2.0&amp;cj=1" alt=""></noscript>
+</div>
+</body>
+</html>

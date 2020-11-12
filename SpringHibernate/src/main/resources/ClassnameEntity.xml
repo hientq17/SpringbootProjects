@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="edu.fpt.entity.ClassnameEntity">
+        <table name="classname" schema="student" catalog=""/>
+        <attributes>
+            <id name="classId">
+                <column name="classId" precision="-1"/>
+            </id>
+            <basic name="className">
+                <column name="className" nullable="false" length="50"/>
+            </basic>
+            <one-to-many name="studentsByClassId" mapped-by="classnameByClassId"
+                         target-entity="edu.fpt.entity.StudentEntity"/>
+        </attributes>
+    </entity>
+</entity-mappings>
