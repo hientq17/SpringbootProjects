@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" media="all"
+          href="../../css/gtvg.css" th:href="@{/css/gtvg.css}"/>
+    <title>Title</title>
+</head>
+<body>
+    <h1>Welcome to DI</h1>
+    Company name: <span th:text="${comp.getName()}"></span> <br/>
+    Company logo: <span th:text="${comp.getLogo()}"></span> <br/>
+</body>
+</html>

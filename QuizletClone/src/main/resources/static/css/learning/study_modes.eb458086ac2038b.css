@@ -1,0 +1,3369 @@
+@-moz-keyframes fadeInOverlay {
+    0% {
+        background: hsla(0, 0%, 100%, 0)
+    }
+    to {
+        background: var(--ui_black_backdrop_opacity)
+    }
+}
+
+@-webkit-keyframes fadeInOverlay {
+    0% {
+        background: hsla(0, 0%, 100%, 0)
+    }
+    to {
+        background: var(--ui_black_backdrop_opacity)
+    }
+}
+
+@-o-keyframes fadeInOverlay {
+    0% {
+        background: hsla(0, 0%, 100%, 0)
+    }
+    to {
+        background: var(--ui_black_backdrop_opacity)
+    }
+}
+
+@keyframes fadeInOverlay {
+    0% {
+        background: hsla(0, 0%, 100%, 0)
+    }
+    to {
+        background: var(--ui_black_backdrop_opacity)
+    }
+}
+
+@-moz-keyframes fadeOutOverlay {
+    0% {
+        background: var(--ui_black_backdrop_opacity)
+    }
+    to {
+        background: hsla(0, 0%, 100%, 0)
+    }
+}
+
+@-webkit-keyframes fadeOutOverlay {
+    0% {
+        background: var(--ui_black_backdrop_opacity)
+    }
+    to {
+        background: hsla(0, 0%, 100%, 0)
+    }
+}
+
+@-o-keyframes fadeOutOverlay {
+    0% {
+        background: var(--ui_black_backdrop_opacity)
+    }
+    to {
+        background: hsla(0, 0%, 100%, 0)
+    }
+}
+
+@keyframes fadeOutOverlay {
+    0% {
+        background: var(--ui_black_backdrop_opacity)
+    }
+    to {
+        background: hsla(0, 0%, 100%, 0)
+    }
+}
+
+.AssemblyButtonBase {
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    border: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: -webkit-flex;
+    display: flex;
+    font: inherit;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center
+}
+
+.AssemblyButtonBase:focus {
+    outline: none
+}
+
+.AssemblyButtonBase[aria-disabled=true], .AssemblyButtonBase[disabled] {
+    cursor: default
+}
+
+.AssemblyButtonBase--small {
+    border-radius: var(--button-radius-small);
+    height: var(--button-height-small);
+    font-weight: var(--typography-section-weight);
+    font-size: .875rem;
+    letter-spacing: normal;
+    line-height: 1.428571428571429;
+    padding: var(--button-vertical-padding-small) var(--button-horizontal-padding-small)
+}
+
+@media screen and (max-width: 38.75em) {
+    .AssemblyButtonBase--small {
+        font-weight: var(--typography-section-weight);
+        font-size: .75rem;
+        letter-spacing: normal;
+        line-height: 1.333333333333333
+    }
+}
+
+.AssemblyButtonBase--medium {
+    border-radius: var(--button-radius-medium);
+    height: var(--button-height-medium);
+    font-weight: var(--typography-section-weight);
+    font-size: .875rem;
+    letter-spacing: normal;
+    line-height: 1.428571428571429;
+    padding: var(--button-vertical-padding-medium) var(--button-horizontal-padding-medium)
+}
+
+@media screen and (max-width: 38.75em) {
+    .AssemblyButtonBase--medium {
+        font-weight: var(--typography-section-weight);
+        font-size: .75rem;
+        letter-spacing: normal;
+        line-height: 1.333333333333333
+    }
+}
+
+.AssemblyButtonBase--large {
+    border-radius: var(--button-radius-large);
+    height: var(--button-height-large);
+    font-weight: var(--typography-section-weight);
+    font-size: 1rem;
+    letter-spacing: normal;
+    line-height: 1.5;
+    padding: var(--button-vertical-padding-large) var(--button-horizontal-padding-large)
+}
+
+@media screen and (max-width: 38.75em) {
+    .AssemblyButtonBase--large {
+        font-weight: var(--typography-section-weight);
+        font-size: .875rem;
+        letter-spacing: normal;
+        line-height: 1.428571428571429
+    }
+}
+
+.AssemblyButtonBase--xlarge {
+    border-radius: var(--button-radius-xlarge);
+    height: var(--button-height-xlarge);
+    font-weight: var(--typography-section-weight);
+    font-size: 1rem;
+    letter-spacing: normal;
+    line-height: 1.5;
+    padding: var(--button-vertical-padding-xlarge) var(--button-horizontal-padding-xlarge)
+}
+
+@media screen and (max-width: 38.75em) {
+    .AssemblyButtonBase--xlarge {
+        font-weight: var(--typography-section-weight);
+        font-size: .875rem;
+        letter-spacing: normal;
+        line-height: 1.428571428571429
+    }
+}
+
+.AssemblyButtonBase--border {
+    border: .0625rem solid var(--button-border)
+}
+
+.AssemblyButtonBase--border:disabled {
+    border-color: var(--button-disabled-border)
+}
+
+.AssemblyButtonBase--border:hover:enabled {
+    border-color: var(--button-hover-border)
+}
+
+.AssemblyButtonBase--fullWidth {
+    width: 100%
+}
+
+.AssemblyButtonBase--default {
+    background: var(--default-button-background);
+    color: var(--default-button-text)
+}
+
+.AssemblyButtonBase--default:disabled {
+    color: var(--default-button-text-disabled)
+}
+
+.AssemblyButtonBase--teal {
+    background: var(--teal-button-background);
+    color: var(--teal-button-text)
+}
+
+.AssemblyButtonBase--teal:disabled {
+    background: var(--teal-button-disabled-background)
+}
+
+.AssemblyButtonBase--teal:hover:enabled {
+    background: var(--teal-button-hover-background)
+}
+
+.AssemblyButtonBase--coral {
+    background: var(--coral-button-background);
+    color: var(--coral-button-text)
+}
+
+.AssemblyButtonBase--coral:disabled {
+    background: var(--coral-button-disabled-background)
+}
+
+.AssemblyButtonBase--coral:hover:enabled {
+    background: var(--coral-button-hover-background)
+}
+
+.AssemblyButtonBase--yellow {
+    background: var(--yellow-button-background);
+    color: var(--yellow-button-text)
+}
+
+.AssemblyButtonBase--yellow:disabled {
+    background: var(--yellow-button-disabled-background);
+    color: var(--yellow-button-disabled-text)
+}
+
+.AssemblyButtonBase--yellow:hover:enabled {
+    background: var(--yellow-button-hover-background)
+}
+
+.AssemblyButtonBase--link {
+    color: var(--link-button-text)
+}
+
+.AssemblyButtonBase--link:disabled {
+    color: var(--link-button-text-disabled)
+}
+
+.AssemblyButtonBase--link:disabled .UIIcon {
+    fill: var(--link-button-text-disabled)
+}
+
+.AssemblyButtonBase--link:hover:enabled {
+    color: var(--link-button-text-hover)
+}
+
+.AssemblyButtonBase--link:hover:enabled .UIIcon {
+    fill: var(--link-button-text-hover)
+}
+
+.AssemblyButtonBase--create {
+    color: var(--create-button-text)
+}
+
+.AssemblyButtonBase--create:disabled {
+    color: var(--create-button-disabled-text)
+}
+
+.AssemblyButtonBase-dropdownText {
+    margin-right: .625rem
+}
+
+.AssemblyMenuItem-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 0 var(--spacing-medium)
+}
+
+.AssemblyMenuItem-container:hover {
+    background: var(--menu_item_highlight_muted)
+}
+
+.AssemblyMenuItem-container:hover .AssemblyMenuItem-title {
+    color: var(--ui_color_default_foreground)
+}
+
+.AssemblyMenuItem-container:hover.AssemblyMenuItem-container--inverted {
+    background: none
+}
+
+.AssemblyMenuItem-container:hover.AssemblyMenuItem-container--inverted .AssemblyMenuItem-title {
+    color: var(--neutral-100)
+}
+
+.AssemblyMenuItem {
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    font-weight: var(--typography-section-weight);
+    font-size: .875rem;
+    letter-spacing: normal;
+    line-height: 1.428571428571429;
+    height: var(--menu-item-height);
+    color: var(--secondary-body-text-color)
+}
+
+@media screen and (max-width: 38.75em) {
+    .AssemblyMenuItem {
+        font-weight: var(--typography-section-weight);
+        font-size: .75rem;
+        letter-spacing: normal;
+        line-height: 1.333333333333333
+    }
+}
+
+.AssemblyMenuItem-left {
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center
+}
+
+.AssemblyMenuItem-left .UIIcon {
+    margin-right: var(--spacing-small)
+}
+
+.AssemblyMenuItem-title {
+    white-space: nowrap
+}
+
+.AssemblyMenuItem-subtext {
+    font-weight: var(--typography-body-weight);
+    font-size: .875rem;
+    letter-spacing: normal;
+    line-height: 1.428571428571429;
+    text-align: left;
+    color: var(--secondary-body-text-color);
+    max-width: 18.75rem;
+    margin-top: var(--spacing-xxsmall);
+    padding-left: var(--spacing-large)
+}
+
+@media screen and (max-width: 38.75em) {
+    .AssemblyMenuItem-subtext {
+        font-weight: var(--typography-body-weight);
+        font-size: .75rem;
+        letter-spacing: normal;
+        line-height: 1.333333333333333
+    }
+}
+
+.AssemblyMenuItem-container--withSubtext {
+    padding: var(--spacing-xsmall) var(--spacing-medium)
+}
+
+.AssemblyMenuItem-container--withSubtext .AssemblyMenuItem {
+    height: auto
+}
+
+.AssemblyMenuItem-container--withSubtext .AssemblyMenuItem-title {
+    color: var(--ui_color_default_foreground)
+}
+
+.AssemblyMenuItem-container--inverted .AssemblyMenuItem-title {
+    color: var(--indigo-200)
+}
+
+@media screen and (max-width: 48em) {
+    .AssemblyMenuItem-container--withSubtext .AssemblyMenuItem, .AssemblyMenuItem-container .AssemblyMenuItem {
+        height: auto
+    }
+
+    .AssemblyMenuItem-container--withSubtext .AssemblyMenuItem-title, .AssemblyMenuItem-container .AssemblyMenuItem-title {
+        font-weight: var(--typography-body-weight);
+        font-size: 1.25rem;
+        letter-spacing: normal;
+        line-height: 1.4
+    }
+
+    .AssemblyMenuItem-container--withSubtext .AssemblyMenuItem-subtext, .AssemblyMenuItem-container--withSubtext .UIIcon, .AssemblyMenuItem-container .AssemblyMenuItem-subtext, .AssemblyMenuItem-container .UIIcon {
+        display: none
+    }
+}
+
+@media screen and (max-width: 48em) and (max-width: 38.75em) {
+    .AssemblyMenuItem-container--withSubtext .AssemblyMenuItem-title, .AssemblyMenuItem-container .AssemblyMenuItem-title {
+        font-weight: var(--typography-body-weight);
+        font-size: 1rem;
+        letter-spacing: normal;
+        line-height: 1.5
+    }
+}
+
+.AssemblyMenu {
+    min-width: 16.25rem
+}
+
+.AssemblyMenu-header {
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: var(--spacing-xxlarge)
+}
+
+@media screen and (max-width: 48em) {
+    .AssemblyMenu-header {
+        height: auto
+    }
+}
+
+.AssemblyMenu--narrow {
+    min-width: 12.5rem
+}
+
+.AssemblyMenu-section {
+    padding-top: var(--spacing-xsmall);
+    padding-bottom: var(--spacing-xsmall);
+    border-top: .0625rem solid var(--menu_item_divider)
+}
+
+.AssemblyMenu-section:first-child {
+    border: none
+}
+
+@media screen and (max-width: 48em) {
+    .AssemblyMenu-section.AssemblyMenu-section--inverted:not(.AssemblyMenu-section--wrap) {
+        padding: 0;
+        border-left: .0625rem solid var(--ui_color_white_transparent_90);
+        margin: var(--spacing-xsmall) var(--spacing-small)
+    }
+
+    .AssemblyMenu-section.AssemblyMenu-section--inverted:not(.AssemblyMenu-section--wrap) > * {
+        padding-top: var(--spacing-small);
+        padding-bottom: 0
+    }
+
+    .AssemblyMenu-section.AssemblyMenu-section--inverted:not(.AssemblyMenu-section--wrap) > :first-child {
+        padding-top: 0
+    }
+
+    .AssemblyMenu-section.AssemblyMenu-section--wrap {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        border: none;
+        padding-bottom: 0
+    }
+
+    .AssemblyMenu-section.AssemblyMenu-section--wrap > * {
+        -webkit-flex: 1 1 calc(50% - 2 * var(--spacing-medium));
+        -ms-flex: 1 1 calc(50% - 2 * var(--spacing-medium));
+        flex: 1 1 calc(50% - 2 * var(--spacing-medium));
+        margin-bottom: var(--spacing-small)
+    }
+}
+
+.AssemblyPopover {
+    background: var(--ui_color_white_background);
+    border-radius: var(--spacing-xsmall);
+    transform: translateY(var(--spacing-xsmall));
+    border: 1px solid var(--menu_item_divider)
+}
+
+.theme-default .AssemblyPopover, .theme-night .AssemblyPopover {
+    box-shadow: 0 .25rem 1rem 0 rgba(0, 0, 0, .16)
+}
+
+.AssemblyPopover > * {
+    position: relative;
+    z-index: 300
+}
+
+.AssemblyTab {
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    position: relative;
+    white-space: nowrap
+}
+
+@media screen and (min-width: 48.0625em) {
+    .AssemblyTab {
+        height: 100%;
+        margin: 0 var(--spacing-small);
+        font-weight: var(--typography-section-weight);
+        font-size: 1rem;
+        letter-spacing: normal;
+        line-height: 1.5
+    }
+
+    .AssemblyTab .UIIcon {
+        margin-left: var(--spacing-xsmall)
+    }
+}
+
+@media screen and (max-width: 48em) {
+    .AssemblyTab {
+        width: 100%;
+        -ms-flex-pack: justify;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+        margin: var(--spacing-xsmall) 0;
+        padding: 0 var(--spacing-small);
+        font-weight: var(--typography-section-weight);
+        font-size: 1.25rem;
+        letter-spacing: normal;
+        line-height: 1.4
+    }
+}
+
+@media screen and (min-width: 48.0625em) and (max-width: 38.75em) {
+    .AssemblyTab {
+        font-weight: var(--typography-section-weight);
+        font-size: .875rem;
+        letter-spacing: normal;
+        line-height: 1.428571428571429
+    }
+}
+
+@media screen and (max-width: 48em) and (max-width: 38.75em) {
+    .AssemblyTab {
+        font-weight: var(--typography-section-weight);
+        font-size: 1rem;
+        letter-spacing: normal;
+        line-height: 1.5
+    }
+}
+
+.AssemblyTab--inverted {
+    color: var(--indigo-200)
+}
+
+.AssemblyTab--inverted:active, .AssemblyTab--inverted:focus, .AssemblyTab--inverted:hover {
+    color: var(--neutral-100)
+}
+
+.AssemblyTab--inverted:active:after, .AssemblyTab--inverted:focus:after, .AssemblyTab--inverted:hover:after {
+    background: var(--indigo-200)
+}
+
+.AssemblyTab--inverted:after {
+    background: transparent;
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-top-right-radius: var(--radius-small)
+}
+
+@media screen and (min-width: 48.0625em) {
+    .AssemblyTab--inverted:after {
+        height: var(--spacing-xxsmall);
+        right: 0;
+        border-top-left-radius: var(--radius-small)
+    }
+}
+
+@media screen and (max-width: 48em) {
+    .AssemblyTab--inverted:after {
+        width: var(--spacing-xxsmall);
+        top: 0;
+        border-bottom-right-radius: var(--radius-small)
+    }
+}
+
+.AssemblyTab--inverted.AssemblyTab--isSelected {
+    color: var(--neutral-100)
+}
+
+.AssemblyTab--inverted.AssemblyTab--isSelected:after {
+    background: var(--yellow-200)
+}
+
+.AssemblyTabs {
+    display: -webkit-flex;
+    display: flex;
+    height: 100%
+}
+
+@media screen and (max-width: 48em) {
+    .AssemblyTabs {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+}
+
+.StudyModesAdsModal {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-pack: distribute;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+@media screen and (max-width: 48em) {
+    .StudyModesAdsModal {
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center
+    }
+}
+
+@media screen and (max-width: 20em) {
+    .StudyModesAdsModal {
+        background: #fff;
+        margin: 0;
+        height: 100%;
+        -ms-flex-pack: distribute;
+        -webkit-justify-content: space-around;
+        justify-content: space-around;
+        padding-bottom: 1.5rem
+    }
+}
+
+.StudyModesAdsModal .StudyModesAdsModal-AdAttribution {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #646f90;
+    border-radius: var(--radius-small);
+    padding: .25rem .5rem;
+    color: #fff;
+    font-weight: var(--typography-section-weight);
+    font-size: .75rem;
+    letter-spacing: .0625rem;
+    line-height: 1.333333333333333;
+    letter-spacing: 1px;
+    margin: 2rem;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center
+}
+
+@media screen and (max-width: 38.75em) {
+    .StudyModesAdsModal .StudyModesAdsModal-AdAttribution {
+        font-weight: var(--typography-section-weight);
+        font-size: .625rem;
+        letter-spacing: .0625rem;
+        line-height: 1.2
+    }
+}
+
+@media screen and (max-width: 64em) {
+    .StudyModesAdsModal .StudyModesAdsModal-AdAttribution {
+        margin: 1rem
+    }
+}
+
+@media screen and (max-width: 28.75em) {
+    .StudyModesAdsModal .StudyModesAdsModal-AdAttribution {
+        margin: .5rem
+    }
+}
+
+.StudyModesAdsModal .StudyModesAdsModal-AdContainer {
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: auto;
+    -webkit-flex-grow: 1;
+    flex-grow: 1
+}
+
+.StudyModesAdsModal .StudyModesAdsModal-AdContainer .SiteAd {
+    margin: 0 3rem
+}
+
+@media screen and (max-width: 48em) {
+    .StudyModesAdsModal .StudyModesAdsModal-AdContainer {
+        -webkit-flex-grow: 0;
+        flex-grow: 0
+    }
+}
+
+@media screen and (max-width: 28.75em) {
+    .StudyModesAdsModal .StudyModesAdsModal-AdContainer .SiteAd {
+        margin: 0
+    }
+}
+
+.StudyModesAdsModal .StudyModesAdsModal-NativeContainer {
+    width: 100%
+}
+
+.StudyModesAdsModal .StudyModesAdsModal-NativeContainer .SiteAd {
+    margin: 0;
+    width: 100%
+}
+
+.StudyModesAdsModal .StudyModesAdsModal-SkipAdButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 2rem;
+    font-weight: var(--typography-section-weight);
+    font-size: 1rem;
+    letter-spacing: normal;
+    line-height: 1.5
+}
+
+@media screen and (max-width: 38.75em) {
+    .StudyModesAdsModal .StudyModesAdsModal-SkipAdButton {
+        font-weight: var(--typography-section-weight);
+        font-size: .875rem;
+        letter-spacing: normal;
+        line-height: 1.428571428571429
+    }
+}
+
+.StudyModesAdsModal .StudyModesAdsModal-SkipAdButton .UIButton {
+    background-color: var(--neutral-200);
+    color: #303545;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: var(--radius-small);
+    padding: .5rem 1rem
+}
+
+.StudyModesAdsModal .StudyModesAdsModal-SkipAdButton .UIIcon {
+    margin-left: .3125rem;
+    margin-top: .125rem
+}
+
+@media screen and (max-width: 48em) {
+    .StudyModesAdsModal .StudyModesAdsModal-SkipAdButton {
+        position: static
+    }
+}
+
+@media screen and (max-width: 64em) {
+    .StudyModesAdsModal .StudyModesAdsModal-SkipAdButton {
+        margin: 1rem
+    }
+}
+
+.StudyModesAdsModal .StudyModesAdsModal-text {
+    color: var(--ink-100)
+}
+
+@media screen and (max-width: 20em) {
+    .StudyModesAdsModal .StudyModesAdsModal-text {
+        text-align: center
+    }
+}
+
+.StudyModesAdsModal .StudyModesAdsModal-content {
+    width: 100%;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center
+}
+
+.StudyModesAdsModal .StudyModesAdsModal-content, .StudyModesAdsModal .StudyModesAdsModal-textContainer {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.StudyModesAdsModal .StudyModesAdsModal-textContainer {
+    font-weight: var(--typography-body-weight);
+    font-size: 1.25rem;
+    letter-spacing: normal;
+    line-height: 1.4;
+    margin-bottom: 3rem
+}
+
+@media screen and (max-width: 38.75em) {
+    .StudyModesAdsModal .StudyModesAdsModal-textContainer {
+        font-weight: var(--typography-body-weight);
+        font-size: 1rem;
+        letter-spacing: normal;
+        line-height: 1.5
+    }
+}
+
+@media screen and (max-width: 64em) {
+    .StudyModesAdsModal .StudyModesAdsModal-textContainer {
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row
+    }
+}
+
+@media screen and (max-width: 48em) {
+    .StudyModesAdsModal .StudyModesAdsModal-textContainer {
+        margin-top: 3rem;
+        margin-bottom: 0;
+        font-weight: var(--typography-body-weight);
+        font-size: .875rem;
+        letter-spacing: normal;
+        line-height: 1.428571428571429;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+}
+
+@media screen and (max-width: 28.75em) {
+    .StudyModesAdsModal .StudyModesAdsModal-textContainer {
+        margin-top: 2rem;
+        font-weight: var(--typography-body-weight);
+        font-size: 1rem;
+        letter-spacing: normal;
+        line-height: 1.5
+    }
+}
+
+@media screen and (max-height: 38.75em) {
+    .StudyModesAdsModal .StudyModesAdsModal-textContainer {
+        margin-top: .5rem;
+        margin-bottom: .25rem
+    }
+}
+
+.StudyModesAdsModal .StudyModesAdsModal-upsellLink {
+    color: var(--teal-400);
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1rem
+}
+
+@media screen and (max-width: 64em) {
+    .StudyModesAdsModal .StudyModesAdsModal-upsellLink {
+        margin-top: 0;
+        margin-left: .25rem
+    }
+}
+
+@media screen and (max-width: 48em) {
+    .StudyModesAdsModal .StudyModesAdsModal-upsellLink {
+        margin-top: 1rem;
+        margin-left: 0
+    }
+}
+
+.ads-modal-fade-exit {
+    opacity: 1
+}
+
+.ads-modal-fade-exit-active {
+    transition: opacity .6s ease-in-out;
+    opacity: 0
+}
+
+.ads-modal-fade-appear, .ads-modal-fade-enter {
+    opacity: 0
+}
+
+.ads-modal-fade-appear-active, .ads-modal-fade-enter-active {
+    transition: opacity .6s ease-in-out;
+    opacity: 1
+}
+
+.ads-modal-fade-appear-done, .ads-modal-fade-enter-done {
+    opacity: 1
+}
+
+.EditStudiableItemModal-form {
+    display: grid;
+    grid-row-gap: 4rem
+}
+
+.EditStudiableItemModal-textarea {
+    padding: 2.5rem
+}
+
+.EditStudiableItemModal-actions {
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-pack: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end
+}
+
+.EditStudiableItemModal-cancel {
+    -webkit-align-self: center;
+    align-self: center;
+    -ms-flex-item-align: center
+}
+
+.EditStudiableItemModal-submit {
+    padding-left: 2.5rem;
+    width: 9.375rem
+}
+
+.FeedbackItem + .FeedbackItem {
+    margin-top: 1.5rem
+}
+
+@media screen and (max-width: 28.75em) {
+    .FeedbackItem + .FeedbackItem, .FeedbackItem + [class^=UI], [class^=UI] + .FeedbackItem {
+        margin-top: 1rem
+    }
+}
+
+.FeedbackItem-label {
+    color: var(--ui_color_gray_60);
+    margin-bottom: .625rem
+}
+
+.FeedbackItem--success .FeedbackItem-label {
+    color: #23b26d
+}
+
+.FeedbackItem--error .FeedbackItem-label {
+    color: #ff725b
+}
+
+.FeedbackItem-content {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.625
+}
+
+@media screen and (max-width: 38.75em) {
+    .FeedbackItem-content {
+        font-weight: 400;
+        font-size: .875rem;
+        line-height: 1.571428571428571
+    }
+}
+
+.OnboardingScreenBase .FixedActionLayout-content {
+    -webkit-flex-grow: 4;
+    flex-grow: 4
+}
+
+.OnboardingScreenBase .FixedActionLayout-action {
+    -webkit-flex-grow: 1;
+    flex-grow: 1
+}
+
+.OnboardingScreenBase-content {
+    padding-top: 2rem;
+    margin: 0 auto;
+    max-width: 34.375rem
+}
+
+@media screen and (max-width: 48em) {
+    .OnboardingScreenBase-content {
+        padding-top: 1.5rem
+    }
+}
+
+@media screen and (max-width: 28.75em) {
+    .OnboardingScreenBase-content {
+        padding-top: 1rem
+    }
+}
+
+.OnboardingScreenBase-headerSection {
+    margin-bottom: 3.75rem;
+    text-align: center
+}
+
+.OnboardingScreenBase-heading {
+    font-weight: var(--typography-heading-weight);
+    font-size: 2rem;
+    letter-spacing: normal;
+    line-height: 1.25;
+    margin-bottom: 1.5rem
+}
+
+@media screen and (max-width: 38.75em) {
+    .OnboardingScreenBase-heading {
+        font-weight: var(--typography-heading-weight);
+        font-size: 1.5rem;
+        letter-spacing: normal;
+        line-height: 1.333333333333333
+    }
+}
+
+.OnboardingScreenBase-subheading {
+    font-weight: var(--typography-body-weight);
+    font-size: 1.25rem;
+    letter-spacing: normal;
+    line-height: 1.4
+}
+
+@media screen and (max-width: 38.75em) {
+    .OnboardingScreenBase-subheading {
+        font-weight: var(--typography-body-weight);
+        font-size: 1rem;
+        letter-spacing: normal;
+        line-height: 1.5
+    }
+}
+
+.OptionsModal-optionsRow + .OptionsModal-optionsRow, .OptionsModal-optionsRow + [class^=UI], [class^=UI] + .OptionsModal-optionsRow {
+    margin-top: 2.5rem
+}
+
+.OptionsModal-optionsRow .UIBadge {
+    margin-left: .5rem
+}
+
+.OptionsModal-settingMeta {
+    font-weight: 400;
+    font-size: .875rem;
+    line-height: 1.285714285714286;
+    margin-top: 1.25rem !important
+}
+
+@media screen and (max-width: 38.75em) {
+    .OptionsModal-settingMeta {
+        font-weight: 400;
+        font-size: .75rem;
+        line-height: 1.333333333333333
+    }
+}
+
+.OptionsModal-errorMessage {
+    color: #ff725b
+}
+
+.OptionsModal-description {
+    color: var(--ui_color_breadcrumb_text)
+}
+
+.OptionsModal-writeNote .UILink {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.625;
+    font-weight: 600
+}
+
+@media screen and (max-width: 38.75em) {
+    .OptionsModal-writeNote .UILink {
+        font-weight: 400;
+        font-size: .875rem;
+        line-height: 1.571428571428571
+    }
+}
+
+.OptionsModal-cols {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+.OptionsModal-col {
+    -webkit-flex: 50%;
+    -ms-flex: 50%;
+    flex: 50%
+}
+
+.OptionsModal-col:nth-child(n+3) {
+    margin-top: 1.25rem
+}
+
+@media screen and (max-width: 38.75em) {
+    .OptionsModal-col {
+        -webkit-flex: 100%;
+        -ms-flex: 100%;
+        flex: 100%
+    }
+
+    .OptionsModal-col + .OptionsModal-col, .OptionsModal-col + [class^=UI], [class^=UI] + .OptionsModal-col {
+        margin-top: 1.25rem
+    }
+}
+
+.OptionsModal-colFill {
+    -webkit-flex: 100%;
+    -ms-flex: 100%;
+    flex: 100%
+}
+
+.OptionsModal-colFill + .OptionsModal-colFill, .OptionsModal-colFill + [class^=UI], .OptionsModal-extraRow, [class^=UI] + .OptionsModal-colFill {
+    margin-top: 1.25rem
+}
+
+.TypeTheAnswerField {
+    display: -webkit-flex;
+    display: flex;
+    padding: 2.5rem 2rem
+}
+
+@media screen and (max-width: 48em) {
+    .TypeTheAnswerField {
+        padding: 1.5rem
+    }
+}
+
+@media screen and (max-width: 28.75em) {
+    .TypeTheAnswerField {
+        padding: 1rem
+    }
+}
+
+@media screen and (max-width: 64em) and (min-width: 48.0625em) {
+    * + .TypeTheAnswerField > *, .TypeTheAnswerField > * + *, .TypeTheAnswerField > * + .TypeTheAnswerField > * {
+        margin-top: 1rem
+    }
+}
+
+@media screen and (max-width: 64em) and (min-width: 48.0625em) {
+    .TypeTheAnswerField {
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap
+    }
+}
+
+.TypeTheAnswerField-input {
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    margin-right: 2rem;
+    z-index: 100
+}
+
+.TypeTheAnswerField-input .UIInput {
+    width: 100%
+}
+
+.TypeTheAnswerField-input .UISpecialCharacterButtonGroup {
+    font-size: .875rem;
+    margin-top: .25rem !important
+}
+
+@media screen and (max-width: 64em) and (min-width: 48.0625em) {
+    .TypeTheAnswerField-input {
+        margin-right: 0;
+        width: 100%
+    }
+}
+
+.TypeTheAnswerField-actions {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center
+}
+
+.TypeTheAnswerField-actions .UIButton {
+    display: inline-block;
+    min-height: 3rem;
+    min-width: 6.25rem;
+    text-align: center
+}
+
+.TypeTheAnswerField-actions.is-correct .UIButton {
+    background-color: #23b26d
+}
+
+.TypeTheAnswerField-actions > * + .TypeTheAnswerField-actions > *, .TypeTheAnswerField-actions > * + [class^=UI], [class^=UI] + .TypeTheAnswerField-actions > * {
+    margin-top: 1rem
+}
+
+.TypeTheAnswerField-actions > * {
+    margin-left: 0 !important
+}
+
+@media screen and (max-width: 64em) and (min-width: 48.0625em) {
+    .TypeTheAnswerField-actions {
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 64em) and (min-width: 48.0625em) {
+    .TypeTheAnswerField-dontKnow {
+        padding-bottom: .25rem
+    }
+}
+
+.WrittenFeedbackItem {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.WrittenFeedbackItem-answerOverride {
+    -webkit-align-self: flex-end;
+    align-self: flex-end;
+    -ms-flex-item-align: end;
+    margin-left: 1.25rem;
+    margin-top: 1rem;
+    min-width: 5rem
+}
+
+.YouSaidLabelWithSmartGrading {
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between
+}
+
+.SmartGradingLabelWithInfo {
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    color: var(--ui_color_gray_30);
+    cursor: pointer;
+    display: -webkit-flex;
+    display: flex
+}
+
+.SmartGradingLabelWithInfo .UIBadge {
+    margin-right: .625rem
+}
+
+.SmartGradingLabelWithInfo .UIIcon {
+    color: var(--ui_color_gray_30);
+    margin-left: 1rem
+}
+
+.SmartGradingLabelWithInfo--lock, .SmartGradingLabelWithInfo--lock .UIIcon {
+    color: var(--smart_grading_modal_upsell_text_color)
+}
+
+.SmartGradingLabelWithInfo--lock {
+    display: grid;
+    grid-template-columns: repeat(2, auto)
+}
+
+.SmartGradingLabelWithInfo--lock .UIIcon {
+    margin-left: .5rem
+}
+
+.SmartGradingPopover:not(.SmartGradingPopover--upsell) {
+    transform: translateX(-20px)
+}
+
+@media screen and (max-width: 28.75em) {
+    .SmartGradingPopover:not(.SmartGradingPopover--upsell) {
+        transform: translateY(90px)
+    }
+}
+
+.SmartGradingPopover:not(.SmartGradingPopover--upsell) .UIHeading {
+    margin-top: .25rem
+}
+
+.SmartGradingPopover {
+    max-width: 24.75rem;
+    padding: 1.5rem
+}
+
+@media screen and (max-width: 28.75em) {
+    .SmartGradingPopover {
+        max-width: 18rem;
+        padding: 1rem
+    }
+}
+
+.SmartGradingPopover .SmartGradingPopover-plusBadge {
+    position: static
+}
+
+.SmartGradingPopover .SmartGradingPopover-plusBadge .UIBadge {
+    position: absolute;
+    right: .5rem;
+    top: .5rem
+}
+
+.SmartGradingPopover .UIButton {
+    margin-top: 1rem;
+    padding: .375rem .75rem
+}
+
+.SmartGradingPopover-text {
+    font-weight: var(--typography-body-weight);
+    font-size: .875rem;
+    letter-spacing: normal;
+    line-height: 1.428571428571429;
+    margin-top: .75rem
+}
+
+@media screen and (max-width: 38.75em) {
+    .SmartGradingPopover-text {
+        font-weight: var(--typography-body-weight);
+        font-size: .75rem;
+        letter-spacing: normal;
+        line-height: 1.333333333333333
+    }
+}
+
+.WrittenQuestionFeedbackView-mobileDiagram {
+    height: 10.625rem;
+    margin-bottom: 1rem;
+    position: relative
+}
+
+.CheckpointBucketedItemButton {
+    background: var(--ui_color_white_background);
+    border-bottom: .25rem solid #fff;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    padding: 1.25rem;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 .3125rem 1rem 0 rgba(0, 0, 0, .08);
+    transition: all .12s cubic-bezier(.47, 0, .745, .715);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.theme-default .CheckpointBucketedItemButton.is-active, .theme-default .CheckpointBucketedItemButton:focus:not(.is-disabled), .theme-default .CheckpointBucketedItemButton:hover:not(.is-disabled), .theme-night .CheckpointBucketedItemButton.is-active, .theme-night .CheckpointBucketedItemButton:focus:not(.is-disabled), .theme-night .CheckpointBucketedItemButton:hover:not(.is-disabled) {
+    box-shadow: 0 .25rem 1rem 0 rgba(0, 0, 0, .16)
+}
+
+.CheckpointBucketedItemButton.is-disabled {
+    cursor: default;
+    opacity: .5
+}
+
+.CheckpointBucketedItemButton.familiar.is-active {
+    border-bottom-color: #f08700
+}
+
+.CheckpointBucketedItemButton.correctAtLeastOnce.is-active, .CheckpointBucketedItemButton.mastered.is-active {
+    border-bottom-color: #23b26d
+}
+
+.CheckpointBucketedItemButton.neverCorrect.is-active, .CheckpointBucketedItemButton.notStarted.is-active {
+    border-bottom-color: var(--ui_color_gray_70_foreground)
+}
+
+.CheckpointBucketedItemButton.seen.is-active {
+    border-bottom-color: #ff725b
+}
+
+.CheckpointBucketedItemButton, .CheckpointBucketedItemButton-content {
+    width: 100%
+}
+
+.CheckpointBucketedItemButton-content {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative
+}
+
+.CheckpointBucketedItemButton-content .UIIcon {
+    margin-right: -.625rem;
+    margin-top: -.625rem;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.CheckpointBucketedItemButton-content .UIIcon.UIIcon--check, .CheckpointBucketedItemButton-content .UIIcon.UIIcon--double-check {
+    color: #23b26d
+}
+
+.CheckpointBucketedItemButton-content .UIIcon.UIIcon--double-check {
+    width: 1.75rem
+}
+
+.CheckpointBucketedItemButton-bucketCount {
+    font-weight: 700;
+    font-size: 2.375rem;
+    line-height: 1.263157894736842;
+    transition: all .12s cubic-bezier(.47, 0, .745, .715);
+    width: 100%
+}
+
+@media screen and (max-width: 38.75em) {
+    .CheckpointBucketedItemButton-bucketCount {
+        font-weight: 700;
+        font-size: 1.625rem;
+        line-height: 1.153846153846154
+    }
+}
+
+.CheckpointBucketedItemButton-bucketCount.correctAtLeastOnce, .CheckpointBucketedItemButton-bucketCount.mastered {
+    color: #23b26d
+}
+
+.CheckpointBucketedItemButton-bucketCount.familiar {
+    color: #f08700
+}
+
+.CheckpointBucketedItemButton-bucketCount.seen {
+    color: #ff725b
+}
+
+.CheckpointBucketedItemButton-bucketCount.neverCorrect, .CheckpointBucketedItemButton-bucketCount.notStarted {
+    color: var(--ui_color_gray_70_foreground)
+}
+
+.CheckpointBucketedItemButton-bucketName {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: .75rem;
+    letter-spacing: .0625rem;
+    line-height: 1.333333333333333;
+    transition: all .12s cubic-bezier(.47, 0, .745, .715);
+    width: 100%
+}
+
+@media screen and (max-width: 38.75em) {
+    .CheckpointBucketedItemButton-bucketName {
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: .625rem;
+        letter-spacing: .0625rem;
+        line-height: 1.3
+    }
+}
+
+.CheckpointBucketedItemButton.is-disabled .CheckpointBucketedItemButton-bucketName {
+    color: var(--ui_color_disabled)
+}
+
+.CheckpointBucketedItemButton-link, .CheckpointView {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.CheckpointView {
+    background: var(--ui_color_gray_90_background);
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+@media screen and (max-width: 48em) {
+    .CheckpointView {
+        background: var(--ui_color_white_background)
+    }
+}
+
+.CheckpointView .FixedActionLayout-content {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow: auto
+}
+
+@media screen and (max-width: 48em) {
+    .CheckpointView .FixedActionLayout-action {
+        min-height: 3.125rem
+    }
+}
+
+.CheckpointView .FixedContinueButton {
+    padding-top: 0
+}
+
+@media screen and (max-width: 48em) {
+    .CheckpointView-progress {
+        margin: 0 auto;
+        padding: 3.75rem 1.25rem 1.25rem;
+        width: 15rem
+    }
+}
+
+@media screen and (max-width: 28.75em) {
+    .CheckpointView-progress {
+        padding: 0;
+        width: 8.75rem
+    }
+}
+
+.CheckpointView-scrollArea {
+    overflow-y: auto
+}
+
+.CheckpointView-stickyArea {
+    overflow: visible
+}
+
+.CheckpointView-stickyArea.has-itemsExpanded.is-sticky {
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.CheckpointView-stickyArea.has-itemsExpanded .CheckpointView-headingAndProgress {
+    display: none
+}
+
+.CheckpointView-stickyPlaceholder {
+    min-height: 8.0625rem
+}
+
+@media screen and (max-width: 38.75em) {
+    .CheckpointView-stickyPlaceholder {
+        min-height: 3.25rem;
+        padding: 1rem 1rem 0
+    }
+}
+
+@media screen and (max-width: 64em) and (min-width: 48.0625em) {
+    .CheckpointView-stickyPlaceholder {
+        min-height: 15.5rem
+    }
+}
+
+.CheckpointView-heading {
+    margin: 0 auto 2rem;
+    text-align: center
+}
+
+@media screen and (max-width: 48em) {
+    .CheckpointView-heading {
+        border-bottom: .125rem solid var(--ui_color_gray_90_foreground);
+        margin: 3.75rem auto 0;
+        padding-bottom: 3.75rem
+    }
+}
+
+@media screen and (max-width: 28.75em) {
+    .CheckpointView-heading {
+        margin: 2rem 0;
+        padding-bottom: 1rem
+    }
+
+    .CheckpointView-heading > * {
+        margin-top: 0 !important
+    }
+}
+
+.CheckpointView-buckets {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: .625rem;
+    z-index: 200;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between
+}
+
+.CheckpointView-stickyArea.is-sticky .CheckpointView-buckets {
+    padding-right: 0
+}
+
+@media screen and (min-width: 48.0625em) {
+    .CheckpointView-buckets {
+        background: var(--ui_color_gray_90_background)
+    }
+}
+
+@media screen and (max-width: 48em) {
+    .CheckpointView-buckets {
+        padding: .625rem 1.5rem
+    }
+}
+
+@media screen and (max-width: 38.75em) {
+    .CheckpointView-buckets {
+        padding: 1rem
+    }
+}
+
+.CheckpointView-stickyArea.is-sticky .CheckpointView-buckets {
+    left: 0;
+    position: absolute;
+    top: 0
+}
+
+.CheckpointView-bucketBlur {
+    background: -webkit-linear-gradient(var(--ui_color_gray_90_background), var(--ui_color_gray_90_background_transparent));
+    background: -moz-linear-gradient(var(--ui_color_gray_90_background), var(--ui_color_gray_90_background_transparent));
+    background: -ms-linear-gradient(var(--ui_color_gray_90_background), var(--ui_color_gray_90_background_transparent));
+    background: linear-gradient(var(--ui_color_gray_90_background), var(--ui_color_gray_90_background_transparent));
+    bottom: -2rem;
+    height: 2rem;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 200
+}
+
+@media screen and (max-width: 48em) {
+    .CheckpointView-bucketBlur {
+        background: -webkit-linear-gradient(var(--ui_color_white_background), var(--ui_color_white_transparent));
+        background: -moz-linear-gradient(var(--ui_color_white_background), var(--ui_color_white_transparent));
+        background: -ms-linear-gradient(var(--ui_color_white_background), var(--ui_color_white_transparent));
+        background: linear-gradient(var(--ui_color_white_background), var(--ui_color_white_transparent))
+    }
+}
+
+@media screen and (max-width: 38.75em) {
+    .CheckpointView-bucketBlur {
+        bottom: -1rem;
+        height: 1rem
+    }
+}
+
+.CheckpointView-mobileBucketsDropdown {
+    padding: 1rem 1rem 0;
+    position: relative
+}
+
+.CheckpointView-bucketButtonWrapper {
+    display: -webkit-flex;
+    display: flex;
+    width: calc((100% - 1.875rem) / 4);
+    z-index: 300
+}
+
+.CheckpointView-bucketButtonWrapper + .CheckpointView-bucketButtonWrapper {
+    margin-left: .625rem
+}
+
+@media screen and (max-width: 48em) {
+    .CheckpointView-bucketButtonWrapper {
+        height: calc((100% - 1.875rem) / 4);
+        width: calc((100% - 1.875rem) / 4)
+    }
+}
+
+@media screen and (max-width: 38.75em) {
+    .CheckpointView-bucketButtonWrapper {
+        width: calc(50% - .625rem);
+        margin-left: 0 !important
+    }
+
+    .CheckpointView-bucketButtonWrapper:nth-child(n+3) {
+        margin-top: .625rem
+    }
+
+    .CheckpointView-bucketButtonWrapper:nth-child(odd) {
+        margin-right: .625rem
+    }
+}
+
+@media screen and (max-width: 64em) and (min-width: 48.0625em) {
+    .CheckpointView-bucketButtonWrapper {
+        width: calc(50% - .625rem);
+        margin-left: 0 !important
+    }
+
+    .CheckpointView-bucketButtonWrapper:nth-child(n+3) {
+        margin-top: .625rem
+    }
+
+    .CheckpointView-bucketButtonWrapper:nth-child(odd) {
+        margin-right: .625rem
+    }
+}
+
+.CheckpointView-buckets .CheckpointView-bucketButtonWrapper {
+    width: calc((100% - 1.25rem) / 3);
+    margin: 0
+}
+
+.CheckpointView-items {
+    min-height: 25.875rem;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.1875
+}
+
+@media screen and (max-width: 48em) {
+    .CheckpointView-items {
+        padding: 0 1.5rem
+    }
+}
+
+@media screen and (max-width: 38.75em) {
+    .CheckpointView-items {
+        margin-top: 0;
+        padding: 0 1rem
+    }
+}
+
+.CheckpointView-item {
+    margin-top: .625rem;
+    padding: 0 .625rem
+}
+
+@media screen and (max-width: 48em) {
+    .CheckpointView-item {
+        border: .125rem solid var(--ui_color_gray_90_foreground);
+        border-radius: .3125rem
+    }
+}
+
+.CheckpointView-item:first-child {
+    margin-top: 0
+}
+
+.EndView {
+    text-align: center
+}
+
+.EndView, .EndView-heading {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.EndView-heading {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    padding: 2rem
+}
+
+@media screen and (max-width: 48em) {
+    .EndView-heading {
+        padding: 1.5rem;
+        padding: 1rem
+    }
+}
+
+.EndView-actions {
+    padding-bottom: 2rem
+}
+
+.FeedbackHeading.is-incorrect {
+    color: #ff725b
+}
+
+.FeedbackHeading.is-correct {
+    color: #23b26d
+}
+
+.FeedbackHeading.is-correct.is-green {
+    background-color: #23b26d;
+    color: var(--neutral-100)
+}
+
+.FeedbackHeading-inner {
+    padding: 1.5rem 2rem 0
+}
+
+@media screen and (max-width: 48em) {
+    .FeedbackHeading-inner {
+        padding: 1.5rem 1.5rem 0
+    }
+}
+
+@media screen and (max-width: 28.75em) {
+    .FeedbackHeading-inner {
+        padding: 1rem 1rem 0
+    }
+}
+
+.FeedbackHeading .UIHeading {
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex
+}
+
+.FeedbackHeading-emoji {
+    margin-right: 1rem
+}
+
+.FeedbackHeading-emoji svg {
+    height: 2.5rem;
+    transform: translateY(.3125rem);
+    width: 2.5rem
+}
+
+@media screen and (max-width: 38.75em) {
+    .FeedbackHeading-emoji svg {
+        height: 2rem;
+        transform: translateY(.125rem);
+        width: 2rem
+    }
+}
+
+.FeedbackHeading-separator {
+    margin-top: 1.5rem
+}
+
+@media screen and (max-width: 28.75em) {
+    .FeedbackHeading-separator {
+        margin-top: 1rem
+    }
+}
+
+.FeedbackHeading-motivationalHeading {
+    font-weight: var(--typography-heading-weight);
+    font-size: 1.5rem;
+    letter-spacing: normal;
+    line-height: 1.333333333333333;
+    margin-bottom: 1rem
+}
+
+@media screen and (max-width: 38.75em) {
+    .FeedbackHeading-motivationalHeading {
+        font-weight: var(--typography-heading-weight);
+        font-size: 1.25rem;
+        letter-spacing: normal;
+        line-height: 1.4
+    }
+}
+
+.FeedbackHeading-motivationalSubHeading {
+    font-weight: var(--typography-body-weight);
+    font-size: 1.25rem;
+    letter-spacing: normal;
+    line-height: 1.4
+}
+
+@media screen and (max-width: 38.75em) {
+    .FeedbackHeading-motivationalSubHeading {
+        font-weight: var(--typography-body-weight);
+        font-size: 1rem;
+        letter-spacing: normal;
+        line-height: 1.5
+    }
+}
+
+.FeedbackTextWithImage {
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex
+}
+
+.FeedbackTextWithImage .Image-image {
+    cursor: pointer
+}
+
+.FeedbackTextWithImage-audio.is-playing .UIIcon {
+    color: #ffcd1f;
+    fill: #ffcd1f
+}
+
+.FeedbackTransitionLayout-transition-enter {
+    opacity: 0;
+    transform: translateY(13%)
+}
+
+.FeedbackTransitionLayout-transition-enter-active {
+    transition: none .25s ease-in-out;
+    transition-property: all;
+    opacity: 1;
+    transform: none;
+    transition-delay: .25s
+}
+
+.FeedbackTransitionLayout-transition-leave {
+    opacity: 1;
+    transform: none
+}
+
+.FeedbackTransitionLayout-transition-leave-active {
+    transition: none .25s ease-in-out;
+    transition-property: all;
+    opacity: 0;
+    transform: translateX(-100%)
+}
+
+.FeedbackViewContent {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.FeedbackViewDetails {
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    position: relative
+}
+
+.FixedActionLayout {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.FixedActionLayout-content {
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    position: relative
+}
+
+.FixedActionLayout-action {
+    -webkit-align-self: flex-end;
+    align-self: flex-end;
+    -ms-flex-item-align: end;
+    width: 100%
+}
+
+.FixedContinueButton {
+    padding: 1rem;
+    text-align: center
+}
+
+@media screen and (max-width: 48em) {
+    .FixedContinueButton {
+        padding: 1.5rem
+    }
+}
+
+@media screen and (max-width: 28.75em) {
+    .FixedContinueButton {
+        padding: 1rem
+    }
+}
+
+.FlashcardQuestionView .ScrollableViewLayout {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.FlashcardQuestionView-actions {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    padding-top: 2.5rem
+}
+
+@media screen and (max-width: 48em) {
+    .FlashcardQuestionView-actions {
+        padding: 1.5rem
+    }
+}
+
+@media screen and (max-width: 28.75em) {
+    .FlashcardQuestionView-actions {
+        padding: 1rem
+    }
+}
+
+@media screen and (max-width: 28.75em) {
+    .FlashcardQuestionView-action .UIButton--hero {
+        font-size: .5rem
+    }
+}
+
+@media screen and (max-width: 64em) and (min-width: 48.0625em) {
+    .FlashcardQuestionView-action {
+        width: 100%
+    }
+
+    .FlashcardQuestionView-action + .FlashcardQuestionView-action {
+        margin-top: 2rem
+    }
+}
+
+.FlashcardQuestionView-actionArea {
+    background: var(--ui_color_gray_90_background)
+}
+
+@media screen and (max-width: 48em) {
+    .FlashcardQuestionView-actionArea {
+        background: var(--ui_color_white_background)
+    }
+}
+
+@media screen and (min-width: 64.0625em) {
+    .ie11 .FlashcardQuestionView-actionArea {
+        height: 7.5rem
+    }
+}
+
+.FlashcardQuestionView-flashcardWrapper {
+    background: var(--ui_color_gray_90_background);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+@media screen and (max-width: 48em) {
+    .FlashcardQuestionView-flashcardWrapper {
+        background: var(--ui_color_white_background)
+    }
+}
+
+@media screen and (max-width: 48em) {
+    .FlashcardQuestionView-flashcardWrapper .FlippableFlashcard {
+        border: .125rem solid var(--ui_color_gray_90_foreground);
+        border-radius: .3125rem;
+        margin: 1.5rem 1.5rem 0
+    }
+}
+
+@media screen and (max-width: 28.75em) {
+    .FlashcardQuestionView-flashcardWrapper .FlippableFlashcard {
+        margin: 1rem 1rem 0
+    }
+}
+
+.FlashcardQuestionView-flashcardWrapper .FormattedText {
+    height: calc(100% - 2.5rem);
+    margin-top: 2.5rem;
+    overflow-y: auto
+}
+
+.GenericTransitionLayout-transition-enter {
+    opacity: 0;
+    transform: translateX(100%)
+}
+
+.GenericTransitionLayout-transition-enter-active {
+    transition: none .25s ease-in-out;
+    transition-property: all;
+    opacity: 1;
+    transform: none
+}
+
+.GenericTransitionLayout-transition-leave {
+    opacity: 1;
+    transform: none
+}
+
+.GenericTransitionLayout-transition-leave-active {
+    transition: none .25s ease-in-out;
+    transition-property: all;
+    opacity: 0;
+    transform: translateX(-100%)
+}
+
+.GradingOptionsPromptView {
+    margin-top: 1.25rem
+}
+
+.GradingOptionsPromptView-buttonWrapper {
+    display: -webkit-flex;
+    display: flex;
+    margin-top: 1.25rem
+}
+
+.GradingOptionsPromptView-buttonWrapper .UIButtonWithKeyboardHint:not(:first-child) {
+    margin-left: 2.5rem
+}
+
+.GradingOptionsPromptView-buttonWrapper-oneColumn {
+    display: block;
+    margin-top: 1.25rem
+}
+
+.GradingOptionsPromptView-buttonWrapper-oneColumn .UIButtonWithKeyboardHint-Fill {
+    margin-left: 0
+}
+
+.GradingOptionsPromptView-buttonWrapper-oneColumn .UIButtonWithKeyboardHint:not(:first-child) {
+    margin-top: 1.25rem
+}
+
+@media screen and (max-width: 48em) {
+    .LearnControls {
+        border-bottom: .125rem solid var(--ui_color_gray_90_foreground)
+    }
+}
+
+.LearnControls .ModeControls-main {
+    padding-bottom: 3.75rem
+}
+
+.LearnControls .ModeControls-modeName {
+    margin-bottom: 0
+}
+
+@media screen and (min-width: 48.0625em) {
+    .LearnControls .ModeControls-progress {
+        overflow-y: auto;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        display: -webkit-flex;
+        display: flex;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        margin-bottom: 3.75rem;
+        margin-top: 5rem;
+        max-height: 30.5rem;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0
+    }
+}
+
+@media screen and (min-width: 48.0625em) {
+    .LearnControls .ModeControls-progressSection {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-pack: distribute;
+        -webkit-justify-content: space-around;
+        justify-content: space-around;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0
+    }
+}
+
+.LearnControls--noBorderBottom {
+    border-bottom: none
+}
+
+.LearnEmoji {
+    font-size: 4.375rem
+}
+
+.LearnViewController {
+    background-color: var(--card-alt-background);
+    max-height: 38rem;
+    overflow: hidden;
+    position: relative;
+    font-weight: 400;
+    font-size: 1.875rem;
+    line-height: 1.266666666666667
+}
+
+@media screen and (max-width: 38.75em) {
+    .LearnViewController {
+        font-weight: 400;
+        font-size: 1.25rem;
+        line-height: 1.4
+    }
+}
+
+@media screen and (max-width: 48em) {
+    .LearnViewController {
+        margin: 0;
+        max-height: none
+    }
+}
+
+.LearnViewController-loadingIndicator {
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.LearnViewController--withProgressBar .FixedActionLayout, .LearnViewController--withProgressBar .MultipleChoiceQuestionPrompt {
+    top: .3125rem
+}
+
+.MultipleChoiceQuestionFeedbackView-diagramAnswerArea {
+    padding: 2rem 2rem 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+@media screen and (max-width: 48em) {
+    .MultipleChoiceQuestionFeedbackView-diagramAnswerArea {
+        padding: 1.5rem 1.5rem 0
+    }
+}
+
+@media screen and (max-width: 38.75em) {
+    .MultipleChoiceQuestionFeedbackView-diagramAnswerArea {
+        height: 10.625rem;
+        margin-bottom: 1rem;
+        padding: 0;
+        position: static
+    }
+}
+
+.MultipleChoiceQuestionPrompt, .MultipleChoiceQuestionPrompt .ScrollableViewLayout-content {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.MultipleChoiceQuestionPrompt-diagramInner {
+    min-height: calc(100% - 2rem);
+    overflow-y: auto;
+    padding: 2rem 2rem .25rem
+}
+
+.MultipleChoiceQuestionPrompt-diagramInner, .MultipleChoiceQuestionPrompt-inner {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.MultipleChoiceQuestionPrompt-inner {
+    height: 100%;
+    padding: 2rem 2rem 0
+}
+
+@media screen and (max-width: 48em) {
+    .MultipleChoiceQuestionPrompt-inner {
+        padding: 1.5rem 1.5rem 0
+    }
+}
+
+@media screen and (max-width: 28.75em) {
+    .MultipleChoiceQuestionPrompt-inner {
+        padding: 1rem
+    }
+}
+
+.MultipleChoiceQuestionPrompt-promptArea {
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -ms-flex-align: stretch;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+    margin-bottom: 2rem;
+    height: 100%;
+    min-height: 50%;
+    overflow-x: hidden;
+    overflow-y: auto
+}
+
+@media screen and (max-width: 28.75em) {
+    .MultipleChoiceQuestionPrompt-promptArea {
+        margin-bottom: 1rem
+    }
+}
+
+.MultipleChoiceQuestionPrompt-promptArea.MultipleChoiceQuestionPrompt-promptArea--diagram {
+    min-height: 300px
+}
+
+@media screen and (max-width: 20em) {
+    .MultipleChoiceQuestionPrompt-promptArea.MultipleChoiceQuestionPrompt-promptArea--diagram {
+        min-height: 200px
+    }
+}
+
+.MultipleChoiceQuestionPrompt-prompt {
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: stretch;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+    height: 100%
+}
+
+.MultipleChoiceQuestionPrompt-prompt .PromptTextWithImage .FormattedTextWithImage {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.MultipleChoiceQuestionPrompt-prompt .PromptTextWithImage .FormattedTextWithImage .FormattedText {
+    max-height: 100%
+}
+
+.MultipleChoiceQuestionPrompt-diagramAnswerArea {
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    margin-top: 2rem;
+    position: relative;
+    min-height: 300px
+}
+
+@media screen and (max-width: 20em) {
+    .MultipleChoiceQuestionPrompt-diagramAnswerArea {
+        min-height: 200px
+    }
+}
+
+.MultipleChoiceQuestionPrompt-diagramAnswerArea > * {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.MultipleChoiceQuestionPrompt-options {
+    -webkit-flex-grow: 0;
+    flex-grow: 0;
+    width: 100%;
+    z-index: 0
+}
+
+.MultipleChoiceQuestionPrompt-termOptions {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%
+}
+
+.MultipleChoiceQuestionPrompt-termOptions--fullWidth .MultipleChoiceQuestionPrompt-termOptions, .MultipleChoiceQuestionPrompt-termOptions.MultipleChoiceQuestionPrompt-termOptions--fullWidth {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+@media screen and (max-width: 64em) {
+    .MultipleChoiceQuestionPrompt-termOptions {
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap
+    }
+}
+
+.MultipleChoiceQuestionPrompt-termOptions.MultipleChoiceQuestionPrompt-termOptions--allImageOnly {
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap
+}
+
+@media screen and (max-width: 38.75em) {
+    .MultipleChoiceQuestionPrompt-termOptions.MultipleChoiceQuestionPrompt-termOptions--allImageOnly {
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap
+    }
+}
+
+.MultipleChoiceQuestionPrompt-termOption {
+    border: .125rem solid #3ccfcf;
+    border-radius: .25rem;
+    cursor: pointer;
+    padding: .75rem;
+    position: relative;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.625;
+    transition: none .12s cubic-bezier(.47, 0, .745, .715);
+    transition-property: border-color;
+    width: 25%
+}
+
+* + .MultipleChoiceQuestionPrompt-termOption, .MultipleChoiceQuestionPrompt-termOption + *, .MultipleChoiceQuestionPrompt-termOption + .MultipleChoiceQuestionPrompt-termOption {
+    margin-left: 1rem
+}
+
+@media screen and (max-width: 38.75em) {
+    .MultipleChoiceQuestionPrompt-termOption {
+        font-weight: 400;
+        font-size: .875rem;
+        line-height: 1.571428571428571
+    }
+}
+
+.MultipleChoiceQuestionPrompt-termOption.MultipleChoiceQuestionPrompt-termOptions--fullWidth, .MultipleChoiceQuestionPrompt-termOptions--fullWidth .MultipleChoiceQuestionPrompt-termOption {
+    width: 100%;
+    margin-left: 0 !important
+}
+
+* + .MultipleChoiceQuestionPrompt-termOption.MultipleChoiceQuestionPrompt-termOptions--fullWidth, * + .MultipleChoiceQuestionPrompt-termOptions--fullWidth .MultipleChoiceQuestionPrompt-termOption, .MultipleChoiceQuestionPrompt-termOption.MultipleChoiceQuestionPrompt-termOptions--fullWidth + *, .MultipleChoiceQuestionPrompt-termOption.MultipleChoiceQuestionPrompt-termOptions--fullWidth + .MultipleChoiceQuestionPrompt-termOption.MultipleChoiceQuestionPrompt-termOptions--fullWidth, .MultipleChoiceQuestionPrompt-termOptions--fullWidth .MultipleChoiceQuestionPrompt-termOption + *, .MultipleChoiceQuestionPrompt-termOptions--fullWidth .MultipleChoiceQuestionPrompt-termOption + .MultipleChoiceQuestionPrompt-termOptions--fullWidth .MultipleChoiceQuestionPrompt-termOption {
+    margin-top: 1rem
+}
+
+@media screen and (max-width: 64em) {
+    .MultipleChoiceQuestionPrompt-termOption {
+        width: 100%;
+        margin-left: 0 !important
+    }
+
+    * + .MultipleChoiceQuestionPrompt-termOption, .MultipleChoiceQuestionPrompt-termOption + *, .MultipleChoiceQuestionPrompt-termOption + .MultipleChoiceQuestionPrompt-termOption {
+        margin-top: 1rem
+    }
+}
+
+.MultipleChoiceQuestionPrompt-termOption:hover {
+    border-color: #ffcd1f
+}
+
+.MultipleChoiceQuestionPrompt-termOption:focus {
+    outline: none
+}
+
+.MultipleChoiceQuestionPrompt-termOption.is-correct {
+    border-color: #23b26d;
+    background-color: #23b26d;
+    color: #fff
+}
+
+.MultipleChoiceQuestionPrompt-termOption.has-imageOnly {
+    padding: 1rem
+}
+
+* + .MultipleChoiceQuestionPrompt-termOptions--allImageOnly .MultipleChoiceQuestionPrompt-termOption.has-imageOnly, .MultipleChoiceQuestionPrompt-termOptions--allImageOnly .MultipleChoiceQuestionPrompt-termOption.has-imageOnly + *, .MultipleChoiceQuestionPrompt-termOptions--allImageOnly .MultipleChoiceQuestionPrompt-termOption.has-imageOnly + .MultipleChoiceQuestionPrompt-termOptions--allImageOnly .MultipleChoiceQuestionPrompt-termOption.has-imageOnly {
+    margin-left: 1rem !important
+}
+
+.MultipleChoiceQuestionPrompt-termOptions--allImageOnly .MultipleChoiceQuestionPrompt-termOption.has-imageOnly {
+    margin-top: 0 !important
+}
+
+@media screen and (max-width: 38.75em) {
+    .MultipleChoiceQuestionPrompt-termOptions--allImageOnly .MultipleChoiceQuestionPrompt-termOption.has-imageOnly {
+        width: calc(50% - .5rem);
+        margin-left: 0 !important
+    }
+
+    .MultipleChoiceQuestionPrompt-termOptions--allImageOnly .MultipleChoiceQuestionPrompt-termOption.has-imageOnly:nth-child(2n) {
+        margin-left: 1rem !important
+    }
+
+    .MultipleChoiceQuestionPrompt-termOptions--allImageOnly .MultipleChoiceQuestionPrompt-termOption.has-imageOnly:nth-child(n+3) {
+        margin-top: 1rem !important
+    }
+}
+
+.MultipleChoiceQuestionPrompt-termOption.has-imageOnly .MultipleChoiceQuestionPrompt-termOptionInner {
+    height: 100%;
+    overflow: hidden;
+    position: relative
+}
+
+.MultipleChoiceQuestionPrompt-termOption.has-imageOnly .MultipleChoiceQuestionPrompt-termOptionInner.MultipleChoiceQuestionPrompt-termOptions--fullWidth, .MultipleChoiceQuestionPrompt-termOptions--fullWidth .MultipleChoiceQuestionPrompt-termOption.has-imageOnly .MultipleChoiceQuestionPrompt-termOptionInner {
+    float: right;
+    height: 4rem;
+    width: 4rem
+}
+
+@media screen and (max-width: 64em) {
+    .MultipleChoiceQuestionPrompt-termOption.has-imageOnly .MultipleChoiceQuestionPrompt-termOptionInner {
+        float: right;
+        height: 4rem;
+        width: 4rem
+    }
+}
+
+.MultipleChoiceQuestionPrompt-termOptions--allImageOnly .MultipleChoiceQuestionPrompt-termOption.has-imageOnly .MultipleChoiceQuestionPrompt-termOptionInner {
+    float: none;
+    height: auto;
+    width: auto
+}
+
+.MultipleChoiceQuestionPrompt-termOption.has-imageOnly .FormattedTextWithImage {
+    position: absolute;
+    height: 100%;
+    width: 100%
+}
+
+@media screen and (max-width: 64em) and (min-width: 48.0625em) {
+    .MultipleChoiceQuestionPrompt-termOption.has-imageOnly {
+        padding: .25rem
+    }
+}
+
+.MultipleChoiceQuestionPrompt-termOption .FormattedTextWithImage.MultipleChoiceQuestionPrompt-termOptions--fullWidth, .MultipleChoiceQuestionPrompt-termOptions--fullWidth .MultipleChoiceQuestionPrompt-termOption .FormattedTextWithImage {
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex
+}
+
+.MultipleChoiceQuestionPrompt-termOption .FormattedTextWithImage.MultipleChoiceQuestionPrompt-termOptions--fullWidth > *, .MultipleChoiceQuestionPrompt-termOptions--fullWidth .MultipleChoiceQuestionPrompt-termOption .FormattedTextWithImage > * {
+    margin-top: 0 !important
+}
+
+@media screen and (max-width: 64em) {
+    .MultipleChoiceQuestionPrompt-termOption .FormattedTextWithImage {
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        display: -webkit-flex;
+        display: flex
+    }
+
+    .MultipleChoiceQuestionPrompt-termOption .FormattedTextWithImage > * {
+        margin-top: 0 !important
+    }
+}
+
+.MultipleChoiceQuestionPrompt-termOption .FormattedText.MultipleChoiceQuestionPrompt-termOptions--fullWidth, .MultipleChoiceQuestionPrompt-termOptions--fullWidth .MultipleChoiceQuestionPrompt-termOption .FormattedText {
+    -webkit-flex-grow: 1;
+    flex-grow: 1
+}
+
+@media screen and (max-width: 64em) {
+    .MultipleChoiceQuestionPrompt-termOption .FormattedText {
+        -webkit-flex-grow: 1;
+        flex-grow: 1
+    }
+}
+
+html.ios.touch .MultipleChoiceQuestionPrompt-termOption:active, html.ios.touch .MultipleChoiceQuestionPrompt-termOption:focus {
+    border-color: #ffcd1f !important
+}
+
+html.ios.touch .MultipleChoiceQuestionPrompt-termOption:hover {
+    border: .125rem solid #3ccfcf
+}
+
+.MultipleChoiceQuestionPrompt-noneOfTheAboveOption {
+    padding-top: 1rem;
+    text-align: center
+}
+
+.MultipleChoiceQuestionPrompt-keyboardHint {
+    left: -2px;
+    position: absolute;
+    top: -2px
+}
+
+.NewLearnProgressBucket {
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    padding: 0 .5rem
+}
+
+@media screen and (max-width: 48em) {
+    .NewLearnProgressBucket {
+        padding: 0 .25rem;
+        transform: translateY(-.0625rem)
+    }
+}
+
+.NewLearnProgressBucket .UIHeading {
+    color: var(--primary-body-text-color)
+}
+
+.NewLearnProgressBucket-labelText {
+    color: var(--neutral-500);
+    margin-top: .25rem;
+    font-weight: var(--typography-section-weight);
+    font-size: .6875rem;
+    letter-spacing: .0625rem;
+    line-height: 1.090909090909091
+}
+
+@media screen and (max-width: 38.75em) {
+    .NewLearnProgressBucket-labelText {
+        font-weight: var(--typography-section-weight);
+        font-size: .5rem;
+        letter-spacing: .0625rem;
+        line-height: 1
+    }
+}
+
+@media screen and (max-width: 48em) {
+    .NewLearnProgressBucket-labelText {
+        margin-top: .125rem;
+        font-weight: var(--typography-section-weight);
+        font-size: .625rem;
+        letter-spacing: .0625rem;
+        line-height: 1.2
+    }
+}
+
+.NewLearnProgressBucket-icon.UIIcon {
+    position: absolute;
+    top: .25rem;
+    right: .5rem
+}
+
+@media screen and (max-width: 38.75em) {
+    .NewLearnProgressBucket-icon.UIIcon {
+        display: none
+    }
+}
+
+.NewLearnProgressBucket-inner {
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    padding: 0 1rem;
+    position: relative
+}
+
+@media screen and (max-width: 38.75em) {
+    .NewLearnProgressBucket-inner {
+        padding: 0 .5rem
+    }
+}
+
+.NewLearnProgressBuckets--success .UIHeading {
+    color: var(--green-400)
+}
+
+.OnboardingView-loading {
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    background: #3ccfcf;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.OnboardingView-gotItButton, .OnboardingView-loading {
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center
+}
+
+.OnboardingView-gotItButton {
+    margin: 2rem
+}
+
+@media screen and (max-width: 48em) {
+    .OnboardingView-gotItButton {
+        margin: 1.5rem
+    }
+}
+
+@media screen and (max-width: 28.75em) {
+    .OnboardingView-gotItButton {
+        margin: 1rem
+    }
+}
+
+.OnboardingView-gotItButton .UIButton {
+    position: relative
+}
+
+.OnboardingView-handEmoji {
+    margin-bottom: 1.25rem
+}
+
+.OnboardingView-icons {
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    text-align: center
+}
+
+.OnboardingView-icons .UIIcon--check, .OnboardingView-icons .UIIcon--double-check {
+    color: #23b26d
+}
+
+.OnboardingView-icons .UIIcon.UIIcon--double-check {
+    width: 1.75rem
+}
+
+.OnboardingView-icons .UIIcon--progress-arrow {
+    color: #edeff4;
+    margin-top: .625rem
+}
+
+.OnboardingView-icons .UILabelledItem-item {
+    font-weight: var(--typography-heading-weight);
+    font-size: 1.5rem;
+    letter-spacing: normal;
+    line-height: 1.333333333333333
+}
+
+@media screen and (max-width: 38.75em) {
+    .OnboardingView-icons .UILabelledItem-item {
+        font-weight: var(--typography-heading-weight);
+        font-size: 1.25rem;
+        letter-spacing: normal;
+        line-height: 1.4
+    }
+}
+
+.OnboardingView-icons .UILabelledItem-label {
+    font-weight: var(--typography-section-weight);
+    font-size: .875rem;
+    letter-spacing: .0625rem;
+    line-height: 1.428571428571429
+}
+
+@media screen and (max-width: 38.75em) {
+    .OnboardingView-icons .UILabelledItem-label {
+        font-weight: var(--typography-section-weight);
+        font-size: .75rem;
+        letter-spacing: .0625rem;
+        line-height: 1.333333333333333
+    }
+}
+
+.ProgressBar {
+    background-color: #a0abd8;
+    height: .3125rem
+}
+
+.ProgressBar-progress {
+    background-color: #4257b2;
+    height: 100%;
+    width: 0
+}
+
+.ProgressBuckets .UILabelledItem {
+    text-align: center;
+    vertical-align: top
+}
+
+.ModeControls-sidebar .ProgressBuckets .ProgressBuckets-arrow, .ModeControls-sidebar .ProgressBuckets .UILabelledItem {
+    width: 100%;
+    margin-top: 1.5rem
+}
+
+.ModeControls-sidebar .ProgressBuckets .ProgressBuckets-label--hasIcon {
+    margin-left: 1.25rem
+}
+
+.ModeControls-sidebar .ProgressBuckets .ProgressBuckets-arrow {
+    transform: rotate(90deg);
+    padding-top: .25rem
+}
+
+.ModeControls-sidebar .ProgressBuckets .ProgressBuckets-label .UIHeading, .ModeControls-sidebar .ProgressBuckets .ProgressBuckets-label .UIIcon {
+    display: inline-block
+}
+
+.ModeControls-sidebar .ProgressBuckets .ProgressBuckets-label .UIIcon {
+    margin-top: 0;
+    margin-left: .25rem;
+    padding-top: .5rem
+}
+
+@media screen and (max-height: 43.75em) {
+    .ModeControls-sidebar .ProgressBuckets .ProgressBuckets-arrow, .ModeControls-sidebar .ProgressBuckets .UILabelledItem {
+        margin-top: 1rem
+    }
+
+    .ModeControls-sidebar .ProgressBuckets .UILabelledItem-item {
+        height: auto
+    }
+}
+
+.ModeControls-header .ProgressBuckets {
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-pack: distribute;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -ms-flex-pack: space-evenly;
+    -webkit-justify-content: space-evenly;
+    justify-content: space-evenly;
+    margin-bottom: -1.25rem
+}
+
+.ModeControls-header .ProgressBuckets .ProgressBuckets-arrow, .ModeControls-header .ProgressBuckets .ProgressBuckets-bucket {
+    display: inline-block
+}
+
+.ModeControls-header .ProgressBuckets .ProgressBuckets-arrow {
+    margin-top: .25rem
+}
+
+.ModeControls-header .ProgressBuckets .UILabelledItem-item {
+    height: 1.25rem
+}
+
+.ModeControls-header .ProgressBuckets .ProgressBuckets-label .UIHeading {
+    display: none
+}
+
+.ModeControls-header .ProgressBuckets .ProgressBuckets-label .UIHeading + .UIIcon {
+    margin-top: 0
+}
+
+.ProgressBuckets-label .UIIcon--double-check {
+    width: 1rem
+}
+
+.ProgressBuckets-success .UILabelledItem-item {
+    color: #23b26d
+}
+
+.ProgressBuckets-arrow {
+    color: #edeff4;
+    text-align: center
+}
+
+.ProgressBuckets--newTopNav {
+    color: var(--secondary-body-text-color);
+    display: -webkit-flex;
+    display: flex
+}
+
+.ProgressBuckets--newTopNav .ProgressBuckets-arrow {
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    color: var(--neutral-500);
+    display: -webkit-flex;
+    display: flex
+}
+
+.ProgressPopover-container {
+    padding: 1rem
+}
+
+.ProgressPopover-popover-line {
+    line-height: 1.25rem
+}
+
+.ProgressPopover-popover-progress {
+    color: var(--ui_color_gray_60);
+    float: right
+}
+
+.ProgressPopover-popover-circle {
+    border-radius: .5rem;
+    display: inline-block;
+    height: .5rem;
+    vertical-align: middle;
+    width: .5rem;
+    margin-right: .5rem
+}
+
+.ProgressPopover--unfamiliar {
+    background-color: var(--ui_color_progress_unfamiliar)
+}
+
+.ProgressPopover--familiar {
+    background-color: #f08700
+}
+
+.ProgressPopover--mastered {
+    background-color: #23b26d
+}
+
+.PromptLocation {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.PromptLocation.has-padding {
+    padding: 2rem 2rem 0
+}
+
+@media screen and (max-width: 48em) {
+    .PromptLocation.has-padding {
+        padding: 1.5rem 1.5rem 0
+    }
+}
+
+@media screen and (max-width: 28.75em) {
+    .PromptLocation.has-padding {
+        padding: 1rem 1rem 0
+    }
+}
+
+.PromptTextWithImage {
+    cursor: pointer
+}
+
+.PromptTextWithImage .Image-image {
+    max-width: 100%;
+    width: auto
+}
+
+@media screen and (max-width: 38.75em) {
+    .PromptTextWithImage .Image-image {
+        max-height: 9.375rem
+    }
+}
+
+.QuestionTransitionLayout-transition-enter {
+    opacity: 0;
+    transform: translateX(100%)
+}
+
+.QuestionTransitionLayout-transition-enter-active {
+    transition: none .25s ease-in-out;
+    transition-property: all;
+    opacity: 1;
+    transform: none
+}
+
+.QuestionTransitionLayout-transition-leave {
+    opacity: 1;
+    transform: none
+}
+
+.QuestionTransitionLayout-transition-leave-active {
+    transition: none .25s ease-in-out;
+    transition-property: all;
+    opacity: 0;
+    transform: translateY(8%)
+}
+
+.ScrollableBucketListLayout {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    position: relative
+}
+
+.ScrollableBucketListLayout-content {
+    padding-bottom: 2.5rem;
+    padding-top: 1.875rem
+}
+
+@media screen and (max-width: 48em) {
+    .ScrollableBucketListLayout-content {
+        padding-bottom: 1.25rem;
+        padding-top: 1.25rem;
+        padding-right: 1.5rem;
+        margin-right: -1.5rem
+    }
+}
+
+@media screen and (max-width: 28.75em) {
+    .ScrollableBucketListLayout-content {
+        padding-right: 1rem;
+        margin-right: -1rem
+    }
+}
+
+.ScrollableBucketListLayout-bottomBlur {
+    background: -webkit-linear-gradient(var(--ui_color_gray_90_background_transparent), var(--ui_color_gray_90_background));
+    background: -moz-linear-gradient(var(--ui_color_gray_90_background_transparent), var(--ui_color_gray_90_background));
+    background: -ms-linear-gradient(var(--ui_color_gray_90_background_transparent), var(--ui_color_gray_90_background));
+    background: linear-gradient(var(--ui_color_gray_90_background_transparent), var(--ui_color_gray_90_background));
+    bottom: 0;
+    height: 2rem;
+    position: absolute;
+    width: 100%;
+    z-index: 200
+}
+
+@media screen and (max-width: 48em) {
+    .ScrollableBucketListLayout-bottomBlur {
+        background: -webkit-linear-gradient(var(--ui_color_white_transparent), var(--ui_color_white_background));
+        background: -moz-linear-gradient(var(--ui_color_white_transparent), var(--ui_color_white_background));
+        background: -ms-linear-gradient(var(--ui_color_white_transparent), var(--ui_color_white_background));
+        background: linear-gradient(var(--ui_color_white_transparent), var(--ui_color_white_background))
+    }
+}
+
+.ScrollableViewLayout {
+    padding: 2rem 2rem 0;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    overflow: hidden;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+@media screen and (max-width: 48em) {
+    .ScrollableViewLayout {
+        padding: 1.5rem 1.5rem 0
+    }
+}
+
+@media screen and (max-width: 28.75em) {
+    .ScrollableViewLayout {
+        padding: 1rem 1rem 0
+    }
+}
+
+.ScrollableViewLayout--topAligned.ScrollableViewLayout {
+    -ms-flex-pack: start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start
+}
+
+.ScrollableViewLayout-content {
+    margin-left: -2rem;
+    margin-right: -2rem;
+    margin-top: -2rem;
+    overflow-y: auto;
+    padding: 2rem
+}
+
+@media screen and (max-width: 48em) {
+    .ScrollableViewLayout-content {
+        margin-left: -1.5rem;
+        margin-right: -1.5rem;
+        margin-top: -1.5rem;
+        padding: 1.5rem
+    }
+}
+
+@media screen and (max-width: 28.75em) {
+    .ScrollableViewLayout-content {
+        margin-left: -1rem;
+        margin-right: -1rem;
+        margin-top: -1rem;
+        padding: 1rem
+    }
+}
+
+.firefox .ScrollableViewLayout-content:after, .ie11 .ScrollableViewLayout-content:after, .ie-edge .ScrollableViewLayout-content:after {
+    content: "";
+    display: block;
+    padding-bottom: 2rem
+}
+
+@media screen and (max-width: 48em) {
+    .firefox .ScrollableViewLayout-content:after, .ie11 .ScrollableViewLayout-content:after, .ie-edge .ScrollableViewLayout-content:after {
+        padding-bottom: 1.5rem
+    }
+}
+
+@media screen and (max-width: 28.75em) {
+    .firefox .ScrollableViewLayout-content:after, .ie11 .ScrollableViewLayout-content:after, .ie-edge .ScrollableViewLayout-content:after {
+        padding-bottom: 1rem
+    }
+}
+
+.ScrollableViewLayout-bottomBlur, .ScrollableViewLayout-topBlur {
+    height: 2rem;
+    pointer-events: none;
+    position: absolute;
+    width: calc(100% - 4rem);
+    z-index: 200
+}
+
+@media screen and (max-width: 48em) {
+    .ScrollableViewLayout-bottomBlur, .ScrollableViewLayout-topBlur {
+        height: 1.5rem;
+        width: calc(100% - 3rem)
+    }
+}
+
+@media screen and (max-width: 28.75em) {
+    .ScrollableViewLayout-bottomBlur, .ScrollableViewLayout-topBlur {
+        height: 1rem;
+        width: calc(100% - 2rem)
+    }
+}
+
+.ScrollableViewLayout-bottomBlur {
+    bottom: 0;
+    background: -webkit-linear-gradient(var(--card-alt-background-transparent), var(--card-alt-background));
+    background: -moz-linear-gradient(var(--card-alt-background-transparent), var(--card-alt-background));
+    background: -ms-linear-gradient(var(--card-alt-background-transparent), var(--card-alt-background));
+    background: linear-gradient(var(--card-alt-background-transparent), var(--card-alt-background))
+}
+
+.ScrollableViewLayout-topBlur {
+    background: -webkit-linear-gradient(var(--card-alt-background), var(--card-alt-background-transparent));
+    background: -moz-linear-gradient(var(--card-alt-background), var(--card-alt-background-transparent));
+    background: -ms-linear-gradient(var(--card-alt-background), var(--card-alt-background-transparent));
+    background: linear-gradient(var(--card-alt-background), var(--card-alt-background-transparent));
+    top: 0
+}
+
+.SponsoredRewardRedeemUI-header {
+    text-align: center
+}
+
+.SponsoredRewardRedeemUI-contentWrapper {
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%
+}
+
+.SponsoredRewardRedeemUI-description {
+    text-align: center;
+    width: 29.0625rem
+}
+
+@media screen and (max-width: 64em) {
+    .SponsoredRewardRedeemUI-description {
+        width: 22.8125rem
+    }
+}
+
+.SponsoredRewardRedeemUI-description .UIParagraph {
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.33
+}
+
+.SponsoredRewardRedeemUI-code {
+    font-weight: 700
+}
+
+.SponsoredRewardRedeemUI-button-label {
+    font-size: 1.0625rem;
+    font-weight: 700;
+    padding: .5rem 2.5rem
+}
+
+.SponsoredRewardRedeemUI-bottomline .UIParagraph {
+    font-size: .9375rem;
+    font-weight: 700;
+    color: var(--ui_color_gray_60)
+}
+
+.SponsoredRewardRedeemUI-image-grubhub {
+    background-image: url(https://assets.quizlet.com/a/i/sponsored_rewards/grubhub.916bc65a1b0f2e4.png);
+    width: 8.5rem;
+    height: 10rem
+}
+
+@media (-o-min-device-pixel-ratio: 1.5/1),(-webkit-min-device-pixel-ratio: 1.5),(min--moz-device-pixel-ratio: 1.5),(min-device-pixel-ratio: 1.5),(min-resolution: 1.5dppx),(min-resolution: 138dpi) {
+    .SponsoredRewardRedeemUI-image-grubhub {
+        background-image: url(https://assets.quizlet.com/a/i/sponsored_rewards/grubhub@2x.626a220ebc7f38f.png);
+        background-size: 100% auto
+    }
+}
+
+.SelfGradePrompt {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    display: -webkit-flex;
+    display: flex;
+    height: 100%
+}
+
+.SelfGradePrompt .UIDivider-separatorLine {
+    border-bottom-color: var(--ui_color_gray_90_foreground)
+}
+
+.SelfGradePrompt-prompt {
+    -webkit-flex-grow: 1;
+    flex-grow: 1
+}
+
+.SelfGradePrompt-heading, .SelfGradePrompt-prompt {
+    display: -webkit-flex;
+    display: flex
+}
+
+.SelfGradePrompt-heading .SelfGradePrompt-heading-segment {
+    display: inline-block
+}
+
+.SelfGradePrompt-promptSection {
+    margin-top: 1rem
+}
+
+.SelfGradePrompt-promptSection-heading {
+    margin-bottom: 1rem;
+    color: var(--ui_color_gray_60)
+}
+
+.SelfGradePrompt-promptSection-content {
+    font-size: 1rem
+}
+
+.SelfGradePrompt-actions {
+    padding: 2rem;
+    display: -webkit-flex;
+    display: flex
+}
+
+.SelfGradePrompt-actions .UIButtonWithKeyboardHint:not(:first-child) {
+    margin-left: 2rem
+}
+
+.StandardGradingLabelSection {
+    margin-bottom: 2rem
+}
+
+.StandardGradingLabel {
+    font-weight: var(--typography-section-weight);
+    font-size: .875rem;
+    letter-spacing: .0625rem;
+    line-height: 1.428571428571429;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    color: var(--green-500);
+    display: -webkit-flex;
+    display: flex
+}
+
+@media screen and (max-width: 38.75em) {
+    .StandardGradingLabel {
+        font-weight: var(--typography-section-weight);
+        font-size: .75rem;
+        letter-spacing: .0625rem;
+        line-height: 1.333333333333333
+    }
+}
+
+.StandardGradingLabel .UIIcon {
+    margin-right: .5rem
+}
+
+.StandardGradingLabel-info {
+    color: var(--neutral-500);
+    margin-left: 1rem
+}
+
+.StandardGradingPopover {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    max-width: 24.75rem;
+    padding: 1.5rem;
+    transform: translateX(-180px) translateY(-20px)
+}
+
+@media screen and (max-width: 64em) {
+    .StandardGradingPopover {
+        padding: 1rem;
+        transform: translateX(-80px) translateY(5px)
+    }
+}
+
+@media screen and (max-width: 28.75em) {
+    .StandardGradingPopover {
+        max-width: 18rem;
+        transform: translateY(5px)
+    }
+}
+
+.StandardGradingPopover .UIButton {
+    margin-top: 1rem;
+    padding: .375rem .75rem
+}
+
+.StandardGradingPopover-text {
+    font-weight: var(--typography-body-weight);
+    font-size: .875rem;
+    letter-spacing: normal;
+    line-height: 1.428571428571429;
+    color: var(--ink-100);
+    margin-top: 1rem
+}
+
+@media screen and (max-width: 38.75em) {
+    .StandardGradingPopover-text {
+        font-weight: var(--typography-body-weight);
+        font-size: .75rem;
+        letter-spacing: normal;
+        line-height: 1.333333333333333
+    }
+}
+
+.StandardGradingPopover-ctas {
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-pack: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    margin-top: .5rem
+}
+
+.StandardGradingPopover-ctas .UIButton--whiteBorder {
+    border-color: var(--neutral-300);
+    color: var(--ink-200);
+    margin-right: -.75rem
+}

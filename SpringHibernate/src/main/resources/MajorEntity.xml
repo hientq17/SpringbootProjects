@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="edu.fpt.entity.MajorEntity">
+        <table name="major" schema="student" catalog=""/>
+        <attributes>
+            <id name="majorId">
+                <column name="majorId" precision="-1"/>
+            </id>
+            <basic name="majorName">
+                <column name="majorName" nullable="false"/>
+            </basic>
+            <one-to-many name="studentsByMajorId" mapped-by="majorByMajorId"
+                         target-entity="edu.fpt.entity.StudentEntity"/>
+        </attributes>
+    </entity>
+</entity-mappings>

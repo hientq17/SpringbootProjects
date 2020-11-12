@@ -1,0 +1,981 @@
+@-moz-keyframes fadeInOverlay {
+    0% {
+        background: hsla(0, 0%, 100%, 0)
+    }
+    to {
+        background: var(--ui_black_backdrop_opacity)
+    }
+}
+
+@-webkit-keyframes fadeInOverlay {
+    0% {
+        background: hsla(0, 0%, 100%, 0)
+    }
+    to {
+        background: var(--ui_black_backdrop_opacity)
+    }
+}
+
+@-o-keyframes fadeInOverlay {
+    0% {
+        background: hsla(0, 0%, 100%, 0)
+    }
+    to {
+        background: var(--ui_black_backdrop_opacity)
+    }
+}
+
+@keyframes fadeInOverlay {
+    0% {
+        background: hsla(0, 0%, 100%, 0)
+    }
+    to {
+        background: var(--ui_black_backdrop_opacity)
+    }
+}
+
+@-moz-keyframes fadeOutOverlay {
+    0% {
+        background: var(--ui_black_backdrop_opacity)
+    }
+    to {
+        background: hsla(0, 0%, 100%, 0)
+    }
+}
+
+@-webkit-keyframes fadeOutOverlay {
+    0% {
+        background: var(--ui_black_backdrop_opacity)
+    }
+    to {
+        background: hsla(0, 0%, 100%, 0)
+    }
+}
+
+@-o-keyframes fadeOutOverlay {
+    0% {
+        background: var(--ui_black_backdrop_opacity)
+    }
+    to {
+        background: hsla(0, 0%, 100%, 0)
+    }
+}
+
+@keyframes fadeOutOverlay {
+    0% {
+        background: var(--ui_black_backdrop_opacity)
+    }
+    to {
+        background: hsla(0, 0%, 100%, 0)
+    }
+}
+
+.SetPageTerm {
+    background: var(--card-background);
+    border-radius: .25rem;
+    min-height: 3.625rem;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .08)
+}
+
+.SetPageTerm:not(.is-showing) {
+    display: none
+}
+
+@media print {
+    .SetPageTerm {
+        border-bottom: .0625rem solid var(--ui_color_gray_60);
+        min-height: 1.25rem
+    }
+}
+
+.SetPageTerm-inner {
+    *zoom: 1;
+    padding: 1.25rem 2rem;
+    position: relative;
+    width: 100%
+}
+
+.SetPageTerm-inner:after, .SetPageTerm-inner:before {
+    content: "";
+    display: table
+}
+
+.SetPageTerm-inner:after {
+    clear: both
+}
+
+.SetPageTerm.has-score .SetPageTerm-inner {
+    padding-left: 0
+}
+
+@media screen and (max-width: 38.75em) {
+    .SetPageTerm.has-score .SetPageTerm-inner {
+        padding-left: 1rem
+    }
+}
+
+@media screen and (max-width: 38.75em) {
+    .SetPageTerm-inner {
+        display: block;
+        padding: 1rem
+    }
+}
+
+@media print {
+    .SetPageTerm-inner {
+        padding: 0
+    }
+}
+
+.SetPageTerm-contentWrapper {
+    display: inline-block;
+    float: left;
+    width: calc(100% - 4.5rem)
+}
+
+.SetPageTerm.has-threeActions:not(.has-score) .SetPageTerm-contentWrapper {
+    width: calc(100% - 6.75rem)
+}
+
+.SetPageTerm.has-score:not(.has-threeActions) .SetPageTerm-contentWrapper {
+    width: calc(100% - 9.5rem)
+}
+
+.SetPageTerm.has-score.has-threeActions .SetPageTerm-contentWrapper {
+    width: calc(100% - 11.75rem)
+}
+
+@media screen and (max-width: 38.75em) {
+    .SetPageTerm-contentWrapper {
+        width: 100% !important
+    }
+}
+
+@media print {
+    .SetPageTerm-contentWrapper {
+        width: calc(100% - 2.25rem)
+    }
+}
+
+.SetPageTerm-content {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: -2.5rem;
+    margin-left: -2rem;
+    text-align: left
+}
+
+@media screen and (max-width: 38.75em) {
+    .SetPageTerm-content {
+        margin-top: -1rem;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+}
+
+.SetPageTerm-score {
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    width: 5rem
+}
+
+@media screen and (max-width: 38.75em) {
+    .SetPageTerm-score {
+        font-weight: 700;
+        font-size: 1.125rem;
+        line-height: 1.111111111111111
+    }
+}
+
+.SetPageTermChunk--oftenMissed .SetPageTerm-score {
+    color: #ff725b
+}
+
+.SetPageTermChunk--sometimesMissed .SetPageTerm-score {
+    color: #f08700
+}
+
+.SetPageTermChunk--rarelyMissed .SetPageTerm-score {
+    color: #ffcd1f
+}
+
+.SetPageTermChunk--neverMissed .SetPageTerm-score {
+    color: #23b26d
+}
+
+.SetPageTermChunk--notStudied .SetPageTerm-score, .SetPageTermChunk--unanswered .SetPageTerm-score {
+    color: var(--ui_color_gray_70_foreground)
+}
+
+.SetPageTermChunk--stillLearning .SetPageTerm-score {
+    color: #f08700
+}
+
+.SetPageTermChunk--mastered .SetPageTerm-score {
+    color: #23b26d
+}
+
+@media screen and (max-width: 38.75em) {
+    .SetPageTerm-score {
+        display: block;
+        float: none;
+        margin-bottom: 1rem;
+        text-align: left
+    }
+}
+
+.SetPageTerm-scorePopover {
+    color: var(--ui_color_gray_60);
+    padding: .625rem .75rem;
+    font-weight: 600;
+    font-size: .875rem;
+    line-height: 1.285714285714286
+}
+
+@media screen and (max-width: 38.75em) {
+    .SetPageTerm-scorePopover {
+        font-weight: 600;
+        font-size: .75rem;
+        line-height: 1.333333333333333
+    }
+}
+
+.SetPageTerm-scoreOverlay .UIPopover {
+    min-width: 5.9375rem !important
+}
+
+.SetPageTerm-scoreText {
+    display: inline-block
+}
+
+.SetPageTerm-diagram {
+    background-color: var(--card-background);
+    height: 6.25rem;
+    width: 6.25rem
+}
+
+.SetPageTerm-diagram .Diagram {
+    box-shadow: 0 0 .25rem 0 var(--ui_color_gray_80_foreground);
+    overflow: hidden !important
+}
+
+.SetPageTerm-side {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 2.5rem;
+    position: relative;
+    vertical-align: top;
+    width: 33%
+}
+
+@media screen and (max-width: 38.75em) {
+    .SetPageTerm-side {
+        border-right: 0;
+        margin-top: 1rem;
+        padding-right: 0;
+        width: 100%
+    }
+}
+
+@media print {
+    .SetPageTerm-side {
+        border-right: .0625rem solid var(--ui_color_gray_60)
+    }
+}
+
+.SetPageTerm-sideContent, .SetPageTerm-sideLabel {
+    padding: 0 2rem
+}
+
+.SetPageTerm-sideLabel {
+    color: var(--ui_color_gray_60);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: .75rem;
+    letter-spacing: .0625rem;
+    line-height: 1.333333333333333;
+    margin-bottom: .75rem
+}
+
+@media screen and (max-width: 38.75em) {
+    .SetPageTerm-sideLabel {
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: .625rem;
+        letter-spacing: .0625rem;
+        line-height: 1.3
+    }
+}
+
+.SetPageTerm-sideContent {
+    border-right: .125rem solid var(--ui_divider_color_black);
+    -webkit-flex-grow: 1;
+    flex-grow: 1
+}
+
+.SetPageTerm-largeSide .SetPageTerm-sideContent, .SetPageTerm-side:last-child .SetPageTerm-sideContent, .SetPageTerm-side:nth-child(3) .SetPageTerm-sideContent {
+    border-right: none
+}
+
+@media screen and (max-width: 38.75em) {
+    .SetPageTerm-sideContent {
+        border-right: none
+    }
+}
+
+.SetPageTerm-sideContent .loading {
+    background: transparent;
+    color: transparent
+}
+
+.SetPageTerm-largeSide {
+    position: relative;
+    width: 67%
+}
+
+@media screen and (max-width: 38.75em) {
+    .SetPageTerm-largeSide {
+        padding: 0;
+        width: 100%
+    }
+}
+
+.SetPageTerm-largeSide .UIDefinitionListDescription {
+    display: inline-block
+}
+
+.SetPageTerm-wordText {
+    color: var(--ui_color_gray_20);
+    word-wrap: break-word
+}
+
+@media screen and (max-width: 38.75em) {
+    .SetPageTerm-wordText {
+        color: var(--ui_color_default_foreground)
+    }
+}
+
+.SetPageTerm.is-loading .SetPageTerm-wordText {
+    color: var(--ui_color_gray_60)
+}
+
+.SetPageTerm-definitionText {
+    color: var(--ui_color_gray_20);
+    display: block;
+    word-wrap: break-word
+}
+
+@media screen and (max-width: 38.75em) {
+    .SetPageTerm-definitionText {
+        color: var(--ui_color_default_foreground)
+    }
+}
+
+.SetPageTerm.is-loading .SetPageTerm-definitionText {
+    color: var(--ui_color_gray_60)
+}
+
+.SetPageTerm.has-image .SetPageTerm-definitionText {
+    min-height: 6.25rem
+}
+
+@media screen and (max-width: 64em) {
+    .SetPageTerm.has-image .SetPageTerm-definitionText {
+        min-height: 0;
+        padding-right: 0
+    }
+}
+
+@media print {
+    .SetPageTerm.has-image .SetPageTerm-definitionText {
+        min-height: 0;
+        padding-bottom: .625rem;
+        padding-right: 0
+    }
+}
+
+.SetPageTerm-definition, .SetPageTerm-imageWrap, .SetPageTerm-word {
+    display: table-cell
+}
+
+@media screen and (max-width: 38.75em) {
+    .SetPageTerm-definition, .SetPageTerm-imageWrap, .SetPageTerm-word {
+        display: block;
+        width: 100%
+    }
+}
+
+@media screen and (min-width: 64.0625em) {
+    .SetPageTerm.has-definitionText .SetPageTerm-largeSide .SetPageTerm-imageWrap {
+        bottom: 0;
+        position: absolute;
+        right: 0;
+        top: 0
+    }
+}
+
+.SetPageTerm-imageWrap {
+    border-radius: .25rem;
+    height: 6.25rem;
+    line-height: 0;
+    position: relative;
+    vertical-align: top;
+    width: 9.5rem
+}
+
+@media screen and (max-width: 64em) {
+    .SetPageTerm-imageWrap {
+        padding-top: .625rem
+    }
+}
+
+@media screen and (max-width: 48em) {
+    .has-threeActions .SetPageTerm-imageWrap, .has-threeActions .SetPageTerm-imageWrap img {
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 38.75em) {
+    .SetPageTerm-imageWrap {
+        margin-top: .625rem;
+        padding: 0;
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 38.75em) and (max-width: 64em) {
+    .SetPageTerm-imageWrap {
+        display: block;
+        margin-top: .625rem;
+        position: relative
+    }
+}
+
+@media screen and (max-width: 38.75em) and (max-width: 38.75em) {
+    .SetPageTerm-imageWrap {
+        width: 100%
+    }
+}
+
+.SetPageTerm-image {
+    border-radius: .25rem;
+    cursor: pointer;
+    display: block;
+    height: 6.25rem;
+    max-height: 6.25rem;
+    max-width: 7.5rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 7.5rem
+}
+
+.SetPageTerm-image.is-animatedGif {
+    object-fit: cover
+}
+
+.SetPageTerm-actions {
+    display: inline-block;
+    height: 1.625rem;
+    width: 4.5rem
+}
+
+@media screen and (max-width: 38.75em) {
+    .SetPageTerm-actions {
+        display: block;
+        position: relative;
+        right: -.3125rem;
+        text-align: right;
+        top: -.3125rem;
+        width: 100%
+    }
+}
+
+.SetPageTerm.has-threeActions .SetPageTerm-actions {
+    width: 6.75rem
+}
+
+@media screen and (max-width: 38.75em) {
+    .SetPageTerm.has-threeActions .SetPageTerm-actions {
+        width: 100%
+    }
+}
+
+.SetPageTerm-actions .UIButton-wrapper {
+    padding-top: .25rem !important;
+    vertical-align: middle
+}
+
+@media print {
+    .SetPageTerm-actions {
+        float: right;
+        width: 2.25rem
+    }
+}
+
+@media print {
+    .SetPageTerm-audio, .SetPageTerm-edit {
+        display: none
+    }
+}
+
+.SetPageTerm.is-editing .SetPageTerm-edit .UIIcon, .SetPageTerm.is-playing .SetPageTerm-audio .UIIcon, .SetPageTerm.is-selected .SetPageTerm-star .UIIcon {
+    color: #ffcd1f;
+    fill: #ffcd1f
+}
+
+.SetPageTerm-category {
+    display: inline-block;
+    border-radius: 1.25rem;
+    color: #fff;
+    padding: .5rem 1rem;
+    font-size: .875rem;
+    line-height: 1.285714285714286;
+    font-weight: 600
+}
+
+@media screen and (max-width: 38.75em) {
+    .SetPageTerm-category {
+        font-weight: 600;
+        font-size: .75rem;
+        line-height: 1.333333333333333
+    }
+}
+
+.SetPageTerm-moreSide {
+    margin-top: 2.5rem;
+    padding-left: 2rem;
+    width: 100%
+}
+
+@media screen and (max-width: 38.75em) {
+    .SetPageTerm-moreSide {
+        margin-top: 1rem
+    }
+}
+
+@media screen and (min-width: 64.0625em) {
+    .SetPageTerm.has-image .SetPageTerm-largeSide .SetPageTerm-definitionText {
+        padding-right: 9.5rem
+    }
+}
+
+.DiffText-del, .DiffText-ins {
+    text-decoration: none
+}
+
+.DiffText-ins {
+    color: #23b26d
+}
+
+.DiffText-del {
+    color: #ff725b
+}
+
+.Image .ZoomableImage {
+    display: block;
+    line-height: 0;
+    height: 0
+}
+
+.FlashcardSide {
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    padding-top: 2rem;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+@media screen and (max-width: 64em) {
+    .FlashcardSide {
+        padding-bottom: 2rem;
+        padding-top: 3rem
+    }
+}
+
+.FlashcardSide-audio {
+    position: absolute !important;
+    right: 1.25rem;
+    top: 1.25rem;
+    z-index: 300
+}
+
+.FlashcardSide-audio.is-playing .UIIcon {
+    color: #ffcd1f;
+    fill: #ffcd1f
+}
+
+.FlashcardSide--imageOnly .FlashcardSide-image {
+    bottom: 3.75rem !important;
+    top: 3.75rem !important;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.FlashcardSide-image .Image {
+    cursor: zoom-in
+}
+
+:not(.ie11) .FlashcardSide-image .Image {
+    height: auto;
+    object-fit: contain;
+    width: 100%
+}
+
+.safari .FlashcardSide-image .Image {
+    height: calc(100% - 2rem);
+    left: 0;
+    position: absolute;
+    top: 2rem
+}
+
+@media screen and (min-width: 64.0625em) {
+    .ie11 .FlashcardSide-image .Image {
+        height: 12.5rem;
+        position: relative;
+        top: 25%;
+        width: auto
+    }
+}
+
+@media screen and (max-width: 64em) {
+    .ie11 .FlashcardSide-image .Image {
+        height: 100%;
+        width: auto
+    }
+}
+
+.FlashcardSide-image .ZoomableImage {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 2rem;
+    vertical-align: middle;
+    width: 100%
+}
+
+:not(.ie11) .FlashcardSide-image .ZoomableImage {
+    height: 100%
+}
+
+.FlashcardSide-image .ZoomableImage-imageWrap {
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    vertical-align: middle
+}
+
+:not(.ie11) .FlashcardSide-image .ZoomableImage-imageWrap {
+    height: 100%
+}
+
+@media screen and (max-width: 64em) {
+    .ie11 .FlashcardSide-image .ZoomableImage-imageWrap {
+        height: 100%
+    }
+}
+
+.FlashcardSide--imageAndText > * {
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    height: 100%;
+    position: relative;
+    width: 100%
+}
+
+@media screen and (min-width: 64.0625em) {
+    .FlashcardSide--imageAndText > * {
+        width: 50%
+    }
+}
+
+@media screen and (max-width: 64em) {
+    .FlashcardSide--imageAndText {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+
+    .FlashcardSide--imageAndText .ScrollableViewLayout {
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row
+    }
+}
+
+.FlippableFlashcard {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.FlippableFlashcard-flipTip {
+    color: var(--ui_color_gray_60);
+    margin-left: 2rem;
+    margin-top: 2rem;
+    position: relative;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: .75rem;
+    letter-spacing: .0625rem;
+    line-height: 1.333333333333333
+}
+
+@media screen and (max-width: 38.75em) {
+    .FlippableFlashcard-flipTip {
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: .625rem;
+        letter-spacing: .0625rem;
+        line-height: 1.3
+    }
+}
+
+.FlippableFlashcard-flipTipText {
+    margin-left: .625rem
+}
+
+.FlippableFlashcard-back, .FlippableFlashcard-front {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background: var(--ui_color_white_background);
+    cursor: pointer;
+    transform-style: flat;
+    transition: all .25s ease-in-out;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.FlippableFlashcard-front {
+    opacity: 1;
+    transform: perspective(625rem) rotateX(0deg)
+}
+
+.FlippableFlashcard.is-flipped .FlippableFlashcard-front {
+    opacity: 0;
+    transform: perspective(625rem) rotateX(-180deg)
+}
+
+.FlippableFlashcard-back {
+    opacity: 0;
+    transform: perspective(625rem) rotateX(180deg)
+}
+
+.FlippableFlashcard.is-flipped .FlippableFlashcard-back {
+    opacity: 1;
+    transform: perspective(625rem) rotateX(0deg)
+}
+
+.ProgressSegmentedSemicircle {
+    transform: translateZ(0);
+    width: 100%
+}
+
+.ProgressSegmentedSemicircle-section {
+    stroke-dasharray: 628.3185307179587;
+    stroke-dashoffset: 628.3185307179587
+}
+
+.ProgressSegmentedSemicircle-section.is-animating {
+    -webkit-animation: animateSegmentedSemicircleCurve 1.5s ease-in-out forwards;
+    -moz-animation: animateSegmentedSemicircleCurve 1.5s ease-in-out forwards;
+    -ms-animation: animateSegmentedSemicircleCurve 1.5s ease-in-out forwards;
+    animation: animateSegmentedSemicircleCurve 1.5s ease-in-out forwards
+}
+
+.ProgressSegmentedSemicircle-section.is-filled {
+    stroke-dashoffset: 1256.6370614359173
+}
+
+.ie11 .ProgressSegmentedSemicircle-section, .ie-edge .ProgressSegmentedSemicircle-section, .ie .ProgressSegmentedSemicircle-section {
+    -webkit-animation: none;
+    -moz-animation: none;
+    -ms-animation: none;
+    animation: none;
+    stroke-dasharray: 0;
+    stroke-dashoffset: 0
+}
+
+.ProgressSegmentedSemicircle-percent {
+    fill: var(--ui_color_gray_30);
+    font: 900 60px/1 hurme_no2-webfont, -apple-system, BlinkMacSystemFont, sans-serif;
+    letter-spacing: .05em
+}
+
+.ProgressSegmentedSemicircle-labelName {
+    fill: var(--ui_color_gray_30);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: .75rem;
+    letter-spacing: .0625rem;
+    line-height: 1.333333333333333;
+    font-size: 1.5rem !important
+}
+
+@media screen and (max-width: 38.75em) {
+    .ProgressSegmentedSemicircle-labelName {
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: .625rem;
+        letter-spacing: .0625rem;
+        line-height: 1.3
+    }
+}
+
+.ProgressSegmentedSemicircle-section--unfamiliar {
+    stroke: var(--ui_color_progress_unfamiliar)
+}
+
+.ProgressSegmentedSemicircle-section--familiar {
+    stroke: #f08700
+}
+
+.ProgressSegmentedSemicircle-section--mastered {
+    stroke: #23b26d
+}
+
+.ProgressSegmentedSemicircle-progressTrigger {
+    z-index: 300
+}
+
+@-moz-keyframes animateSegmentedSemicircleCurve {
+    0% {
+        stroke-dashoffset: 628.3185307179587
+    }
+    to {
+        stroke-dashoffset: 1256.6370614359173
+    }
+}
+
+@-webkit-keyframes animateSegmentedSemicircleCurve {
+    0% {
+        stroke-dashoffset: 628.3185307179587
+    }
+    to {
+        stroke-dashoffset: 1256.6370614359173
+    }
+}
+
+@-o-keyframes animateSegmentedSemicircleCurve {
+    0% {
+        stroke-dashoffset: 628.3185307179587
+    }
+    to {
+        stroke-dashoffset: 1256.6370614359173
+    }
+}
+
+@keyframes animateSegmentedSemicircleCurve {
+    0% {
+        stroke-dashoffset: 628.3185307179587
+    }
+    to {
+        stroke-dashoffset: 1256.6370614359173
+    }
+}
+
+.ZoomableImage, .ZoomableImage-imageWrap {
+    display: inline-block
+}
+
+.ZoomableImage-rawImage {
+    vertical-align: middle
+}
+
+.ZoomableImage-image {
+    background: var(--ui_color_gray_90_background);
+    cursor: -webkit-zoom-out;
+    cursor: -moz-zoom-out;
+    cursor: -ms-zoom-out;
+    cursor: zoom-out
+}
+
+.ZoomableImage-image, .ZoomableImage-overlay {
+    position: fixed;
+    transition: all .25s ease;
+    z-index: 10001
+}
+
+.ZoomableImage-overlay {
+    height: 100%;
+    width: 100%;
+    background: var(--ui_color_white_background);
+    background: var(--ui_black_backdrop_opacity);
+    opacity: 0;
+    left: 0;
+    top: 0
+}
+
+.MediaImage {
+    display: block
+}
+
+.MediaImage-baseImage {
+    max-width: 240px;
+    max-height: 240px;
+    cursor: zoom-in
+}
+
+.MediaVideo-player {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    position: relative
+}
+
+.MediaVideo-player > iframe {
+    border-radius: .25rem;
+    max-width: 100%
+}
